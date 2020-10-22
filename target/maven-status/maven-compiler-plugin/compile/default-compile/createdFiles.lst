@@ -1,3 +1,4 @@
-extraction\WikiPageExtractor.class
+extraction\ExtractionManager.class
 extraction\WikipediaService.class
+extraction\WikiPageExtractor.class
 main\Test.class

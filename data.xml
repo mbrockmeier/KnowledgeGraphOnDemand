@@ -1,0 +1,138 @@
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.10/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.10/ http://www.mediawiki.org/xml/export-0.10.xsd" version="0.10" xml:lang="en">
+  <siteinfo>
+    <sitename>Wikipedia</sitename>
+    <dbname>enwiki</dbname>
+    <base>https://en.wikipedia.org/wiki/Main_Page</base>
+    <generator>MediaWiki 1.36.0-wmf.13</generator>
+    <case>first-letter</case>
+    <namespaces>
+      <namespace key="-2" case="first-letter">Media</namespace>
+      <namespace key="-1" case="first-letter">Special</namespace>
+      <namespace key="0" case="first-letter" />
+      <namespace key="1" case="first-letter">Talk</namespace>
+      <namespace key="2" case="first-letter">User</namespace>
+      <namespace key="3" case="first-letter">User talk</namespace>
+      <namespace key="4" case="first-letter">Wikipedia</namespace>
+      <namespace key="5" case="first-letter">Wikipedia talk</namespace>
+      <namespace key="6" case="first-letter">File</namespace>
+      <namespace key="7" case="first-letter">File talk</namespace>
+      <namespace key="8" case="first-letter">MediaWiki</namespace>
+      <namespace key="9" case="first-letter">MediaWiki talk</namespace>
+      <namespace key="10" case="first-letter">Template</namespace>
+      <namespace key="11" case="first-letter">Template talk</namespace>
+      <namespace key="12" case="first-letter">Help</namespace>
+      <namespace key="13" case="first-letter">Help talk</namespace>
+      <namespace key="14" case="first-letter">Category</namespace>
+      <namespace key="15" case="first-letter">Category talk</namespace>
+      <namespace key="100" case="first-letter">Portal</namespace>
+      <namespace key="101" case="first-letter">Portal talk</namespace>
+      <namespace key="108" case="first-letter">Book</namespace>
+      <namespace key="109" case="first-letter">Book talk</namespace>
+      <namespace key="118" case="first-letter">Draft</namespace>
+      <namespace key="119" case="first-letter">Draft talk</namespace>
+      <namespace key="446" case="first-letter">Education Program</namespace>
+      <namespace key="447" case="first-letter">Education Program talk</namespace>
+      <namespace key="710" case="first-letter">TimedText</namespace>
+      <namespace key="711" case="first-letter">TimedText talk</namespace>
+      <namespace key="828" case="first-letter">Module</namespace>
+      <namespace key="829" case="first-letter">Module talk</namespace>
+      <namespace key="2300" case="first-letter">Gadget</namespace>
+      <namespace key="2301" case="first-letter">Gadget talk</namespace>
+      <namespace key="2302" case="case-sensitive">Gadget definition</namespace>
+      <namespace key="2303" case="case-sensitive">Gadget definition talk</namespace>
+    </namespaces>
+  </siteinfo>
+  <page>
+    <title>Ethan Hunt</title>
+    <ns>0</ns>
+    <id>3420376</id>
+    <revision>
+      <id>980512467</id>
+      <parentid>971915857</parentid>
+      <timestamp>2020-09-26T23:02:53Z</timestamp>
+      <contributor>
+        <ip>2001:BB6:5241:C900:25F7:4F75:E3D8:A51E</ip>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="12189" xml:space="preserve">{{short description|Fictional character from the Mission: Impossible films}}
+{{Infobox character
+| name              = Ethan Hunt
+| series            = [[Mission: Impossible (film series)|Mission: Impossible]]
+| image             = Ethan Hunt MI.jpg
+| caption           = Ethan Hunt as portrayed by Tom Cruise in ''[[Mission: Impossible (film)|Mission: Impossible]]''
+| first             = ''[[Mission: Impossible (film)|Mission: Impossible]]'' (1996)
+| creator           = {{Plainlist|
+* [[David Koepp]]
+* [[Robert Towne]]
+* [[Steven Zaillian]]}}
+| portrayer         = [[Tom Cruise]]
+| voice             = [[Steve Blum]] ([[Mission: Impossible (1998 video game)|''Mission Impossible'' video game]] and ''[[Mission: Impossible – Operation Surma]])''
+| full_name         = Ethan Matthew Hunt
+| gender            = [[Male]]
+| occupation        = {{Plainlist|
+* [[United States Army Ranger]] (formerly)
+* [[Impossible Missions Force|IMF Agent]] (1988–present)}}
+| spouse            = Julia "Jules" Meade (2005–2010)
+| significant_other = Ilsa Faust (2015–present)&lt;br&gt;Nyah Nordoff-Hall (2000)
+| relatives         = {{Plainlist|
+* Margaret Ethan-Hunt (mother)
+* Nathan Hunt (father; deceased)
+* Donald Hunt (uncle)}}
+| nationality = [[Americans|American]]
+}}
+
+'''Ethan Matthew Hunt''' is a [[Character (arts)|fictional character]] and the [[protagonist]] of the [[Mission: Impossible (film series)|''Mission: Impossible'' film series]]. He is portrayed by [[Tom Cruise]] in all films to date.
+
+==Appearances==
+===''Mission: Impossible'' (1996)===
+{{Main|Mission: Impossible (film)}}
+In the first film, Hunt acts as the [[Impossible Missions Force|IMF]] [[point man]] for an experienced field team led by veteran [[Jim Phelps]] ([[Jon Voight]]), his mentor. While attempting to recover stolen files containing information on all IMF's field agents during a mission in [[Prague]], the entire team, barring Hunt, is supposedly killed and the files are stolen, leaving Hunt the only suspect as he learns that the mission was a set-up to expose a mole who had been selling secrets to a Czech arms dealer ([[Vanessa Redgrave]]). Hunt decides to steal the genuine list himself, demanding that the genuine mole be present at the exchange. He sets up a rogue team of other disavowed agents, including computer expert [[Luther Stickell]] ([[Ving Rhames]]), pilot Franz Krieger ([[Jean Reno]]), and Jim's wife Claire ([[Emmanuelle Béart]]), who had in fact survived the mission and chooses to help Ethan clear his name. Ethan later finds Jim alive and deduces that he is the real mole, working with Claire and Krieger; Jim chose to betray the IMF due to his disillusionment with the end of the [[Cold War]]. He, Claire, and Krieger intend to escape with the money for the list and frame Ethan for their crimes. Ethan works out their true agenda when Jim attempts to accuse IMF head Eugene Kittridge ([[Henry Czerny]]) of being the mole, allowing Ethan to expose their survival to Kittridge. In a final confrontation in the [[Channel Tunnel]], Claire is killed when she tries to protect Ethan in a moment of conscience, and Ethan avenges the rest of the team when he kills Jim and Krieger by destroying their escape helicopter with explosive chewing gum from the Prague mission. Ethan gets Luther reinstated as an IMF agent and considers leaving the IMF, but is offered a mission of his own during the flight home.
+
+===''Mission: Impossible 2'' (2000)===
+{{Main|Mission: Impossible 2}}
+In the second film, Hunt is tasked with retrieving a deadly genetically engineered virus, known as "Chimera", from a rogue IMF agent, Sean Ambrose ([[Dougray Scott]]), who intends to release the virus after acquiring a controlling influence on the company that created it so that he can profit from sales of the cure.  Hunt attempts to infiltrate Ambrose's inner circle through Ambrose's former girlfriend, Nyah Nordoff-Hall ([[Thandie Newton]]), an accomplished thief. During their mission, Hunt and Nordoff-Hall engage in an affair that complicates the mission. At the climax, Nordoff-Hall is forced to infect herself with the last virus in order to save Hunt; with Hunt having destroyed the only other traces of the virus, she was thus able to shield Hunt until he could escape. Subsequently racing against time—the virus is incurable twenty hours after infection—Hunt manages to acquire the cure and is forced to kill Ambrose.
+
+===''Mission: Impossible III'' (2006)===
+{{Main|Mission: Impossible III}}
+In the third film, Hunt is now a semi-retired training officer for IMF and plans a quiet life with his fiancée Julia Meade ([[Michelle Monaghan]]), who does not know about the IMF. He is called back into service to rescue a former student called Lindsey Farris ([[Keri Russell]]) captured during a mission in Germany, and recovers confidential information via stolen laptop. He is forced to once again go rogue in an attempt to track down the sadistic arms dealer, Owen Davian ([[Philip Seymour Hoffman]]) and secure a dangerous mystery item known as the 'Rabbit's Foot'. After an impromptu ceremony, Hunt and Julia are married, only for Owen, who has a double agent working within IMF, to kidnap Julia. With the help of his IMF team: Stickell, Declan Gormley ([[Jonathan Rhys Meyers]]), and Zhen Lei ([[Maggie Q]]), Hunt finds the Rabbit's foot, saves his wife, and kills Owen Davian in Shanghai.
+
+The later film ''Mission: Impossible – Fallout'' confirms that Ethan and Julia were happy for a while, but their marriage was tainted every time they heard a disaster due to the possibility that Ethan could have done something to stop it.
+
+===''Mission: Impossible – Ghost Protocol'' (2011)===
+{{Main|Mission: Impossible – Ghost Protocol}}
+In the fourth film, Hunt&amp;mdash;having just escaped from a deep-cover mission in prison&amp;mdash;and his IMF team are blamed for an attack that destroys the [[Moscow Kremlin|Kremlin]], resulting in the disavowal of the entire IMF. Despite lacking their usual resources, connections, technology, and backup, their mission is to find and stop Kurt Hendricks ([[Michael Nyqvist]]), a former Soviet nuclear strategist who is intent on starting a nuclear war to usher in the next era of human evolution. As they chase Hendricks to [[Dubai]] and on to [[Mumbai|Mumbai, India]], they themselves are pursued by a team of Russian agents trying to apprehend them. The team becomes increasingly fractured as individual members fight their own demons while trying to trust the others. Hunt manages to pull the team together, stop a nuclear bomb and clear the IMF of any involvement in the Kremlin attack. It is also revealed that Hunt had Julia's death faked to protect her, something only he and the Secretary of IMF knew about, giving him the pretext to infiltrate the prison his team freed him from in the opening scenes.
+
+===''Mission: Impossible – Rogue Nation'' (2015)===
+{{Main|Mission: Impossible – Rogue Nation}}
+In the fifth film, Hunt is assigned a mission that culminates in him hanging outside of an A400M military aircraft 5,000 feet above the ground in Belarus to recover a package that contains [[VX (nerve agent)|VX]] nerve gas. Although this mission succeeds, when he learns that the thieves responsible for stealing the gas lacked the connections to do so, Hunt begins to uncover evidence of the existence of the Syndicate, a consortium of covert operatives who wreak terrorist attacks worldwide. After Hunt is forced to go off-the-grid when he is nearly killed by a Syndicate operative and the IMF is disbanded and absorbed into the CIA due to its controversial and destructive methods, he spends six months trying to track the Syndicate. Eventually, he and his former team learn that the Syndicate was actually originally a British project to perform missions without oversight, but British agent Solomon Lane ([[Sean Harris]]) took the plans and went rogue, now seeking to steal files that would grant him access to various established bank accounts to finance future Syndicate operations. Refusing to allow the Syndicate to continue, Hunt and his team are able to capture Lane, with CIA Director Alan Hunley ([[Alec Baldwin]]) subsequently forced to claim that the disbanding of IMF was a cover to allow them to track the Syndicate.
+
+===''Mission: Impossible – Fallout'' (2018)===
+{{Main|Mission: Impossible – Fallout}}
+In the sixth film, an IMF mission goes wrong when Ethan chooses to save Luther after his friend is taken hostage, allowing a splinter group of the Syndicate, known as the Apostles, to gain access to three plutonium cores that could be used to create nuclear weapons. Forced to work with CIA agent August Walker ([[Henry Cavill]]), Ethan is able to assume the identity of Apostle contact John Lark (Liang Yang) and acquire one of the cores in exchange for breaking Solomon Lane out of prison – despite opposition from Ilsa Faust, now under orders to kill Lane or bring him back to Britain – but he, Luther and Benji later use Lane to trick Walker into revealing that ''he'' is Lark. When the Secretary is killed by Walker, Ethan's team and Ilsa track Walker and Lane to a medical aid camp where Julia, Ethan's estranged wife, is currently working, Ethan realizing that Lane and Walker intend to detonate the bombs there for both the personal reason of hurting Ethan and the wider-scale reason that such a nuclear detonation would contaminate the water supply for almost a third of the world's population. While Luther, Julia, Benji and Ilsa disable the bombs and confront Lane, Ethan is forced to steal a helicopter that he doesn't know how to fly to pursue Walker and acquire the bomb detonator, culminating in a desperate struggle on a steep cliff that ends with Walker forced off the cliff. With the crisis concluded, Ethan's reputation and the reputation of the IMF is redeemed in the eyes of the CIA, who muse that Ethan's focus on individual lives is important for his superiors as it allows them to focus on the biggest picture.
+
+===Video games===
+Aside from the ''Mission: Impossible'' films, Ethan Hunt has appeared in the [[Mission: Impossible (1998 video game)|1998 video game]] based on the first film and the 2003 video game ''[[Mission: Impossible – Operation Surma]]'', voiced by [[Steve Blum]]. He also appears as a playable character in the crossover game ''[[Lego Dimensions]]'', with archive recordings of [[Tom Cruise]] being used for his voice.
+
+==Reception==
+As of March 2020, Hunt was voted #31 on Ranker's "The Most Hardcore Big Screen Action Heroes".&lt;ref&gt;https://m.ranker.com/crowdranked-list/the-most-badass-big-screen-action-heroes&lt;/ref&gt;
+
+Vlad Dima, writing in ''[[Bright Lights Film Journal]]'', said while the series succeeds due to "inventive, over-the-top stunts, the relentless trickery, and ultimately... Tom Cruise's star-power", he said, "One less obvious element, though, is a myth that slowly develops over the span of the series and comes to full bloom in ''Fallout''... [is Ethan] Hunt's eternal quest... to become the perfect man." Dima said Ethan Hunt "comes from a long line of action heroes" and that the character (and the films) have become more like [[James Bond]] and [[Jason Bourne]]. Hunt "erases all of the weaknesses we have ever noticed in any of these screen heroes". He is unlike Bourne in knowing his status as "a good guy" and unlike Bond in not womanizing, having cared about only two women. Dima said, "This personal detail seems to be an important requirement in the mythology of the perfect man."&lt;ref&gt;{{cite journal | last=Dima | first=Vlad | url=https://brightlightsfilm.com/holding-on-mission-impossible-and-the-myth-of-the-perfect-man/ | title=Holding On: Mission: Impossible and the Myth of the Perfect Man | work=[[Bright Lights Film Journal]] | date=August 17, 2018 | accessdate=February 7, 2020 }}&lt;/ref&gt;
+
+==References==
+{{reflist}}
+
+{{MissionImpossible}}
+{{Portal bar|Film|United States}}
+
+{{DEFAULTSORT:Hunt, Ethan}}
+[[Category:Action film characters]]
+[[Category:Fictional American secret agents]]
+[[Category:Mission: Impossible characters]]
+[[Category:Spy film characters]]
+[[Category:Tom Cruise]]
+[[Category:Film characters introduced in 1996]]</text>
+      <sha1>m98m7kxlyd5fd208cbmizneu63g9n5n</sha1>
+    </revision>
+  </page>
+</mediawiki>
