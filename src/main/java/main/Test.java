@@ -1,6 +1,8 @@
 package main;
 
+import extraction.StringToXml;
 import extraction.WikiPageExtractor;
+import org.w3c.dom.Document;
 
 public class Test {
     public static void main(String[] args) {
@@ -9,5 +11,10 @@ public class Test {
 
         String source = wikiPageExtractor.retrieveWikiPageByTitle("Star Wars");
         System.out.println(source);
+
+
+        Document d = StringToXml.toXmlDocument(source);
+
+        StringToXml.saveXML(d);
     }
 }
