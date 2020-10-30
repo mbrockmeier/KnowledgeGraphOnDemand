@@ -18,6 +18,12 @@ import java.io.StringReader;
  */
 
 public class StringToXml {
+
+    /**
+     * transforms the given XML string into a XML Document Object
+     * @param str XML string
+     * @return the XML string as a XML Document Object
+     */
     public static Document toXmlDocument(String str){
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         DocumentBuilder builder;
@@ -33,20 +39,17 @@ public class StringToXml {
         return null;
     }
 
+    /**
+     * Saves the specified Document Object to a xml file
+     * @param document the XML Document Object
+     */
     public static void saveXML(Document document) {
-
-        try{
-
+        try {
             Transformer tf= TransformerFactory.newInstance().newTransformer();
-
             tf.transform(new DOMSource(document), new StreamResult("src/page.xml"));
-
-        }catch (Exception e) {
-
+        } catch (Exception e) {
             throw new RuntimeException(e);
-
         }
-
     }
 
 }

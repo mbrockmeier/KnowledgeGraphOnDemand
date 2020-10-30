@@ -28,7 +28,15 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ace9530-a117-4620-86ff-fce22afcfaac" name="Default Changelist" comment="Add string to xml file methods" />
+    <list default="true" id="8ace9530-a117-4620-86ff-fce22afcfaac" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/extraction/StringToXml.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/extraction/StringToXml.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/extraction/WikiPageExtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/extraction/WikiPageExtractor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/KnowledgeGraphOnDemand-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/KnowledgeGraphOnDemand-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,7 +59,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="E:\Intellij\IntelliJ IDEA Community Edition 2020.2.3\plugins\maven\lib\maven3" />
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.3\plugins\maven\lib\maven3" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -137,6 +145,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add string to xml file methods" />
@@ -163,26 +172,26 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1061" y="455" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1603124315510" />
-    <state width="729" height="255" key="GridCell.Tab.0.bottom" timestamp="1603580119166">
-      <screen x="0" y="0" width="1504" height="963" />
+    <state width="1257" height="398" key="GridCell.Tab.0.bottom" timestamp="1604067031756">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="729" height="255" key="GridCell.Tab.0.bottom/0.0.1504.963@0.0.1504.963" timestamp="1603580119166" />
-    <state width="1258" height="400" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1603127154016" />
-    <state width="729" height="255" key="GridCell.Tab.0.center" timestamp="1603580119166">
-      <screen x="0" y="0" width="1504" height="963" />
+    <state width="1257" height="398" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1604067031756" />
+    <state width="1257" height="398" key="GridCell.Tab.0.center" timestamp="1604067031756">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="729" height="255" key="GridCell.Tab.0.center/0.0.1504.963@0.0.1504.963" timestamp="1603580119166" />
-    <state width="1258" height="400" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1603127154016" />
-    <state width="729" height="255" key="GridCell.Tab.0.left" timestamp="1603580119166">
-      <screen x="0" y="0" width="1504" height="963" />
+    <state width="1257" height="398" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1604067031756" />
+    <state width="1257" height="398" key="GridCell.Tab.0.left" timestamp="1604067031756">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="729" height="255" key="GridCell.Tab.0.left/0.0.1504.963@0.0.1504.963" timestamp="1603580119166" />
-    <state width="1258" height="400" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1603127154016" />
-    <state width="729" height="255" key="GridCell.Tab.0.right" timestamp="1603580119166">
-      <screen x="0" y="0" width="1504" height="963" />
+    <state width="1257" height="398" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1604067031756" />
+    <state width="1257" height="398" key="GridCell.Tab.0.right" timestamp="1604067031756">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="729" height="255" key="GridCell.Tab.0.right/0.0.1504.963@0.0.1504.963" timestamp="1603580119166" />
-    <state width="1258" height="400" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1603127154016" />
+    <state width="1257" height="398" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1604067031756" />
     <state x="345" y="215" key="Vcs.Push.Dialog.v2" timestamp="1603580298673">
       <screen x="0" y="0" width="1504" height="963" />
     </state>

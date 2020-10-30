@@ -14,6 +14,9 @@ import java.time.Duration;
  * WikiPageExtractor: use for locating and downloading a specified wikipedia page via its title or ID
  */
 
+/**
+ * Class providing methods for XML source extraction from Wikipedia
+ */
 public class WikiPageExtractor {
     private WikipediaService wikipediaService;
 
@@ -36,6 +39,11 @@ public class WikiPageExtractor {
         wikipediaService = retrofit.create(WikipediaService.class);
     }
 
+    /**
+     * retrieves the specified Wikipedia Page
+     * @param title the title of the wikipedia page to retrieve
+     * @return the XML source of the wikipedia page as a String
+     */
     public String retrieveWikiPageByTitle(String title) {
         String pageSource = null;
 
