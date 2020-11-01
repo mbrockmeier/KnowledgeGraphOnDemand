@@ -1,5 +1,6 @@
 package main;
 
+import extraction.KnowledgeGraphConfiguration;
 import extraction.StringToXml;
 import extraction.WikiPageExtractor;
 import org.w3c.dom.Document;
@@ -16,5 +17,7 @@ public class Test {
         Document d = StringToXml.toXmlDocument(source);
 
         StringToXml.saveXML(d);
+
+        System.out.println("Language = " + KnowledgeGraphConfiguration.getLanguage());
     }
 }
