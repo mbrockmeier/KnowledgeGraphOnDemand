@@ -1,5 +1,6 @@
 package main;
 
+import extraction.Extraction_Process;
 import extraction.KnowledgeGraphConfiguration;
 import extraction.StringToXml;
 import extraction.WikiPageExtractor;
@@ -19,5 +20,7 @@ public class Test {
         StringToXml.saveXML(d);
 
         System.out.println("Language = " + KnowledgeGraphConfiguration.getLanguage());
+
+        Extraction_Process.extractToTtl();
     }
 }

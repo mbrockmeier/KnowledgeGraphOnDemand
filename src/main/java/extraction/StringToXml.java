@@ -46,7 +46,8 @@ public class StringToXml {
     public static void saveXML(Document document) {
         try {
             Transformer tf= TransformerFactory.newInstance().newTransformer();
-            tf.transform(new DOMSource(document), new StreamResult("src/page.xml"));
+            String basedir = KnowledgeGraphConfiguration.getExtractionFrameworkBaseDir();
+            tf.transform(new DOMSource(document), new StreamResult(basedir+"/enwiki-20201020-dump.xml"));
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
