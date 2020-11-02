@@ -18,6 +18,8 @@ public class Test {
 
         StringToXml.saveXML(d);
 
-        System.out.println("Language = " + KnowledgeGraphConfiguration.getLanguage());
+        String baseDir = KnowledgeGraphConfiguration.getExtractionFrameworkBaseDir();
+        String extractionFrameworkDir = KnowledgeGraphConfiguration.getExtractionFrameworkDir();
+        String language = KnowledgeGraphConfiguration.getLanguage();
     }
 }
