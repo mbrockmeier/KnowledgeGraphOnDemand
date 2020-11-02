@@ -10,6 +10,7 @@ import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
+import java.io.File;
 import java.io.StringReader;
 
 /**
@@ -42,12 +43,12 @@ public class StringToXml {
     /**
      * Saves the specified Document Object to a xml file
      * @param document the XML Document Object
+     * @param file where .xml file will be stored
      */
-    public static void saveXML(Document document) {
+    public static void saveXML(Document document, File file) {
         try {
             Transformer tf= TransformerFactory.newInstance().newTransformer();
-            String basedir = KnowledgeGraphConfiguration.getExtractionFrameworkBaseDir();
-            tf.transform(new DOMSource(document), new StreamResult(basedir+"/enwiki-20201020-dump.xml"));
+            tf.transform(new DOMSource(document), new StreamResult(file));
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
