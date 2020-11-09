@@ -32,7 +32,6 @@ public class StringToXml {
         {
             builder = factory.newDocumentBuilder();
             Document doc = builder.parse(new InputSource(new StringReader(str)));
-            System.out.println();
             return doc;
         } catch (Exception e) {
             e.printStackTrace();
