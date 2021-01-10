@@ -22,8 +22,7 @@ public class RDFResource {
     public String getResourceHTML(@PathParam("resource") String resource) {
         StringWriter outputWriter = new StringWriter();
         Model model = KnowledgeGraphBuilder.getInstance().createKnowledgeGraphForWikiPage(resource, true);
-        model.write(outputWriter, "N-TRIPLES");
-        return "<pre>" + StringEscapeUtils.escapeHtml4(outputWriter.toString()) + "</pre>";
+        return HTMLRenderer.renderModel(model, "http://dbpedia.org/resource/" + resource);
     }
 
     @GET

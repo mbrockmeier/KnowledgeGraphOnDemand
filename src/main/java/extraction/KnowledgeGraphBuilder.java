@@ -42,7 +42,7 @@ public class KnowledgeGraphBuilder {
         runExtractionFramework();
         decompressExtractedData();
         modelParser.readRDF(resultFiles);
-        return  modelParser.getModel();
+        return modelParser.getModel();
     }
 
     /**
