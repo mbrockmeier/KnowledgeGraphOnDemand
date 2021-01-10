@@ -5,6 +5,9 @@ import java.io.BufferedInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
+/**
+ * @author Malte Brockmeier
+ */
 public class KnowledgeGraphConfiguration {
     private static Properties properties;
     private static BufferedInputStream bufferedInputStream;
