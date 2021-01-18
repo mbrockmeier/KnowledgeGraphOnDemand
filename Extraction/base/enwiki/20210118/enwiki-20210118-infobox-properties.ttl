@@ -1,0 +1,867 @@
+# started 2021-01-18T21:15:15Z
+<http://dbpedia.org/resource/August_5> <http://dbpedia.org/property/month> "8"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/August_5> <http://dbpedia.org/property/day> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Bicycle> <http://dbpedia.org/property/auto> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Bicycle> <http://dbpedia.org/property/wikt> "bicycle"@en .
+<http://dbpedia.org/resource/Bicycle> <http://dbpedia.org/property/n> "y"@en .
+<http://dbpedia.org/resource/Bicycle> <http://dbpedia.org/property/q> "Cycling"@en .
+<http://dbpedia.org/resource/Bicycle> <http://dbpedia.org/property/s> "1911"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Bicycle> <http://dbpedia.org/property/voy> "Cycling"@en .
+<http://dbpedia.org/resource/Albert_Speer> <http://dbpedia.org/property/birthname> "Berthold Konrad Hermann Albert Speer"@en .
+<http://dbpedia.org/resource/Albert_Speer> <http://dbpedia.org/property/alt> "Monochrome photograph of the upper body of Albert Speer, signed at the bottom"@en .
+<http://dbpedia.org/resource/Albert_Speer> <http://dbpedia.org/property/caption> "Speer in 1933"@en .
+<http://dbpedia.org/resource/Albert_Speer> <http://dbpedia.org/property/office> <http://dbpedia.org/resource/Reich_Minister_of_Armaments_and_War_Production> .
+<http://dbpedia.org/resource/Albert_Speer> <http://dbpedia.org/property/office> ""@en .
+<http://dbpedia.org/resource/Albert_Speer> <http://dbpedia.org/property/termStart> "1942-02-08"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://dbpedia.org/resource/Albert_Speer> <http://dbpedia.org/property/termEnd> "1945-04-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://dbpedia.org/resource/Albert_Speer> <http://dbpedia.org/property/1blankname> "Head of state"@en .
+<http://dbpedia.org/resource/Albert_Speer> <http://dbpedia.org/property/1namedata> "Adolf Hitler"@en .
+<http://dbpedia.org/resource/Albert_Speer> <http://dbpedia.org/property/2blankname> "Head of government"@en .
+<http://dbpedia.org/resource/Albert_Speer> <http://dbpedia.org/property/2namedata> "Adolf Hitler"@en .
+<http://dbpedia.org/resource/Albert_Speer> <http://dbpedia.org/property/office> "Reich Minister of Industry and Production"@en .
+<http://dbpedia.org/resource/Albert_Speer> <http://dbpedia.org/property/termStart> "1945-05-02"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://dbpedia.org/resource/Albert_Speer> <http://dbpedia.org/property/termEnd> "1945-05-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://dbpedia.org/resource/Albert_Speer> <http://dbpedia.org/property/1namedata> <http://dbpedia.org/resource/Karl_Dönitz> .
+<http://dbpedia.org/resource/Albert_Speer> <http://dbpedia.org/property/2namedata> <http://dbpedia.org/resource/Lutz_Graf_Schwerin_von_Krosigk> .
+<http://dbpedia.org/resource/Albert_Speer> <http://dbpedia.org/property/predecessor> "Position established"@en .
+<http://dbpedia.org/resource/Albert_Speer> <http://dbpedia.org/property/successor> "Position abolished"@en .
+<http://dbpedia.org/resource/Albert_Speer> <http://dbpedia.org/property/predecessor> <http://dbpedia.org/resource/Fritz_Todt> .
+<http://dbpedia.org/resource/Albert_Speer> <http://dbpedia.org/property/successor> <http://dbpedia.org/resource/Karl_Saur> .
+<http://dbpedia.org/resource/Albert_Speer> <http://dbpedia.org/property/birthDate> "1905-03-19"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://dbpedia.org/resource/Albert_Speer> <http://dbpedia.org/property/birthPlace> <http://dbpedia.org/resource/Mannheim> .
+<http://dbpedia.org/resource/Albert_Speer> <http://dbpedia.org/property/birthPlace> <http://dbpedia.org/resource/Grand_Duchy_of_Baden> .
+<http://dbpedia.org/resource/Albert_Speer> <http://dbpedia.org/property/birthPlace> <http://dbpedia.org/resource/German_Empire> .
+<http://dbpedia.org/resource/Albert_Speer> <http://dbpedia.org/property/deathDate> "1981-09-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://dbpedia.org/resource/Albert_Speer> <http://dbpedia.org/property/deathPlace> "London, England"@en .
+<http://dbpedia.org/resource/Albert_Speer> <http://dbpedia.org/property/nationality> "German"@en .
+<http://dbpedia.org/resource/Albert_Speer> <http://dbpedia.org/property/party> <http://dbpedia.org/resource/Nazi_Party> .
+<http://dbpedia.org/resource/Albert_Speer> <http://dbpedia.org/property/spouse> "1981"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Albert_Speer> <http://dbpedia.org/property/spouse> "1928"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Albert_Speer> <http://dbpedia.org/property/spouse> "Margarete Weber"@en .
+<http://dbpedia.org/resource/Albert_Speer> <http://dbpedia.org/property/spouse> ""@en .
+<http://dbpedia.org/resource/Albert_Speer> <http://dbpedia.org/property/children> "6"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Albert_Speer> <http://dbpedia.org/property/parents> "Albert Friedrich Speer"@en .
+<http://dbpedia.org/resource/Albert_Speer> <http://dbpedia.org/property/parents> "Luise Máthilde Wilhelmine Hommel"@en .
+<http://dbpedia.org/resource/Albert_Speer> <http://dbpedia.org/property/parents> ""@en .
+<http://dbpedia.org/resource/Albert_Speer> <http://dbpedia.org/property/almaMater> "Technical University of Berlin"@en .
+<http://dbpedia.org/resource/Albert_Speer> <http://dbpedia.org/property/almaMater> "Technical University of Munich"@en .
+<http://dbpedia.org/resource/Albert_Speer> <http://dbpedia.org/property/almaMater> "Karlsruhe Institute of Technology"@en .
+<http://dbpedia.org/resource/Albert_Speer> <http://dbpedia.org/property/almaMater> ""@en .
+<http://dbpedia.org/resource/Albert_Speer> <http://dbpedia.org/property/profession> "Architect, government official, author"@en .
+<http://dbpedia.org/resource/Albert_Speer> <http://dbpedia.org/property/cabinet> <http://dbpedia.org/resource/Hitler_cabinet> .
+<http://dbpedia.org/resource/Albert_Speer> <http://dbpedia.org/property/cabinet> <http://dbpedia.org/resource/Flensburg_Government> .
+<http://dbpedia.org/resource/Albert_Speer> <http://dbpedia.org/property/signature> "Albert Speer Signature.svg"@en .
+<http://dbpedia.org/resource/Albert_Speer> <http://dbpedia.org/property/module> "Criminal conviction"@en .
+<http://dbpedia.org/resource/Albert_Speer> <http://dbpedia.org/property/title> "Articles and topics related to Albert Speer"@en .
+<http://dbpedia.org/resource/Albert_Speer> <http://dbpedia.org/property/state> "collapsed"@en .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/type> "city"@en .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/name> "Bonn"@en .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/imageCaption> "A view over the Bundesviertel"@en .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/imageCoa> "DEU Bonn COA.svg"@en .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/imageFlag> "Flagge der kreisfreien Stadt Bonn.svg"@en .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/imagePlan> "North rhine w BN.svg"@en .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/plantext> "Bonn within North Rhine-Westphalia"@en .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/state> "Nordrhein-Westfalen"@en .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/region> "Cologne"@en .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/district> "Kreisfreie Stadt"@en .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/elevation> "60"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/area> "141.06"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/gemeindeschlüssel> "5314000"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/postalCode> "53111"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/plzAlt> "5300"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/areaCode> "228"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/licence> "BN"@en .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/website> <https://www.bonn.de/> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/mayor> <http://dbpedia.org/resource/Katja_Dörner> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/bürgermeistertitel> <http://dbpedia.org/resource/Lord_Mayor> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/party> "Greens"@en .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/year> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/location> "Bonn"@en .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/metricFirst> "Yes"@en .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/singleLine> "yes"@en .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/janHighC> "4.7"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/febHighC> "6.1"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/marHighC> "9.9"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/aprHighC> "14.1"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/mayHighC> "18.6"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/junHighC> "21.8"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/julHighC> "23.2"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/augHighC> "22.8"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/sepHighC> "19.8"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/octHighC> "14.7"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/novHighC> "9"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/decHighC> "5.8"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/janMeanC> "2.4"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/febMeanC> "2.8"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/marMeanC> "6.3"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/aprMeanC> "9.7"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/mayMeanC> "14"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/junMeanC> "16.7"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/julMeanC> "18.8"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/augMeanC> "18.3"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/sepMeanC> "14.6"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/octMeanC> "10.5"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/novMeanC> "6.2"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/decMeanC> "3.1"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/yearMeanC> "10.3"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/rainColour> "green"@en .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/janRainMm> "61"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/febRainMm> "54"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/marRainMm> "64"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/aprRainMm> "54"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/mayRainMm> "72"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/junRainMm> "86"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/julRainMm> "78"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/augRainMm> "78"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/sepRainMm> "72"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/octRainMm> "63"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/novRainMm> "66"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/decRainMm> "68"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/yearRainMm> "816"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/unitRainDays> "1.0"^^<http://dbpedia.org/datatype/millimetre> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/janLowC> "-0.6"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/febLowC> "-0.4"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/marLowC> "1.6"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/aprLowC> "4.5"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/mayLowC> "8.1"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/junLowC> "11.3"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/julLowC> "13"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/augLowC> "12.5"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/sepLowC> "10"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/octLowC> "6.4"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/novLowC> "3.2"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/decLowC> "0.6"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/janSun> "51"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/febSun> "76"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/marSun> "110"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/aprSun> "163"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/maySun> "190"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/junSun> "195"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/julSun> "209"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/augSun> "194"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/sepSun> "141"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/octSun> "104"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/novSun> "55"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/decSun> "41"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/source> <http://dbpedia.org/resource/Deutscher_Wetterdienst> .
+<http://dbpedia.org/resource/Bonn> <http://dbpedia.org/property/source> "Climate-Data.org, high and low averages"@en .
+<http://dbpedia.org/resource/Carl_Barks> <http://dbpedia.org/property/name> "Carl Barks"@en .
+<http://dbpedia.org/resource/Carl_Barks> <http://dbpedia.org/property/caption> "Barks at the 1982 San Diego Comic-Con"@en .
+<http://dbpedia.org/resource/Carl_Barks> <http://dbpedia.org/property/birthDate> "1901-03-27"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://dbpedia.org/resource/Carl_Barks> <http://dbpedia.org/property/birthPlace> "near Merrill, Oregon, U.S."@en .
+<http://dbpedia.org/resource/Carl_Barks> <http://dbpedia.org/property/deathDate> "2000-08-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://dbpedia.org/resource/Carl_Barks> <http://dbpedia.org/property/deathPlace> "Grants Pass, Oregon, U.S."@en .
+<http://dbpedia.org/resource/Carl_Barks> <http://dbpedia.org/property/deathCause> <http://dbpedia.org/resource/Chronic_lymphocytic_leukemia> .
+<http://dbpedia.org/resource/Carl_Barks> <http://dbpedia.org/property/write> "y"@en .
+<http://dbpedia.org/resource/Carl_Barks> <http://dbpedia.org/property/pencil> "y"@en .
+<http://dbpedia.org/resource/Carl_Barks> <http://dbpedia.org/property/ink> "y"@en .
+<http://dbpedia.org/resource/Carl_Barks> <http://dbpedia.org/property/notableWorks> "Scrooge McDuck, Gyro Gearloose, Gladstone Gander, The Junior Woodchucks, Beagle Boys, Flintheart Glomgold, Magica De Spell, Neighbor J. Jones, Glittering Goldie, Cornelius Coot, John D. Rockerduck"@en .
+<http://dbpedia.org/resource/Carl_Barks> <http://dbpedia.org/property/notableWorks> "Oil paintings of his duck characters"@en .
+<http://dbpedia.org/resource/Carl_Barks> <http://dbpedia.org/property/spouse> ""@en .
+<http://dbpedia.org/resource/Carl_Barks> <http://dbpedia.org/property/spouse> "1929"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Carl_Barks> <http://dbpedia.org/property/spouse> "1923"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Carl_Barks> <http://dbpedia.org/property/spouse> "Pearl Turner"@en .
+<http://dbpedia.org/resource/Carl_Barks> <http://dbpedia.org/property/spouse> "1951"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Carl_Barks> <http://dbpedia.org/property/spouse> "1932"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Carl_Barks> <http://dbpedia.org/property/spouse> "Clara Balken"@en .
+<http://dbpedia.org/resource/Carl_Barks> <http://dbpedia.org/property/spouse> "1993"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Carl_Barks> <http://dbpedia.org/property/spouse> "1954"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Carl_Barks> <http://dbpedia.org/property/spouse> "Garé Williams"@en .
+<http://dbpedia.org/resource/Carl_Barks> <http://dbpedia.org/property/children> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Carl_Barks> <http://dbpedia.org/property/title> "Ode to the Disney Ducks"@en .
+<http://dbpedia.org/resource/Carl_Barks> <http://dbpedia.org/property/source> "—Carl Barks, 1999"@en .
+<http://dbpedia.org/resource/Carl_Barks> <http://dbpedia.org/property/width> "270"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Carl_Barks> <http://dbpedia.org/property/fontsize> "80.0"^^<http://dbpedia.org/datatype/perCent> .
+<http://dbpedia.org/resource/Carl_Barks> <http://dbpedia.org/property/bgcolor> "#eeffff"@en .
+<http://dbpedia.org/resource/Carl_Barks> <http://dbpedia.org/property/quote> "They ride tall ships to the far away,\nand see the long ago.\nThey walk where fabled people trod,\nand Yetis trod the snow.\n\nThey meet the folks who live on stars,\nand find them much like us,\nWith food and love and happiness\nthe things they most discuss.\n\nThe world is full of clans and cults\nabuzz as angry bees,\nAnd Junior Woodchucks snapping jeers\nat Littlest Chickadees.\n\nThe ducks show us that part of life\nis to forgive a slight.\nThat black eyes given in revenge\nkeep hatred burning bright.\n\nSo when our walks in sun or shade\npass graveyards filled by wars,\nIt's nice to stop and read of ducks\nwhose battles leave no scars.\n\nTo read of ducks who parody\nour vain attempts at glory,\nThey don't exist, but somehow leave\nus glad we bought their story."@en .
+<http://dbpedia.org/resource/Carl_Barks> <http://dbpedia.org/property/id> "55119"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Antipope_John_XXIII> <http://dbpedia.org/property/type> "Antipope"@en .
+<http://dbpedia.org/resource/Antipope_John_XXIII> <http://dbpedia.org/property/honorificPrefix> "Antipope"@en .
+<http://dbpedia.org/resource/Antipope_John_XXIII> <http://dbpedia.org/property/name> "John XXIII"@en .
+<http://dbpedia.org/resource/Antipope_John_XXIII> <http://dbpedia.org/property/enthroned> "1410"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Antipope_John_XXIII> <http://dbpedia.org/property/ended> "1415"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Antipope_John_XXIII> <http://dbpedia.org/property/predecessor> <http://dbpedia.org/resource/Antipope_Alexander_V> .
+<http://dbpedia.org/resource/Antipope_John_XXIII> <http://dbpedia.org/property/opposed> "Gregory XII"@en .
+<http://dbpedia.org/resource/Antipope_John_XXIII> <http://dbpedia.org/property/opposed> "Benedict XIII"@en .
+<http://dbpedia.org/resource/Antipope_John_XXIII> <http://dbpedia.org/property/opposed> ""@en .
+<http://dbpedia.org/resource/Antipope_John_XXIII> <http://dbpedia.org/property/birthPlace> <http://dbpedia.org/resource/Procida> .
+<http://dbpedia.org/resource/Antipope_John_XXIII> <http://dbpedia.org/property/birthPlace> <http://dbpedia.org/resource/Kingdom_of_Naples> .
+<http://dbpedia.org/resource/Antipope_John_XXIII> <http://dbpedia.org/property/deathPlace> <http://dbpedia.org/resource/Florence> .
+<http://dbpedia.org/resource/Antipope_John_XXIII> <http://dbpedia.org/property/deathPlace> <http://dbpedia.org/resource/Republic_of_Florence> .
+<http://dbpedia.org/resource/Antipope_John_XXIII> <http://dbpedia.org/property/other> "John"@en .
+<http://dbpedia.org/resource/Antipope_John_XXIII> <http://dbpedia.org/property/coatOfArms> "C o a Giovanni XXIII .svg"@en .
+<http://dbpedia.org/resource/Antipope_John_XXIII> <http://dbpedia.org/property/portal> "Biography"@en .
+<http://dbpedia.org/resource/Antipope_John_XXIII> <http://dbpedia.org/property/portal> "Christianity"@en .
+<http://dbpedia.org/resource/Antipope_John_XXIII> <http://dbpedia.org/property/portal> "Catholicism"@en .
+<http://dbpedia.org/resource/Antipope_John_XXIII> <http://dbpedia.org/property/commons> "y"@en .
+<http://dbpedia.org/resource/Antipope_John_XXIII> <http://dbpedia.org/property/commonsSearch> "Category:Ioannes XXIII"@en .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/name> "Cologne"@en .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/germanName> "Köln"@en .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/type> "burgur"@en .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/imageCaption> "From top to bottom, left to right:"@en .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/imageCaption> "Great St. Martin Church, Cologne Cathedral, Shrine of the Three Kings, St. Gereon's Basilica, Flora Botanical Garden, Hohenzollern Bridge"@en .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/imageCoa> "DEU Koeln COA.svg"@en .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/imageFlag> "Flagge Köln.svg"@en .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/imagePlan> "North rhine w K.svg"@en .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/plantext> "Cologne within North Rhine-Westphalia"@en .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/state> "Nordrhein-Westfalen"@en .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/region> <http://dbpedia.org/resource/Cologne_(region)> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/district> "Urban districts of Germany"@en .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/elevation> "37"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/area> "405.15"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/popMetro> "8633158"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/stand> "2014-12-31"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/postalCode> "50441"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/areaCode> "22102203"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/licence> "K"@en .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/gemeindeschlüssel> "5315000"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/locode> "DE CGN"@en .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/mayor> <http://dbpedia.org/resource/Henriette_Reker> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/bürgermeistertitel> <http://dbpedia.org/resource/Lord_Mayor> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/website> <http://www.stadt-koeln.de> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/year> "38"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/location> "Cologne/Bonn Airport 1981-2010, extremes 1957-present"@en .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/metricFirst> "Yes"@en .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/singleLine> "Yes"@en .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/janRecordHighC> "16.2"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/febRecordHighC> "20.7"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/marRecordHighC> "25.3"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/aprRecordHighC> "30.8"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/mayRecordHighC> "34.4"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/junRecordHighC> "36.8"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/julRecordHighC> "40.3"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/augRecordHighC> "38.8"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/sepRecordHighC> "33.1"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/octRecordHighC> "27.6"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/novRecordHighC> "20.2"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/decRecordHighC> "16.7"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/yearRecordHighC> "40.3"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/janHighC> "5.4"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/febHighC> "6.7"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/marHighC> "10.9"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/aprHighC> "15.1"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/mayHighC> "19.3"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/junHighC> "21.9"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/julHighC> "24.4"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/augHighC> "24"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/sepHighC> "19.9"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/octHighC> "15.1"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/novHighC> "9.5"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/decHighC> "5.9"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/yearHighC> "14.8"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/janAvgRecordHighC> "12.5"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/febAvgRecordHighC> "14"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/marAvgRecordHighC> "19"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/aprAvgRecordHighC> "23.7"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/mayAvgRecordHighC> "27.7"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/junAvgRecordHighC> "30.8"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/julAvgRecordHighC> "32.3"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/augAvgRecordHighC> "32"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/sepAvgRecordHighC> "26.4"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/octAvgRecordHighC> "21.9"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/novAvgRecordHighC> "16.4"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/decAvgRecordHighC> "12.8"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/yearAvgRecordHighC> "34.1"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/janMeanC> "2.6"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/febMeanC> "2.9"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/marMeanC> "6.3"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/aprMeanC> "9.7"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/mayMeanC> "14"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/junMeanC> "16.6"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/julMeanC> "18.8"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/augMeanC> "18.1"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/sepMeanC> "14.5"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/octMeanC> "10.6"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/novMeanC> "6.3"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/decMeanC> "3.3"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/yearMeanC> "10.3"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/janLowC> "-0.6"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/febLowC> "-0.7"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/marLowC> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/aprLowC> "4.2"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/mayLowC> "8.1"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/junLowC> "11"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/julLowC> "13.2"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/augLowC> "12.6"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/sepLowC> "9.8"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/octLowC> "6.7"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/novLowC> "3.1"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/decLowC> "0.4"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/yearLowC> "5.8"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/janAvgRecordLowC> "-10.3"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/febAvgRecordLowC> "-8.9"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/marAvgRecordLowC> "-5.2"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/aprAvgRecordLowC> "-3.2"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/mayAvgRecordLowC> "1.3"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/junAvgRecordLowC> "4.7"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/julAvgRecordLowC> "7.6"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/augAvgRecordLowC> "6.8"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/sepAvgRecordLowC> "3.5"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/octAvgRecordLowC> "-0.8"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/novAvgRecordLowC> "-4.2"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/decAvgRecordLowC> "-8.3"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/yearAvgRecordLowC> "-13"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/janRecordLowC> "-23.4"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/febRecordLowC> "-19.2"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/marRecordLowC> "-13.4"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/aprRecordLowC> "-8.8"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/mayRecordLowC> "-2.9"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/junRecordLowC> "-0.5"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/julRecordLowC> "2.9"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/augRecordLowC> "1.9"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/sepRecordLowC> "-1.3"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/octRecordLowC> "-6"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/novRecordLowC> "-10.4"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/decRecordLowC> "-18"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/yearRecordLowC> "-23.4"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/precipitationColour> "green"@en .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/janPrecipitationMm> "62.1"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/febPrecipitationMm> "54.2"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/marPrecipitationMm> "64.6"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/aprPrecipitationMm> "53.9"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/mayPrecipitationMm> "72.2"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/junPrecipitationMm> "90.7"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/julPrecipitationMm> "85.8"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/augPrecipitationMm> "75"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/sepPrecipitationMm> "74.9"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/octPrecipitationMm> "67.1"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/novPrecipitationMm> "67"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/decPrecipitationMm> "71.1"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/yearPrecipitationMm> "838.6"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/janSun> "54"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/febSun> "78.8"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/marSun> "120.3"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/aprSun> "167.2"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/maySun> "193"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/junSun> "193.6"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/julSun> "209.7"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/augSun> "194.2"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/sepSun> "141.5"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/octSun> "109.2"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/novSun> "60.7"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/decSun> "45.3"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/yearSun> "1567.5"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/source> "Data derived from Deutscher Wetterdienst"@en .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/date> "2017-04-27"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/centre> "Cologne"@en .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/north> <http://dbpedia.org/resource/Düsseldorf> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/northeast> <http://dbpedia.org/resource/Wuppertal> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/east> <http://dbpedia.org/resource/Siegen> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/southeast> <http://dbpedia.org/resource/Koblenz> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/south> <http://dbpedia.org/resource/Bonn> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/southwest> <http://dbpedia.org/resource/Brühl,_North_Rhine-Westphalia> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/west> <http://dbpedia.org/resource/Aachen> .
+<http://dbpedia.org/resource/Cologne> <http://dbpedia.org/property/northwest> <http://dbpedia.org/resource/Neuss> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/region> <http://dbpedia.org/resource/Western_philosophy> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/era> "19"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/signature> "Arthur Schopenhauer Signature.svg"@en .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/name> "Arthur Schopenhauer"@en .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/birthDate> "1788-02-22"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/birthPlace> <http://dbpedia.org/resource/Gdańsk> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/birthPlace> <http://dbpedia.org/resource/Polish–Lithuanian_Commonwealth> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/deathDate> "1860-09-21"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/deathPlace> <http://dbpedia.org/resource/Free_City_of_Frankfurt> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/deathPlace> <http://dbpedia.org/resource/German_Confederation> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/education> "Illustrious Gymnasium, Gotha"@en .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/education> "University of Göttingen"@en .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/education> "University of Jena"@en .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/education> ""@en .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/nationality> "German"@en .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/institutions> <http://dbpedia.org/resource/Humboldt_University_of_Berlin> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/schoolTradition> "Continental philosophy"@en .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/schoolTradition> "Post-Kantian philosophy"@en .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/schoolTradition> "Transcendental idealism"@en .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/schoolTradition> "Metaphysical voluntarism"@en .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/schoolTradition> "Philosophical pessimism"@en .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/schoolTradition> ""@en .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/mainInterests> <http://dbpedia.org/resource/Metaphysics> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/mainInterests> <http://dbpedia.org/resource/Aesthetics> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/mainInterests> <http://dbpedia.org/resource/Ethics> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/mainInterests> <http://dbpedia.org/resource/Morality> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/mainInterests> <http://dbpedia.org/resource/Psychology> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/notableIdeas> <http://dbpedia.org/resource/Anthropic_principle> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/notableIdeas> <http://dbpedia.org/resource/Arthur_Schopenhauer> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/notableIdeas> <http://dbpedia.org/resource/Principle_of_sufficient_reason> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/notableIdeas> <http://dbpedia.org/resource/Hedgehog's_dilemma> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/notableIdeas> <http://dbpedia.org/resource/Philosophical_pessimism> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/notableIdeas> <http://dbpedia.org/resource/Principium_individuationis> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/notableIdeas> "Will as thing in itself"@en .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/notableIdeas> <http://dbpedia.org/resource/Criticism_of_religion> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/notableIdeas> "Criticism of German idealism"@en .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/notableIdeas> <http://dbpedia.org/resource/Arthur_Schopenhauer's_aesthetics> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/notableIdeas> <http://dbpedia.org/resource/Wooden_iron> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/influences> <http://dbpedia.org/resource/Gottlob_Ernst_Schulze> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/influences> <http://dbpedia.org/resource/Plato> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/influences> <http://dbpedia.org/resource/German_mysticism> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/influences> <http://dbpedia.org/resource/Johann_Wolfgang_von_Goethe> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/influences> <http://dbpedia.org/resource/Karl_Christian_Friedrich_Krause> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/influences> <http://dbpedia.org/resource/John_Locke> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/influences> <http://dbpedia.org/resource/Baruch_Spinoza> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/influences> <http://dbpedia.org/resource/Immanuel_Kant> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/influences> <http://dbpedia.org/resource/David_Hume> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/influences> <http://dbpedia.org/resource/George_Berkeley> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/influences> <http://dbpedia.org/resource/Leonhard_Euler> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/influences> <http://dbpedia.org/resource/René_Descartes> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/influences> <http://dbpedia.org/resource/Aristotle> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/influences> <http://dbpedia.org/resource/Upanishads> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/influences> <http://dbpedia.org/resource/Buddhism> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/influences> ""@en .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/influenced> <http://dbpedia.org/resource/Émile_Zola> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/influenced> <http://dbpedia.org/resource/Peter_Wessel_Zapffe> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/influenced> <http://dbpedia.org/resource/Ludwig_Wittgenstein> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/influenced> <http://dbpedia.org/resource/Otto_Weininger> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/influenced> <http://dbpedia.org/resource/Richard_Wagner> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/influenced> <http://dbpedia.org/resource/Johannes_Volkelt> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/influenced> <http://dbpedia.org/resource/Hans_Vaihinger> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/influenced> <http://dbpedia.org/resource/Leo_Tolstoy> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/influenced> <http://dbpedia.org/resource/Oswald_Spengler> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/influenced> <http://dbpedia.org/resource/Vladimir_Solovyov_(philosopher)> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/influenced> <http://dbpedia.org/resource/George_Bernard_Shaw> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/influenced> <http://dbpedia.org/resource/Erwin_Schrödinger> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/influenced> <http://dbpedia.org/resource/Moritz_Schlick> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/influenced> <http://dbpedia.org/resource/George_Santayana> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/influenced> <http://dbpedia.org/resource/Gilbert_Ryle> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/influenced> <http://dbpedia.org/resource/Otto_Rank> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/influenced> <http://dbpedia.org/resource/Friedrich_Nietzsche> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/influenced> <http://dbpedia.org/resource/Carlo_Michelstaedter> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/influenced> <http://dbpedia.org/resource/Maupassant> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/influenced> <http://dbpedia.org/resource/Thomas_Mann> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/influenced> <http://dbpedia.org/resource/Ettore_Majorana> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/influenced> <http://dbpedia.org/resource/Philipp_Mainländer> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/influenced> <http://dbpedia.org/resource/Gustav_Mahler> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/influenced> <http://dbpedia.org/resource/Thomas_Ligotti> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/influenced> <http://dbpedia.org/resource/Anthony_Ludovici> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/influenced> <http://dbpedia.org/resource/Karl_Kraus_(writer)> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/influenced> <http://dbpedia.org/resource/Carl_Jung> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/influenced> <http://dbpedia.org/resource/Joris-Karl_Huysmans> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/influenced> <http://dbpedia.org/resource/Max_Horkheimer> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/influenced> <http://dbpedia.org/resource/Karl_Robert_Eduard_von_Hartmann> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/influenced> <http://dbpedia.org/resource/John_Gray_(philosopher)> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/influenced> <http://dbpedia.org/resource/Sigmund_Freud> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/influenced> <http://dbpedia.org/resource/Wilhelm_Dilthey> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/influenced> <http://dbpedia.org/resource/Emil_Cioran> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/influenced> <http://dbpedia.org/resource/Afanasy_Fet> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/influenced> <http://dbpedia.org/resource/Albert_Einstein> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/influenced> <http://dbpedia.org/resource/Joseph_Campbell> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/influenced> <http://dbpedia.org/resource/L._E._J._Brouwer> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/influenced> <http://dbpedia.org/resource/Jorge_Luis_Borges> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/influenced> <http://dbpedia.org/resource/Henri_Bergson> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/influenced> <http://dbpedia.org/resource/Samuel_Beckett> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/influenced> <http://dbpedia.org/resource/Julius_Bahnsen> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/influenced> <http://dbpedia.org/resource/Machado_de_Assis> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/influenced> <http://dbpedia.org/resource/Augusto_dos_Anjos> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/influenced> ""@en .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/bsize> "235"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/cwidth> "235"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/cheight> "133"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/otop> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/oleft> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/location> "right"@en .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/description> "Schopenhauer depicted on a 500 million Danzig papiermark note ."@en .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/id> "Arthur+Schopenhauer"@en .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/v> "no"@en .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/n> "no"@en .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/b> "no"@en .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/wikt> "no"@en .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/author> "yes"@en .
+<http://dbpedia.org/resource/Arthur_Schopenhauer> <http://dbpedia.org/property/id> "Schopenhauer,+Arthur"@en .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/type> "City"@en .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/imageCaption> "Clockwise from top: Friedrichsplatz, Luisenpark, Augustanlage, Wasserturm, Jesuit Church"@en .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/imageCoa> "Wappen Mannheim.svg"@en .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/imageFlag> "Mannheim-Flagge.svg"@en .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/imagePlan> "Baden-Württemberg MA.svg"@en .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/plantext> "Location of Mannheim in Baden-Württemberg"@en .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/state> "Baden-Württemberg"@en .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/region> "Karlsruhe"@en .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/district> "Urban district"@en .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/elevation> "97"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/area> "144.96"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/popMetro> "2362046"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/popMetroDate> "2012"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/postalCode> "68001"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/gemeindeschlüssel> "8222000"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/areaCode> "621"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/licence> "MA"@en .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/website> <https://www.mannheim.de/> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/mayor> <http://dbpedia.org/resource/Peter_Kurz> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/bürgermeistertitel> "Lord Mayor"@en .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/party> "SPD"@en .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/quote> "Mannheim is in the Duchy of Baden and situated at the confluence of the Rhine and Neckar over both of which there is a bridge of boats. This is the third town of this name having been twice burnt. The houses are large, and the streets broad and at right angles to each other, and is one of the most airy clean towns I have seen in Germany. It was formerly fortified, but the fortifications were razed in 1806 and gardens fill their places. There is a large château here belonging to the Grand Duke and a very good garden; part of the château was destroyed when the town was bombarded and has never since been repaired, the other part is occupied by the Grand Duchess, widow of the late Grand Duke who was succeeded by his uncle having left only three daughters. She is the sister of Eugene Beauharnais [sic; in fact, she was his second cousin]. There is a cathedral, a theatre which is considered good, an observatory, a gallery of pictures at the château, and some private collections. About  below the town the Russian Army crossed the Rhine in 1813. Population 18,300."@en .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/align> "center"@en .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/width> "750"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/fontsize> "90.0"^^<http://dbpedia.org/datatype/perCent> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/bgcolor> "#e3e5e5"@en .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/quoted> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/location> "Mannheim, Germany for 1981–2010"@en .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/metricFirst> "Yes"@en .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/singleLine> "Yes"@en .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/janRecordHighC> "16.4"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/febRecordHighC> "20.2"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/marRecordHighC> "26.1"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/aprRecordHighC> "32"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/mayRecordHighC> "33.2"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/junRecordHighC> "38.9"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/julRecordHighC> "39"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/augRecordHighC> "39.8"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/sepRecordHighC> "34.3"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/octRecordHighC> "28.5"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/novRecordHighC> "22.6"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/decRecordHighC> "17.5"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/yearRecordHighC> "39.8"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/janHighC> "4.7"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/febHighC> "6.7"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/marHighC> "11.6"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/aprHighC> "16.2"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/mayHighC> "20.6"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/junHighC> "23.7"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/julHighC> "26.1"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/augHighC> "25.9"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/sepHighC> "21.2"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/octHighC> "15.3"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/novHighC> "8.9"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/decHighC> "5.3"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/yearHighC> "15.5"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/janMeanC> "1.8"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/febMeanC> "2.8"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/marMeanC> "6.7"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/aprMeanC> "10.7"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/mayMeanC> "15.2"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/junMeanC> "18.2"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/julMeanC> "20.3"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/augMeanC> "19.9"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/sepMeanC> "15.6"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/octMeanC> "10.7"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/novMeanC> "5.7"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/decMeanC> "2.8"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/yearMeanC> "10.85"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/janLowC> "-1.3"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/febLowC> "-0.8"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/marLowC> "2.3"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/aprLowC> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/mayLowC> "9.4"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/junLowC> "12.4"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/julLowC> "14.5"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/augLowC> "14.2"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/sepLowC> "10.6"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/octLowC> "6.7"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/novLowC> "2.5"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/decLowC> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/yearLowC> "6.28"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/janRecordLowC> "-18.7"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/febRecordLowC> "-21.1"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/marRecordLowC> "-13.6"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/aprRecordLowC> "-6.4"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/mayRecordLowC> "-0.1"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/junRecordLowC> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/julRecordLowC> "4.7"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/augRecordLowC> "5.3"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/sepRecordLowC> "2.5"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/octRecordLowC> "-5"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/novRecordLowC> "-8.7"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/decRecordLowC> "-18.3"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/yearRecordLowC> "-21.1"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/precipitationColour> "green"@en .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/janPrecipitationMm> "40.9"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/febPrecipitationMm> "43.1"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/marPrecipitationMm> "50.8"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/aprPrecipitationMm> "49.3"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/mayPrecipitationMm> "72.5"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/junPrecipitationMm> "66.6"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/julPrecipitationMm> "76"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/augPrecipitationMm> "57.7"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/sepPrecipitationMm> "54.1"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/octPrecipitationMm> "56.4"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/novPrecipitationMm> "53.5"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/decPrecipitationMm> "54.1"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/yearPrecipitationMm> "675"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/janSun> "55.2"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/febSun> "85.6"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/marSun> "124"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/aprSun> "180.2"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/maySun> "214.1"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/junSun> "219.1"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/julSun> "235.1"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/augSun> "222.1"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/sepSun> "164.1"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/octSun> "108.8"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/novSun> "59"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/decSun> "44.9"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/yearSun> "1712.2"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/source> "Data derived from Deutscher Wetterdienst"@en .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/date> "November 2015"@en .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/location> "Mannheim 2019-present"@en .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/janHighC> "7.2"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/febHighC> "11.3"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/marHighC> "13"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/aprHighC> "19.1"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/mayHighC> "19.3"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/junHighC> "25.9"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/julHighC> "27.5"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/augHighC> "27.6"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/sepHighC> "21.4"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/octHighC> "16.6"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/novHighC> "8.7"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/decHighC> "7.6"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/janMeanC> "4.4"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/febMeanC> "6.1"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/marMeanC> "8.2"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/aprMeanC> "12.3"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/mayMeanC> "13.7"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/junMeanC> "19.9"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/julMeanC> "21"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/augMeanC> "20.9"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/sepMeanC> "16"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/octMeanC> "12.6"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/novMeanC> "6"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/decMeanC> "4.8"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/janLowC> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/febLowC> "1.6"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/marLowC> "3.1"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/aprLowC> "4.8"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/mayLowC> "7"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/junLowC> "12.9"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/julLowC> "13.8"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/augLowC> "14.8"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/sepLowC> "10.2"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/octLowC> "9"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/novLowC> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/decLowC> "1.9"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/janPrecipitationMm> "15.6"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/febPrecipitationMm> "49.3"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/marPrecipitationMm> "35.7"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/aprPrecipitationMm> "22.6"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/mayPrecipitationMm> "55.4"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/junPrecipitationMm> "81.4"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/julPrecipitationMm> "38.3"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/augPrecipitationMm> "63.3"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/sepPrecipitationMm> "77.1"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/octPrecipitationMm> "89.9"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/novPrecipitationMm> "48.6"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/decPrecipitationMm> "52.3"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/janSnowCm> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/febSnowCm> "1.6"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/marSnowCm> "1.2"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/aprSnowCm> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/maySnowCm> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/junSnowCm> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/julSnowCm> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/augSnowCm> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/sepSnowCm> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/octSnowCm> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/novSnowCm> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/decSnowCm> "5.6"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/yearSnowCm> "2.6"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/janSun> "57.3"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/febSun> "116.2"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/marSun> "164"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/aprSun> "251.2"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/maySun> "247.9"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/junSun> "268.1"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/julSun> "286.1"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/augSun> "248.9"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/sepSun> "199.1"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/octSun> "97.5"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/novSun> "38.2"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/decSun> "53.4"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/source> "Deutscher Wetterdienst"@en .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/caption> "Mannheim on the rivers Rhine and Neckar"@en .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/type> "thumb"@en .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/x> "296"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Mannheim> <http://dbpedia.org/property/y> "195"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/name> "Aachen"@en .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/type> "City"@en .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/imageCaption> "Panoramic view of Aachen, including Kaiser-Karls-Gymnasium , city hall  and cathedral"@en .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/imageCoa> "DEU Aachen COA.svg"@en .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/imageFlag> "Flag de-city of Aachen.svg"@en .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/imagePlan> "Aachen in AC .svg"@en .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/state> "North Rhine-Westphalia"@en .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/region> "Cologne"@en .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/district> "Aachen"@en .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/elevation> "173"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/area> "160.85"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/postalCode> "52062"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/areaCode> "241"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/licence> "AC / MON"@en .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/gemeindeschlüssel> "5334002"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/mayor> "Sibylle Keupen"@en .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/bürgermeistertitel> "Oberbürgermeister"@en .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/party> "Grüne"@en .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/rulingParty> "CDU"@en .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/rulingParty> "SPD"@en .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/location> "Aachen, Germany for 1981–2010"@en .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/metricFirst> "Yes"@en .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/singleLine> "Yes"@en .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/janRecordHighC> "16.2"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/febRecordHighC> "20.2"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/marRecordHighC> "23.1"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/aprRecordHighC> "28.7"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/mayRecordHighC> "32.8"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/junRecordHighC> "34.5"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/julRecordHighC> "36.7"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/augRecordHighC> "36.8"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/sepRecordHighC> "32.2"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/octRecordHighC> "26.9"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/novRecordHighC> "22.1"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/decRecordHighC> "16.8"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/yearRecordHighC> "36.8"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/janHighC> "5.4"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/febHighC> "6.2"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/marHighC> "10.1"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/aprHighC> "14.1"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/mayHighC> "18.2"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/junHighC> "20.8"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/julHighC> "23.3"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/augHighC> "23"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/sepHighC> "19.2"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/octHighC> "14.8"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/novHighC> "9.3"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/decHighC> "5.9"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/yearHighC> "14.2"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/janMeanC> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/febMeanC> "3.2"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/marMeanC> "6.4"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/aprMeanC> "9.5"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/mayMeanC> "13.6"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/junMeanC> "16.2"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/julMeanC> "18.5"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/augMeanC> "18"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/sepMeanC> "14.6"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/octMeanC> "11"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/novMeanC> "6.6"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/decMeanC> "3.7"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/yearMeanC> "10.4"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/janLowC> "0.7"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/febLowC> "0.6"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/marLowC> "3.2"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/aprLowC> "5.5"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/mayLowC> "9.2"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/junLowC> "11.8"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/julLowC> "14.1"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/augLowC> "13.9"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/sepLowC> "11.2"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/octLowC> "7.9"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/novLowC> "4.3"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/decLowC> "1.5"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/yearLowC> "7"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/janRecordLowC> "-16.4"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/febRecordLowC> "-15.8"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/marRecordLowC> "-9.9"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/aprRecordLowC> "-4.7"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/mayRecordLowC> "0.4"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/junRecordLowC> "3.9"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/julRecordLowC> "5.8"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/augRecordLowC> "6.7"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/sepRecordLowC> "3.8"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/octRecordLowC> "-3.7"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/novRecordLowC> "-7.6"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/decRecordLowC> "-14.3"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/yearRecordLowC> "-16.4"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/precipitationColour> "green"@en .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/janPrecipitationMm> "68.1"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/febPrecipitationMm> "63.6"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/marPrecipitationMm> "67"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/aprPrecipitationMm> "55.7"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/mayPrecipitationMm> "72"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/junPrecipitationMm> "80.3"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/julPrecipitationMm> "75.2"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/augPrecipitationMm> "74.8"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/sepPrecipitationMm> "69.2"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/octPrecipitationMm> "70.1"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/novPrecipitationMm> "66.1"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/decPrecipitationMm> "74.9"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/yearPrecipitationMm> "836.8"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/janSun> "63.5"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/febSun> "83"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/marSun> "119.3"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/aprSun> "163.4"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/maySun> "195.6"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/junSun> "196.6"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/julSun> "208.5"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/augSun> "195.7"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/sepSun> "149.3"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/octSun> "120.4"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/novSun> "71"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/decSun> "50.2"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/yearSun> "1616.5"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/source> "Data derived from Deutscher Wetterdienst"@en .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/date> "May 2013"@en .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/reason> "don't want \"around.\" Want stuff that is in the city. If there is a metro article, \"around\" can go there"@en .
+<http://dbpedia.org/resource/Aachen> <http://dbpedia.org/property/date> "October 2013"@en .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/name> "Berlin"@en .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/subdivisionType> <http://dbpedia.org/resource/List_of_sovereign_states> .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/subdivisionType> <http://dbpedia.org/resource/States_of_Germany> .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/subdivisionName> "Berlin"@en .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/settlementType> "Capital city and state"@en .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/imageShield> "Coat of arms of Berlin.svg"@en .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/shieldSize> "70"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/pushpinMap> "Germany#Europe"@en .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/pushpinRelief> "yes"@en .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/pushpinMapCaption> "Location within Germany"@en .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/imageFlag> "Flag_of_Berlin.svg"@en .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/totalType> "City/State"@en .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/areaTotalKm> "891.7"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/populationTotal> "3769495"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/populationAsOf> "2019-12-31"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/populationMetro> "6144600"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/elevationM> "34"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/populationDemonyms> "Berliner"@en .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/populationDemonyms> "Berliner , Berlinerin"@en .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/blankNameSec> <http://dbpedia.org/resource/Gross_regional_product> .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/blankInfoSec> "1.53E11"^^<http://dbpedia.org/datatype/euro> .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/blank1NameSec> "GRP per capita"@en .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/blank1InfoSec> "42000.0"^^<http://dbpedia.org/datatype/euro> .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/blank2NameSec> <http://dbpedia.org/resource/Human_Development_Index> .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/blank2InfoSec> "0.95"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/blank2InfoSec> "· 4th of 16"@en .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/timezone> <http://dbpedia.org/resource/Central_European_Time> .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/utcOffset> "60.0"^^<http://dbpedia.org/datatype/second> .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/timezone1Dst> <http://dbpedia.org/resource/Central_European_Summer_Time> .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/utcOffset1Dst> "120.0"^^<http://dbpedia.org/datatype/second> .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/blankNameSec> <http://dbpedia.org/resource/GeoTLD> .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/blankInfoSec> <http://dbpedia.org/resource/.berlin> .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/governingBody> <http://dbpedia.org/resource/Abgeordnetenhaus_of_Berlin> .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/leaderTitle> <http://dbpedia.org/resource/Governing_Mayor_of_Berlin> .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/leaderName> <http://dbpedia.org/resource/Michael_Müller_(politician,_born_1964)> .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/leaderParty> <http://dbpedia.org/resource/Social_Democratic_Party_of_Germany> .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/geocode> "NUTS Region: DE3"@en .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/areaCode> "30"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/registrationPlate> "--08-11"^^<http://www.w3.org/2001/XMLSchema#gMonthDay> .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/isoCode> "DE-BE"@en .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/align> "right"@en .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/image> "Berliner Schloß .jpeg"@en .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/width> "195"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/caption> "The rebuilt Berlin Palace nearing completion, in 2020"@en .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/width> "220"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/width> "215"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/reason> "Population and area are given, but urban areas of the EU are not ranked"@en .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/date> "April 2019"@en .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/reason> "Gives the population figure but does not show the area figure"@en .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/perrow> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/totalWidth> "400"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/width> "500"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/height> "350"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/image> "Berliner Dom - panoramio .jpg"@en .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/image> "Neue Synagoge, Berlin-Mitte, 160328, ako.jpg"@en .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/image> "Berlin, Mitte, Bebelplatz, Hedwigskathedrale 02.jpg"@en .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/image> "Şehitlik mosque Berlin by ZUFAr.jpg"@en .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/footer> "Clockwise from top left: Berlin Cathedral, New Synagogue, Şehitlik Mosque, and St. Hedwig's Cathedral"@en .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/align> "left"@en .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/image> "Berlin Fashion Week 2013.jpg"@en .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/width> "206"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/caption> <http://dbpedia.org/resource/Berlin_Fashion_Week> .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/image> "IFA 2012 IMG 7677.JPG"@en .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/caption> "IFA is the world's leading trade show for consumer electronics."@en .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/image> "Erster Spreestrand.JPG"@en .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/caption> "Berlin is one of the world's most livable cities."@en .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/image> "Simon-Dach-Straße Berlin.jpg"@en .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/caption> "Typical street scene at Simon-Dach-Straße."@en .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/captionAlign> "center"@en .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/footerAlign> "center"@en .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/image> "Berlin-Mitte Deutsches Currywurst Museum.jpg"@en .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/width> "200"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/caption> "The Currywurst Museum"@en .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/image> "Currywurst-1.jpg"@en .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/width> "192"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/caption> "A plate of Currywurst"@en .
+<http://dbpedia.org/resource/Berlin> <http://dbpedia.org/property/footer> "Invented in Berlin, currywurst is an icon of German popular culture and cuisine."@en .
+# completed 2021-01-18T21:15:16Z

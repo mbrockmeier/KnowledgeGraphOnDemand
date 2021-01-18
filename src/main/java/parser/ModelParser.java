@@ -2,10 +2,12 @@ package parser;
 
 import extraction.KnowledgeGraphConfiguration;
 import org.apache.jena.rdf.model.*;
+import org.apache.jena.vocabulary.VCARD;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
+
 
 /**
  * @author Yawen Liu
@@ -54,7 +56,7 @@ public class ModelParser {
         }
 
         model.setNsPrefixes(namespaces);
-
+        model = renameRDF();
         return model;
     }
 
@@ -62,25 +64,30 @@ public class ModelParser {
      * @author Yawen Liu
      * print the model
      */
-    public void printRDF() {
+    public Model renameRDF() {
         StmtIterator iter = model.listStatements();
+        Model result = ModelFactory.createDefaultModel();
         while (iter.hasNext())
         {
             Statement stmt = iter.nextStatement();
-            String subject = stmt.getSubject().toString();
             String predicate = stmt.getPredicate().toString();
-            RDFNode object = stmt.getObject();
+            if(predicate.startsWith("http://dbpedia.org/ontology/")){
+                predicate = predicate.replace("http://dbpedia.org/ontology/","dbo: ");
+                Property property = result.createProperty(predicate);
+                result.add(stmt.getSubject(),property,stmt.getObject());
+            }else if (predicate.startsWith("http://dbpedia.org/resource/")){
+                predicate = predicate.replace("http://dbpedia.org/resource/","dbr: ");
+                Property property = result.createProperty(predicate);
+                result.add(stmt.getSubject(),property,stmt.getObject());
+            }else if (predicate.startsWith("http://dbpedia.org/property/")){
+                predicate = predicate.replace("http://dbpedia.org/property/","dbp: ");
+                Property property = result.createProperty(predicate);
+                result.add(stmt.getSubject(),property,stmt.getObject());
+            }else{
+                result.add(stmt.getSubject(),stmt.getPredicate(),stmt.getObject());
+            }
 
-            System.out.print("subject " + subject+"\t");
-            System.out.print(" predicate " + predicate+"\t");
-            if (object instanceof Resource)
-            {
-                System.out.print(" object " + object);
-            }
-            else {
-                System.out.print("object \"" + object.toString() + "\"");
-            }
-            System.out.println(" .");
         }
+        return result;
     }
 }
