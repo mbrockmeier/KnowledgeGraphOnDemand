@@ -26,9 +26,12 @@ public class KnowledgeGraphBuilder {
     private static KnowledgeGraphBuilder instance = null;
 
     public static KnowledgeGraphBuilder getInstance() {
+        /*
         if (instance == null) {
             instance = new KnowledgeGraphBuilder();
         }
+        */
+        instance = new KnowledgeGraphBuilder();
         return instance;
     }
 
@@ -42,6 +45,7 @@ public class KnowledgeGraphBuilder {
         runExtractionFramework();
         decompressExtractedData();
         modelParser.readRDF(resultFiles);
+        modelParser.printRDF();
         return  modelParser.getModel();
     }
 
