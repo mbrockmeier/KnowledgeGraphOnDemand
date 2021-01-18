@@ -1,7 +1,6 @@
 package server;
 
 import extraction.KnowledgeGraphBuilder;
-import org.apache.commons.text.StringEscapeUtils;
 import org.apache.jena.rdf.model.Model;
 
 import javax.ws.rs.GET;

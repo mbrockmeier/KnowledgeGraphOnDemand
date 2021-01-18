@@ -20,6 +20,7 @@ public class ModelParser {
         this.namespaces = new HashMap<String, String>() {{
             put("dbp", "http://dbpedia.org/property/");
             put("dbo", "http://dbpedia.org/ontology/");
+            put("dbr", "http://dbpedia.org/resource/");
         }};
     }
 

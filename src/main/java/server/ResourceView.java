@@ -1,12 +1,9 @@
 package server;
 
-import j2html.attributes.Attr;
 import j2html.tags.ContainerTag;
 import j2html.tags.Tag;
+import org.apache.jena.rdf.model.RDFNode;
 import org.apache.jena.rdf.model.Resource;
-import org.apache.jena.rdf.model.Statement;
-
-import java.util.List;
 
 import static j2html.TagCreator.*;
 
@@ -18,7 +15,7 @@ public class ResourceView {
     }
 
     public Tag render() {
-        List<Statement> statements = resource.listProperties().toList();
+        GroupedResource groupedResource = GroupedResource.create(resource);
 
         return table(attrs("#properties"),
                 thead(
@@ -28,27 +25,29 @@ public class ResourceView {
                   )
                 ),
                 tbody(
-                        statements.stream().map(statement ->
+                        groupedResource.getGroupedProperties().entrySet().stream().map(groupedProperty ->
                                 tr(attrs(".property"),
-                                        td(statement.getPredicate().getNameSpace() + ":" + statement.getPredicate().getLocalName()),
-                                        td(
-                                            getStatementValue(statement)
+                                        td(groupedProperty.getKey()),
+                                        td(ul(
+                                                groupedProperty.getValue().stream().map(resourceValue ->
+                                                    li(getRDFNodeValue(resourceValue))
+                                                ).toArray(ContainerTag[]::new)
                                         ))
-                        ).toArray(ContainerTag[]::new)
+                        )).toArray(ContainerTag[]::new)
                 )
         ).attr("border", "1");
     }
 
-    private Tag getStatementValue(Statement statement) {
-        if (statement.getObject().isURIResource()) {
-            return a(statement.getObject().asResource().getURI()).withHref(statement.getObject().asResource().getURI().replace("http://dbpedia.org/resource", "http://localhost:8080/kgod/resource"));
-        } else if (statement.getObject().isLiteral()) {
+    private Tag getRDFNodeValue(RDFNode rdfNode) {
+        if (rdfNode.isURIResource()) {
+            return a(rdfNode.asResource().getURI()).withHref(rdfNode.asResource().getURI().replace("http://dbpedia.org/resource", "http://localhost:8080/kgod/resource"));
+        } else if (rdfNode.isLiteral()) {
             return div(
-                    span(statement.getObject().asLiteral().getString()),
-                    small(statement.getObject().asLiteral().getDatatypeURI())
+                    span(rdfNode.asLiteral().getString()),
+                    small(rdfNode.asLiteral().getDatatypeURI())
             );
         } else {
-            return span(statement.getObject().toString());
+            return span(rdfNode.toString());
         }
     }
 }
