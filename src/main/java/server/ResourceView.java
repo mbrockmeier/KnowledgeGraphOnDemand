@@ -44,10 +44,30 @@ public class ResourceView {
         } else if (rdfNode.isLiteral()) {
             return div(
                     span(rdfNode.asLiteral().getString()),
-                    small(rdfNode.asLiteral().getDatatypeURI())
+                    small(dataType((rdfNode)))
             );
         } else {
             return span(rdfNode.toString());
         }
+    }
+
+    /**
+     * @Author: Yawen Liu
+     * @param rdfNode the object
+     * @return datatype as String
+     */
+    private String dataType(RDFNode rdfNode){
+        String language = rdfNode.asLiteral().getLanguage();
+        String uri = rdfNode.asLiteral().getDatatypeURI();
+        String erg = "";
+        if(!language.equals("")){
+            erg = "("+language+")";
+        }else{
+            String object = rdfNode.toString();
+            int index2 = object.indexOf("#");
+            String back = object.substring(index2 + 1, object.toString().length());
+            erg = "(xsd:"+back+")";
+        }
+        return erg;
     }
 }
