@@ -7,6 +7,7 @@ import org.apache.jena.rdf.model.Statement;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.TreeMap;
 
 public class GroupedResource {
     private Resource resource;
@@ -35,7 +36,9 @@ public class GroupedResource {
         return new GroupedResource(resource);
     }
 
-    public HashMap<String, List<RDFNode>> getGroupedProperties() {
-        return this.groupedProperties;
+    public TreeMap<String, List<RDFNode>> getGroupedProperties() {
+        TreeMap<String, List<RDFNode>> sorted = new TreeMap<>();
+        sorted.putAll(this.groupedProperties);
+        return sorted;
     }
 }

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><mediawiki xmlns="http://www.mediawiki.org/xml/export-0.10/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="0.10" xml:lang="en" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.10/ http://www.mediawiki.org/xml/export-0.10.xsd">
+  <siteinfo>
+    <sitename>Wikipedia</sitename>
+    <dbname>enwiki</dbname>
+    <base>https://en.wikipedia.org/wiki/Main_Page</base>
+    <generator>MediaWiki 1.36.0-wmf.26</generator>
+    <case>first-letter</case>
+    <namespaces>
+      <namespace case="first-letter" key="-2">Media</namespace>
+      <namespace case="first-letter" key="-1">Special</namespace>
+      <namespace case="first-letter" key="0"/>
+      <namespace case="first-letter" key="1">Talk</namespace>
+      <namespace case="first-letter" key="2">User</namespace>
+      <namespace case="first-letter" key="3">User talk</namespace>
+      <namespace case="first-letter" key="4">Wikipedia</namespace>
+      <namespace case="first-letter" key="5">Wikipedia talk</namespace>
+      <namespace case="first-letter" key="6">File</namespace>
+      <namespace case="first-letter" key="7">File talk</namespace>
+      <namespace case="first-letter" key="8">MediaWiki</namespace>
+      <namespace case="first-letter" key="9">MediaWiki talk</namespace>
+      <namespace case="first-letter" key="10">Template</namespace>
+      <namespace case="first-letter" key="11">Template talk</namespace>
+      <namespace case="first-letter" key="12">Help</namespace>
+      <namespace case="first-letter" key="13">Help talk</namespace>
+      <namespace case="first-letter" key="14">Category</namespace>
+      <namespace case="first-letter" key="15">Category talk</namespace>
+      <namespace case="first-letter" key="100">Portal</namespace>
+      <namespace case="first-letter" key="101">Portal talk</namespace>
+      <namespace case="first-letter" key="108">Book</namespace>
+      <namespace case="first-letter" key="109">Book talk</namespace>
+      <namespace case="first-letter" key="118">Draft</namespace>
+      <namespace case="first-letter" key="119">Draft talk</namespace>
+      <namespace case="first-letter" key="446">Education Program</namespace>
+      <namespace case="first-letter" key="447">Education Program talk</namespace>
+      <namespace case="first-letter" key="710">TimedText</namespace>
+      <namespace case="first-letter" key="711">TimedText talk</namespace>
+      <namespace case="first-letter" key="828">Module</namespace>
+      <namespace case="first-letter" key="829">Module talk</namespace>
+      <namespace case="first-letter" key="2300">Gadget</namespace>
+      <namespace case="first-letter" key="2301">Gadget talk</namespace>
+      <namespace case="case-sensitive" key="2302">Gadget definition</namespace>
+      <namespace case="case-sensitive" key="2303">Gadget definition talk</namespace>
+    </namespaces>
+  </siteinfo>
+  <page>
+    <title>Tylor Swift</title>
+    <ns>0</ns>
+    <id>64221015</id>
+    <redirect title="Taylor Swift"/>
+    <revision>
+      <id>961592832</id>
+      <timestamp>2020-06-09T10:35:10Z</timestamp>
+      <contributor>
+        <username>Composemi</username>
+        <id>9549209</id>
+      </contributor>
+      <comment>[[WP:AES|←]]Redirected page to [[Taylor Swift]]</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="26" xml:space="preserve">#REDIRECT [[Taylor Swift]]</text>
+      <sha1>2k1bahqvc443nxwnv86yveqw7ko7847</sha1>
+    </revision>
+  </page>
+</mediawiki>

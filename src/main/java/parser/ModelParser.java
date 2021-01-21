@@ -80,8 +80,12 @@ public class ModelParser {
                 predicate = predicate.replace("http://dbpedia.org/resource/","dbr: ");
                 Property property = result.createProperty(predicate);
                 result.add(stmt.getSubject(),property,stmt.getObject());
-            }else if (predicate.startsWith("http://dbpedia.org/property/")){
-                predicate = predicate.replace("http://dbpedia.org/property/","dbp: ");
+            }else if (predicate.startsWith("http://dbpedia.org/property/")) {
+                predicate = predicate.replace("http://dbpedia.org/property/", "dbp: ");
+                Property property = result.createProperty(predicate);
+                result.add(stmt.getSubject(), property, stmt.getObject());
+            }else if(predicate.startsWith("http://www.w3.org/2000/01/rdf-schema#")){
+                predicate = predicate.replace("http://www.w3.org/2000/01/rdf-schema#","rdfs: ");
                 Property property = result.createProperty(predicate);
                 result.add(stmt.getSubject(),property,stmt.getObject());
             }else{

@@ -1,0 +1,13 @@
+# started 2021-01-20T20:23:08Z
+<http://dbpedia.org/resource/Mission:_Impossible_(film)> <http://dbpedia.org/ontology/wikiPageID> "724258"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Simon_Pegg> <http://dbpedia.org/ontology/wikiPageID> "147672"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Mission:_Impossible_2> <http://dbpedia.org/ontology/wikiPageID> "451866"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Toshiyuki_Morikawa> <http://dbpedia.org/ontology/wikiPageID> "829137"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Tom_Cruise> <http://dbpedia.org/ontology/wikiPageID> "31460"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Mission:_Impossible_(1966_TV_series)> <http://dbpedia.org/ontology/wikiPageID> "53078"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/A113> <http://dbpedia.org/ontology/wikiPageID> "873352"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Lake_Wānaka> <http://dbpedia.org/ontology/wikiPageID> "431395"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Ethan_Hunt> <http://dbpedia.org/ontology/wikiPageID> "3420376"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Steve_Blum> <http://dbpedia.org/ontology/wikiPageID> "1088867"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dbpedia.org/resource/Dead_Ringers_(comedy)> <http://dbpedia.org/ontology/wikiPageID> "266463"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# completed 2021-01-20T20:23:09Z

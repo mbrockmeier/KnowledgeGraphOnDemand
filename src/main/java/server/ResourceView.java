@@ -42,6 +42,7 @@ public class ResourceView {
         if (rdfNode.isURIResource()) {
             return a(rdfNode.asResource().getURI()).withHref(rdfNode.asResource().getURI().replace("http://dbpedia.org/resource", "http://localhost:8080/kgod/resource"));
         } else if (rdfNode.isLiteral()) {
+            //System.out.println(rdfNode.asLiteral().getString()+" DataType: "+dataType(rdfNode)+" #Original: "+rdfNode.toString());
             return div(
                     span(rdfNode.asLiteral().getString()),
                     small(dataType((rdfNode)))

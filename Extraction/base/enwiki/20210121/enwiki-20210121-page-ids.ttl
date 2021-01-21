@@ -1,0 +1,3 @@
+# started 2021-01-21T10:22:07Z
+<http://dbpedia.org/resource/Tylor_Swift> <http://dbpedia.org/ontology/wikiPageID> "64221015"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# completed 2021-01-21T10:22:08Z
