@@ -38,7 +38,7 @@ public class ResourceView {
         ).attr("border", "1");
     }
 
-    private Tag getRDFNodeValue(RDFNode rdfNode) {
+    public Tag getRDFNodeValue(RDFNode rdfNode) {
         if (rdfNode.isURIResource()) {
             return a(rdfNode.asResource().getURI()).withHref(rdfNode.asResource().getURI().replace("http://dbpedia.org/resource", "http://localhost:8080/kgod/resource"));
         } else if (rdfNode.isLiteral()) {

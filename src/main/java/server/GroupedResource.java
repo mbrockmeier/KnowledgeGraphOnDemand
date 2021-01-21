@@ -41,4 +41,12 @@ public class GroupedResource {
         sorted.putAll(this.groupedProperties);
         return sorted;
     }
+
+    /**
+     * @Author: Yawen Liu
+     * @return
+     */
+    public String getSubject(){
+        return this.resource.getLocalName();
+    }
 }
