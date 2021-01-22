@@ -7,17 +7,17 @@ import static j2html.TagCreator.*;
 public class HTMLRenderer {
     public static String renderModel(Model model, String resource) {
         Resource resourceToRender = model.getResource(resource);
-        GroupedResource groupedResource = GroupedResource.create(resourceToRender);
+        GroupedResource groupedResource = GroupedResource.create(resourceToRender, model);
         return document(html(
                 style("h1 {display : inline;}"),
                 head(
-                        title("KnowledgeGraphOnDemand"),
+                        title("About: " + groupedResource.getSubject()),
                         h1("About: "),
                         h1(groupedResource.getSubject())
                 ),
                 body(
                         main(
-                            new ResourceView(resourceToRender).render()
+                            new ResourceView(resourceToRender, model).render()
                         )
                 )
         ));

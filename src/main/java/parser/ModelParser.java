@@ -42,7 +42,8 @@ public class ModelParser {
      * @return the RDF model
      */
 
-    public Model readRDF(String[] files){
+    public Model readRDF(String[] files) {
+        model.setNsPrefixes(namespaces);
         String baseDir = KnowledgeGraphConfiguration.getExtractionFrameworkBaseDir();
         String language = KnowledgeGraphConfiguration.getLanguage();
         String currentDate = new SimpleDateFormat("yyyyMMdd").format(new Date());
@@ -56,8 +57,7 @@ public class ModelParser {
             model.read(filePath, "N-TRIPLES");
         }
 
-        model.setNsPrefixes(namespaces);
-        model = renameRDF();
+        //model = renameRDF();
         return model;
     }
 

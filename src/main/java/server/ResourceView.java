@@ -2,6 +2,7 @@ package server;
 
 import j2html.tags.ContainerTag;
 import j2html.tags.Tag;
+import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.RDFNode;
 import org.apache.jena.rdf.model.Resource;
 
@@ -9,13 +10,15 @@ import static j2html.TagCreator.*;
 
 public class ResourceView {
     private Resource resource;
+    private Model model;
 
-    public ResourceView(Resource resource) {
+    public ResourceView(Resource resource, Model model) {
         this.resource = resource;
+        this.model = model;
     }
 
     public Tag render() {
-        GroupedResource groupedResource = GroupedResource.create(resource);
+        GroupedResource groupedResource = GroupedResource.create(resource, model);
 
         return table(attrs("#properties"),
                 thead(
