@@ -4,6 +4,8 @@ import io.undertow.Undertow;
 import io.undertow.servlet.api.DeploymentInfo;
 import org.jboss.resteasy.plugins.server.undertow.UndertowJaxrsServer;
 import org.tinylog.Logger;
+import parser.DBpediaOntology;
+import server.RDFOntology;
 import server.RDFResource;
 
 import javax.ws.rs.core.Application;
@@ -27,6 +29,8 @@ public class App {
 
         Logger.info("Server listening on 0.0.0.0:8080. Press ENTER to quit...");
 
+        DBpediaOntology.getInstance().printOntology();
+
         System.in.read();
 
         server.stop();
@@ -37,6 +41,7 @@ public class App {
 
         public AppResourceConfig() {
             classes.add(RDFResource.class);
+            classes.add(RDFOntology.class);
         }
 
         public Set<Class<?>> getClasses() {

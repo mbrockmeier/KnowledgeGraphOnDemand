@@ -19,7 +19,6 @@ public class RDFResource {
     @GET
     @Produces({MediaType.TEXT_HTML})
     public String getResourceHTML(@PathParam("resource") String resource) {
-        StringWriter outputWriter = new StringWriter();
         Model model = KnowledgeGraphBuilder.getInstance().createKnowledgeGraphForWikiPage(resource, true);
         return HTMLRenderer.renderModel(model, "http://dbpedia.org/resource/" + resource);
     }

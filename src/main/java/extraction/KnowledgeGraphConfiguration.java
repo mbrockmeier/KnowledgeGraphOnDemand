@@ -19,27 +19,25 @@ public class KnowledgeGraphConfiguration {
             properties.load(bufferedInputStream);
             bufferedInputStream.close();
         } catch (IOException ioException) {
-
+            ioException.printStackTrace();
         }
     }
 
     private KnowledgeGraphConfiguration() { }
 
     public static String getExtractionFrameworkDir() {
-        String extractionFrameworkDir = properties.getProperty("extractionFrameworkDir");
-
-        return extractionFrameworkDir;
+        return properties.getProperty("extractionFrameworkDir");
     }
 
     public static String getLanguage() {
-        String lang = properties.getProperty("lang");
-
-        return lang;
+        return properties.getProperty("lang");
     }
 
     public static String getExtractionFrameworkBaseDir() {
-        String extractionFrameworkBaseDir = properties.getProperty("extractionFrameworkBaseDir");
+        return properties.getProperty("extractionFrameworkBaseDir");
+    }
 
-        return extractionFrameworkBaseDir;
+    public static String getPrefixesFile() {
+        return properties.getProperty("prefixesFile");
     }
 }

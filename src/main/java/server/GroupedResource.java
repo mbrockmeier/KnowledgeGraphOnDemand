@@ -18,20 +18,20 @@ public class GroupedResource {
     private GroupedResource(Resource resource, Model model) {
         this.resource = resource;
         this.model = model;
-        this.groupedProperties = new HashMap<String, List<RDFNode>>();
+        this.groupedProperties = new HashMap<>();
 
         List<Statement> statements = this.resource.listProperties().toList();
 
         for (Statement statement : statements) {
-            List<RDFNode> valueList = this.groupedProperties.get(model.shortForm(statement.getPredicate().toString()));
+            List<RDFNode> valueList = this.groupedProperties.get(statement.getPredicate().toString());
 
             if (valueList == null) {
-                valueList = new ArrayList<RDFNode>();
+                valueList = new ArrayList<>();
             }
 
             valueList.add(statement.getObject());
 
-            this.groupedProperties.put(model.shortForm(statement.getPredicate().toString()), valueList);
+            this.groupedProperties.put(statement.getPredicate().toString(), valueList);
         }
     }
 

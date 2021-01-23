@@ -6,6 +6,8 @@ import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.RDFNode;
 import org.apache.jena.rdf.model.Resource;
 
+import java.util.Map;
+
 import static j2html.TagCreator.*;
 
 public class ResourceView {
@@ -19,6 +21,9 @@ public class ResourceView {
 
     public Tag render() {
         GroupedResource groupedResource = GroupedResource.create(resource, model);
+        for (Map.Entry<String, String> entry : model.getNsPrefixMap().entrySet()) {
+            System.out.println(entry.getKey() + " " + entry.getValue());
+        }
 
         return table(attrs("#properties"),
                 thead(
@@ -30,7 +35,9 @@ public class ResourceView {
                 tbody(
                         groupedResource.getGroupedProperties().entrySet().stream().map(groupedProperty ->
                                 tr(attrs(".property"),
-                                        td(groupedProperty.getKey()),
+                                        td(
+                                                a(model.shortForm(groupedProperty.getKey())).withHref(groupedProperty.getKey())
+                                        ),
                                         td(ul(
                                                 groupedProperty.getValue().stream().map(resourceValue ->
                                                     li(getRDFNodeValue(resourceValue))
@@ -43,9 +50,8 @@ public class ResourceView {
 
     public Tag getRDFNodeValue(RDFNode rdfNode) {
         if (rdfNode.isURIResource()) {
-            return a(rdfNode.asResource().getURI()).withHref(rdfNode.asResource().getURI().replace("http://dbpedia.org/resource", "http://localhost:8080/kgod/resource"));
+            return a(model.shortForm(rdfNode.asResource().getURI())).withHref(rdfNode.asResource().getURI().replace("http://dbpedia.org/", "http://localhost:8080/kgod/"));
         } else if (rdfNode.isLiteral()) {
-            //System.out.println(rdfNode.asLiteral().getString()+" DataType: "+dataType(rdfNode)+" #Original: "+rdfNode.toString());
             return div(
                     span(rdfNode.asLiteral().getString()),
                     small(dataType((rdfNode)))
@@ -63,15 +69,15 @@ public class ResourceView {
     private String dataType(RDFNode rdfNode){
         String language = rdfNode.asLiteral().getLanguage();
         String uri = rdfNode.asLiteral().getDatatypeURI();
-        String erg = "";
-        if(!language.equals("")){
-            erg = "("+language+")";
-        }else{
-            String object = rdfNode.toString();
-            int index2 = object.indexOf("#");
-            String back = object.substring(index2 + 1, object.toString().length());
-            erg = "(xsd:"+back+")";
+
+        String dataType = "";
+
+        if (!language.equals("")) {
+            dataType += " (" + language + ")";
         }
-        return erg;
+        if (!uri.equals("")) {
+            dataType += " (" + model.shortForm(uri) + ")";
+        }
+        return dataType;
     }
 }
