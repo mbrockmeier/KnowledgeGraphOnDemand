@@ -2,11 +2,9 @@ package server;
 
 import extraction.KnowledgeGraphBuilder;
 import org.apache.jena.rdf.model.Model;
+import sparqlConnect.RDFConnection_spaqrql;
 
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.PathParam;
-import javax.ws.rs.Produces;
+import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import java.io.StringWriter;
 
@@ -14,7 +12,7 @@ import java.io.StringWriter;
  * @author Malte Brockmeier
  */
 @Path("/resource/{resource}")
-public class RDFResource {
+public class RDFResource{
 
     @GET
     @Produces({MediaType.TEXT_HTML})
@@ -31,4 +29,22 @@ public class RDFResource {
         model.write(outputWriter);
         return outputWriter.toString();
     }
+
+    /**
+     * @author:Yawen Liu
+     * @param resource
+     * @param sparql
+     * @return
+     */
+    @POST
+    @Produces({MediaType.TEXT_HTML})
+    public String getSparql(@PathParam("resource") String resource,@FormParam("textarea") String sparql) {
+        Model model = KnowledgeGraphBuilder.getInstance().createKnowledgeGraphForWikiPage(resource, true);
+        String query = sparql;
+        RDFConnection_spaqrql rdfConnection_spaqrql = new RDFConnection_spaqrql(query,model);
+        String erg = rdfConnection_spaqrql.connect();
+        //System.out.println("here+++++++++"+erg);
+        return erg;
+    }
+
 }

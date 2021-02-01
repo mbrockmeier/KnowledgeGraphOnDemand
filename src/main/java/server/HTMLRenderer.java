@@ -17,7 +17,11 @@ public class HTMLRenderer {
                 ),
                 body(
                         main(
-                            new ResourceView(resourceToRender, model).render()
+                            new ResourceView(resourceToRender, model).render(),
+                                form().withMethod("post").with(
+                                        textarea().withType("text").withName("textarea"),
+                                        button("Sparql").withType("submit").withId("button1"))
+
                         )
                 )
         ));
