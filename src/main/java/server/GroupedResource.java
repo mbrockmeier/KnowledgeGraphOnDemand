@@ -49,7 +49,7 @@ public class GroupedResource {
      * @Author: Yawen Liu
      * @return
      */
-    public String getSubject(){
+    public String getSubject(String uri){
         return this.resource.getLocalName();
     }
 }

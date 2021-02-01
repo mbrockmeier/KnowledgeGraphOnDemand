@@ -4,16 +4,21 @@ import org.apache.jena.rdf.model.Resource;
 
 import static j2html.TagCreator.*;
 
+/**
+ * @author Malte Brockmeier, Yawen Liu
+ */
+
 public class HTMLRenderer {
     public static String renderModel(Model model, String resource) {
         Resource resourceToRender = model.getResource(resource);
         GroupedResource groupedResource = GroupedResource.create(resourceToRender, model);
         return document(html(
-                style("h1 {display : inline;}"),
+                style("h1 {display : inline;}" +
+                        "textarea{height: 200px; width: 600px;}"),
                 head(
-                        title("About: " + groupedResource.getSubject()),
                         h1("About: "),
-                        h1(groupedResource.getSubject())
+                        h1(a(groupedResource.getSubject(resourceToRender.getURI())).withHref(resourceToRender.getURI().replace("http://dbpedia.org/", "http://localhost:8080/kgod/")))
+
                 ),
                 body(
                         main(
