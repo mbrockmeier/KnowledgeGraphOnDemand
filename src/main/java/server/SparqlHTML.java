@@ -5,6 +5,10 @@ import java.util.List;
 
 import static j2html.TagCreator.*;
 
+/**
+ * @author Yawen Liu
+ */
+
 public class SparqlHTML {
     public static String sparqlRender(String sparqlResult){
         List<List<String>> results = new ArrayList<>();
