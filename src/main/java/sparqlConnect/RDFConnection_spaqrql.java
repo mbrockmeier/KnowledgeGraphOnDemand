@@ -91,8 +91,9 @@ public class RDFConnection_spaqrql {
                 }else {
                     line = rdfNode.toString();
                 }
-                sb.append(line+"\n");
+                sb.append(line+" ");
             }
+            sb.append("\n");
         }
         return sb.toString();
     }

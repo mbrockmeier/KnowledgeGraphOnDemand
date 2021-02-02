@@ -43,8 +43,7 @@ public class RDFResource{
         String query = sparql;
         RDFConnection_spaqrql rdfConnection_spaqrql = new RDFConnection_spaqrql(query,model);
         String erg = rdfConnection_spaqrql.connect();
-        //System.out.println("here+++++++++"+erg);
-        return erg;
+        return SparqlHTML.sparqlRender(erg);
     }
 
 }
