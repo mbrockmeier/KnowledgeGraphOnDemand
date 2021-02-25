@@ -9,6 +9,9 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.HashMap;
 
+/**
+ * @author Malte Brockmeier
+ */
 public class NamespacePrefixLoader {
     private static final String COMMA_DELIMITER = ",";
 

@@ -21,9 +21,6 @@ public class ResourceView {
 
     public Tag render() {
         GroupedResource groupedResource = GroupedResource.create(resource, model);
-        for (Map.Entry<String, String> entry : model.getNsPrefixMap().entrySet()) {
-            System.out.println(entry.getKey() + " " + entry.getValue());
-        }
 
         return table(attrs("#properties"),
                 thead(
@@ -33,17 +30,32 @@ public class ResourceView {
                   )
                 ),
                 tbody(
-                        groupedResource.getGroupedProperties().entrySet().stream().map(groupedProperty ->
+                        each(groupedResource.getGroupedProperties().entrySet(), groupedProperty ->
                                 tr(attrs(".property"),
                                         td(
                                                 a(model.shortForm(groupedProperty.getKey())).withHref(groupedProperty.getKey())
                                         ),
                                         td(ul(
                                                 groupedProperty.getValue().stream().map(resourceValue ->
-                                                    li(getRDFNodeValue(resourceValue))
+                                                        li(getRDFNodeValue(resourceValue))
                                                 ).toArray(ContainerTag[]::new)
                                         ))
-                        )).toArray(ContainerTag[]::new)
+                                )
+                        ),
+                        each(groupedResource.getIncomingArcs().entrySet(), incomingArc ->
+                                tr(attrs(".property"),
+                                        td(
+                                                span("is "),
+                                                a(model.shortForm(incomingArc.getKey())).withHref(incomingArc.getKey()),
+                                                span(" of")
+                                        ),
+                                        td(ul(
+                                                incomingArc.getValue().stream().map(resourceValue ->
+                                                        li(getRDFNodeValue(resourceValue))
+                                                ).toArray(ContainerTag[]::new)
+                                        ))
+                                )
+                        )
                 )
         ).attr("border", "1");
     }

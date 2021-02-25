@@ -20,7 +20,7 @@ import java.util.concurrent.TimeUnit;
  * @author Malte Brockmeier
  */
 public class KnowledgeGraphBuilder {
-    private String[] resultFiles = {"-infobox-properties.ttl", "-page-ids.ttl", "-labels.ttl"};
+    private String[] resultFiles = {"-infobox-properties.ttl", "-page-ids.ttl", "-labels.ttl", "-mappingbased-objects-uncleaned.ttl", "-page-links.ttl"};
     private ModelParser modelParser;
 
     private static KnowledgeGraphBuilder instance = null;

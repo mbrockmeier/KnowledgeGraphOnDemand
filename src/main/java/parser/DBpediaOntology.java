@@ -3,6 +3,9 @@ package parser;
 import org.apache.jena.ontology.OntModel;
 import org.apache.jena.rdf.model.ModelFactory;
 
+/**
+ * @author Malte Brockmeier
+ */
 public class DBpediaOntology {
     private static DBpediaOntology instance = null;
     private OntModel ontModel;

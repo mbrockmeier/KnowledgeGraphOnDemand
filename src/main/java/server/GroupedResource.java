@@ -14,11 +14,13 @@ public class GroupedResource {
     private Model model;
     private Resource resource;
     private HashMap<String, List<RDFNode>> groupedProperties;
+    private HashMap<String, List<RDFNode>> incomingArcs;
 
     private GroupedResource(Resource resource, Model model) {
         this.resource = resource;
         this.model = model;
         this.groupedProperties = new HashMap<>();
+        this.incomingArcs = new HashMap<>();
 
         List<Statement> statements = this.resource.listProperties().toList();
 
@@ -33,6 +35,20 @@ public class GroupedResource {
 
             this.groupedProperties.put(statement.getPredicate().toString(), valueList);
         }
+
+        List<Statement> incomingStatements = this.model.listStatements(null, null, resource).toList();
+
+        for (Statement incomingStatement : incomingStatements) {
+            List<RDFNode> valueList = this.incomingArcs.get(incomingStatement.getPredicate().toString());
+
+            if (valueList == null) {
+                valueList = new ArrayList<>();
+            }
+
+            valueList.add(incomingStatement.getSubject());
+
+            this.incomingArcs.put(incomingStatement.getPredicate().toString(), valueList);
+        }
     }
 
     public static GroupedResource create(Resource resource, Model model) {
@@ -42,6 +58,12 @@ public class GroupedResource {
     public TreeMap<String, List<RDFNode>> getGroupedProperties() {
         TreeMap<String, List<RDFNode>> sorted = new TreeMap<>();
         sorted.putAll(this.groupedProperties);
+        return sorted;
+    }
+
+    public TreeMap<String, List<RDFNode>> getIncomingArcs() {
+        TreeMap<String, List<RDFNode>> sorted = new TreeMap<>();
+        sorted.putAll(this.incomingArcs);
         return sorted;
     }
 
