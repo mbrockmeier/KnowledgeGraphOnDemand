@@ -54,4 +54,26 @@ public class ModelParser {
         //model = renameRDF();
         return model;
     }
+
+    public void printRDF() {
+        StmtIterator iter = model.listStatements();
+        while (iter.hasNext())
+        {
+            Statement stmt = iter.nextStatement();
+            String subject = stmt.getSubject().toString();
+            String predicate = stmt.getPredicate().toString();
+            RDFNode object = stmt.getObject();
+
+            System.out.print("subject " + subject+"\t");
+            System.out.print(" predicate " + predicate+"\t");
+            if (object instanceof Resource)
+            {
+                System.out.print(" object " + object);
+            }
+            else {
+                System.out.print("object \"" + object.toString() + "\"");
+            }
+            System.out.println(" .");
+        }
+    }
 }

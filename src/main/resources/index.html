@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base href="/">
+    <meta charset="utf-8">
+    <link rel="icon" href="http://obj-cache.cloud.ruanbekker.com/favicon.ico">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <title>About: {{tableName}}</title>
+    <style>
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+                width:40%;
+                padding: 10px;
+            }
+            th, td {
+            padding: 10px;
+            }
+            #t01 tr:nth-child(even) {
+            background-color: #eee;
+            }
+            #t01 tr:nth-child(odd) {
+            background-color: #fff;
+            }
+            #t01 th {
+            background-color: black;
+            color: white;
+            }
+            table.center {
+            margin-left:auto;
+            margin-right:auto;
+            }
+            th {
+            text-align: center;
+            }
+        </style>
+</head>
+
+<body>
+<div class="container">
+    <div style="background:transparent !important" class="jumbotron">
+        <div style="font-family: 'Pacifico', cursive;">
+            <p>
+            <center>
+                <font size="8">Knowledge Graph on Demand</font>
+            </center>
+            </p>
+        </div>
+    </div>
+</div>
+
+<div style="width: 90%; margin: auto">
+    <h2 style="color:blue;">About: {{tableName}}</h2>
+    <table id='t01' style="width:100%; word-wrap:break-word; white-space: wrap; float: center;">
+        <thead>
+            <tr>
+                <th class='center'>Subject</th>
+                <th class='center'>Property</th>
+                <th class='center'>Value</th>
+            </tr>
+        </thead>
+        {{tableData}}
+    </table>
+</div>
+</body>
+</html>
