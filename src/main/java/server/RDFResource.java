@@ -3,10 +3,7 @@ package server;
 import extraction.KnowledgeGraphBuilder;
 import org.apache.jena.rdf.model.Model;
 
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.PathParam;
-import javax.ws.rs.Produces;
+import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import java.io.StringWriter;
 
@@ -30,5 +27,14 @@ public class RDFResource {
         Model model = KnowledgeGraphBuilder.getInstance().createKnowledgeGraphForWikiPage(resource, true);
         model.write(outputWriter);
         return outputWriter.toString();
+    }
+
+    @GET
+    @Produces({MediaType.APPLICATION_JSON})
+    public String getResourceJSON(@PathParam("resource") String resource) {
+        Model model = KnowledgeGraphBuilder.getInstance().createKnowledgeGraphForWikiPage(resource, true);
+        JSONResource jsonResource = new JSONResource();
+        jsonResource.createFromModel(model, "http://dbpedia.org/resource/" + resource);
+        return jsonResource.getJSON();
     }
 }
