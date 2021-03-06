@@ -15,24 +15,24 @@ public class RDFResource {
 
     @GET
     @Produces({MediaType.TEXT_HTML})
-    public String getResourceHTML(@PathParam("resource") String resource) {
-        Model model = KnowledgeGraphBuilder.getInstance().createKnowledgeGraphForWikiPage(resource, true);
+    public String getResourceHTML(@PathParam("resource") String resource, @QueryParam("wikiBaseUrl") String wikiBaseUrl) {
+        Model model = KnowledgeGraphBuilder.getInstance().createKnowledgeGraphForWikiPage(wikiBaseUrl, resource, true);
         return HTMLRenderer.renderModel(model, "http://dbpedia.org/resource/" + resource);
     }
 
     @GET
     @Produces("application/rdf+xml")
-    public String getResourceRDFXML(@PathParam("resource") String resource) {
+    public String getResourceRDFXML(@PathParam("resource") String resource, @QueryParam("wikiBaseUrl") String wikiBaseUrl) {
         StringWriter outputWriter = new StringWriter();
-        Model model = KnowledgeGraphBuilder.getInstance().createKnowledgeGraphForWikiPage(resource, true);
+        Model model = KnowledgeGraphBuilder.getInstance().createKnowledgeGraphForWikiPage(wikiBaseUrl, resource, true);
         model.write(outputWriter);
         return outputWriter.toString();
     }
 
     @GET
     @Produces({MediaType.APPLICATION_JSON})
-    public String getResourceJSON(@PathParam("resource") String resource) {
-        Model model = KnowledgeGraphBuilder.getInstance().createKnowledgeGraphForWikiPage(resource, true);
+    public String getResourceJSON(@PathParam("resource") String resource, @QueryParam("wikiBaseUrl") String wikiBaseUrl) {
+        Model model = KnowledgeGraphBuilder.getInstance().createKnowledgeGraphForWikiPage(wikiBaseUrl, resource, true);
         JSONResource jsonResource = new JSONResource();
         jsonResource.createFromModel(model, "http://dbpedia.org/resource/" + resource);
         return jsonResource.getJSON();

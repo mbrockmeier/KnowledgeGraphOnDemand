@@ -40,4 +40,12 @@ public class KnowledgeGraphConfiguration {
     public static String getPrefixesFile() {
         return properties.getProperty("prefixesFile");
     }
+
+    public static int getBacklinksCount() {
+        try {
+            return Integer.parseInt(properties.getProperty("backlinksCount"));
+        } catch(Exception ex) {
+            return 10;
+        }
+    }
 }

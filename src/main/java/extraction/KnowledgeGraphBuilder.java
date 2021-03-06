@@ -37,8 +37,12 @@ public class KnowledgeGraphBuilder {
         modelParser = new ModelParser();
     }
 
-    public Model createKnowledgeGraphForWikiPage(String wikiPage, boolean includeBacklinks) {
-        retrieveAndStoreWikipageXmlSource(wikiPage, includeBacklinks);
+    public Model createKnowledgeGraphForWikiPage(String wikiBaseUrl, String wikiPage, boolean includeBacklinks) {
+        if (wikiBaseUrl != null) {
+            retrieveAndStoreWikipageXmlSource(wikiBaseUrl, wikiBaseUrl, wikiPage, includeBacklinks);
+        } else {
+            retrieveAndStoreWikipageXmlSource(wikiPage, includeBacklinks);
+        }
         runExtractionFramework();
         decompressExtractedData();
         modelParser.readRDF(resultFiles);
@@ -71,7 +75,17 @@ public class KnowledgeGraphBuilder {
      * @param includeBacklinks whether backlinks to the specified wikipedia page should also be retrieved
      */
     private void retrieveAndStoreWikipageXmlSource(String wikiPage, boolean includeBacklinks) {
-        WikipediaExtractor wikipediaExtractor = new WikipediaExtractor();
+        retrieveAndStoreWikipageXmlSource("https://en.wikipedia.org/", "https://en.wikipedia.org/w/", wikiPage, includeBacklinks);
+    }
+
+    /**
+     * @author Malte Brockmeier
+     * @param
+     * @param wikiPage the wikipedia page to retrieve
+     * @param includeBacklinks whether backlinks to the specified wikipedia page should also be retrieved
+     */
+    private void retrieveAndStoreWikipageXmlSource(String wikiBaseUrl, String wikiApiBaseUrl, String wikiPage, boolean includeBacklinks) {
+        WikipediaExtractor wikipediaExtractor = new WikipediaExtractor(wikiBaseUrl, wikiApiBaseUrl);
 
         List<String> pagesToRetrieve;
 
