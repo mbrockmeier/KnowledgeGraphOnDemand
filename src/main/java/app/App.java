@@ -7,6 +7,7 @@ import org.tinylog.Logger;
 import parser.DBpediaOntology;
 import server.RDFOntology;
 import server.RDFResource;
+import server.SettingResource;
 
 import javax.ws.rs.core.Application;
 import java.util.HashSet;
@@ -42,6 +43,7 @@ public class App {
         public AppResourceConfig() {
             classes.add(RDFResource.class);
             classes.add(RDFOntology.class);
+            classes.add(SettingResource.class);
         }
 
         public Set<Class<?>> getClasses() {

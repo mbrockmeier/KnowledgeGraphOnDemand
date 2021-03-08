@@ -29,6 +29,7 @@ public class JSONResource {
             JSONObject groupedProperty = new JSONObject();
             JSONArray objects = new JSONArray();
             groupedProperty.put("predicate", groupedPropertyEntry.getKey());
+            groupedProperty.put("prefixedPredicate", model.shortForm(groupedPropertyEntry.getKey()));
 
             for (RDFNode objectEntry : groupedPropertyEntry.getValue()) {
                 JSONObject object = new JSONObject();
@@ -59,13 +60,13 @@ public class JSONResource {
         }
 
         // Package incoming arcs
-
         JSONArray incomingArcs = new JSONArray();
 
         for (Map.Entry<String, List<RDFNode>> groupedPropertyEntry : groupedResource.getIncomingArcs().entrySet()) {
             JSONObject incomingArc = new JSONObject();
             JSONArray objects = new JSONArray();
             incomingArc.put("predicate", groupedPropertyEntry.getKey());
+            incomingArc.put("prefixedPredicate", model.shortForm(groupedPropertyEntry.getKey()));
 
             for (RDFNode objectEntry : groupedPropertyEntry.getValue()) {
                 JSONObject object = new JSONObject();
