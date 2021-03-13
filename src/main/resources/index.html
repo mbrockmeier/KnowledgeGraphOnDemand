@@ -13,50 +13,82 @@
                 width:40%;
                 padding: 10px;
             }
+
             th, td {
             padding: 10px;
             }
+
             #t01 tr:nth-child(even) {
             background-color: #eee;
             }
+
             #t01 tr:nth-child(odd) {
             background-color: #fff;
             }
+
             #t01 th {
             background-color: black;
             color: white;
             }
+
             table.center {
             margin-left:auto;
             margin-right:auto;
             }
+
             th {
             text-align: center;
             }
-        </style>
+    </style>
+    <script>
+        function changeActionUrl() {
+            var form = document.getElementById("resourceForm");
+            var input = document.getElementById("input");
+
+            var input_value = input.value;
+            input_value = input_value.split(" ").join("_");
+            input_value = input_value.split("?").join("");
+
+            form.action="/kgod/resource/" + input_value;
+            input.disabled = true;
+            form.submit();
+        }
+    </script>
 </head>
 
 <body>
+
 <div class="container">
     <div style="background:transparent !important" class="jumbotron">
         <div style="font-family: 'Pacifico', cursive;">
             <p>
-            <center>
-                <font size="8">Knowledge Graph on Demand</font>
-            </center>
+                <center>
+                    <font size="8">Knowledge Graph on Demand</font>
+                </center>
             </p>
         </div>
     </div>
 </div>
+
+<form id="resourceForm" name="resourceForm" action="?" method="get">
+    <div class="input-group" style="width: 90%; margin: auto">
+        <div>
+            <input type="text" class="form-control input-lg" id="input" name="input" placeholder="Search resource here..." style="width: 750px;" autofocus>
+            <button type="button" form="resourceForm" onclick="changeActionUrl()">
+                <i class="glyphicon glyphicon-search"></i>
+            </button>
+        </div>
+    </div>
+</form>
 
 <div style="width: 90%; margin: auto">
     <h2 style="color:blue;">About: {{tableName}}</h2>
     <table id='t01' style="width:100%; word-wrap:break-word; white-space: wrap; float: center;">
         <thead>
             <tr>
-                <th class='center'>Subject</th>
-                <th class='center'>Property</th>
-                <th class='center'>Value</th>
+                <th class='subject'>Subject</th>
+                <th class='property'>Property</th>
+                <th class='value'>Value</th>
             </tr>
         </thead>
         {{tableData}}
