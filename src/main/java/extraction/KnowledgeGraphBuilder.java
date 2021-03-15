@@ -4,6 +4,8 @@ import org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream;
 import org.apache.jena.rdf.model.Model;
 import org.tinylog.Logger;
 import org.w3c.dom.Document;
+import parser.ModelCache;
+import parser.ModelCacheEntry;
 import parser.ModelParser;
 
 import java.io.*;
@@ -22,6 +24,7 @@ import java.util.concurrent.TimeUnit;
 public class KnowledgeGraphBuilder {
     private String[] resultFiles = {"-infobox-properties.ttl", "-page-ids.ttl", "-labels.ttl", "-mappingbased-objects-uncleaned.ttl", "-page-links.ttl"};
     private ModelParser modelParser;
+    private ModelCache modelCache;
 
     private static KnowledgeGraphBuilder instance = null;
 
@@ -35,18 +38,28 @@ public class KnowledgeGraphBuilder {
     //Singleton
     private KnowledgeGraphBuilder() {
         modelParser = new ModelParser();
+        modelCache = new ModelCache();
     }
 
-    public Model createKnowledgeGraphForWikiPage(String wikiBaseUrl, String wikiPage, boolean includeBacklinks) {
-        if (wikiBaseUrl != null) {
-            retrieveAndStoreWikipageXmlSource(wikiBaseUrl, wikiBaseUrl, wikiPage, includeBacklinks);
+    public ModelCacheEntry createKnowledgeGraphForWikiPage(String wikiBaseUrl, String wikiPage, boolean includeBacklinks, boolean refreshModel) {
+        if (modelCache.containsModel(wikiPage) && !refreshModel) {
+            return modelCache.retrieveModelFromCache(wikiPage);
         } else {
-            retrieveAndStoreWikipageXmlSource(wikiPage, includeBacklinks);
+            long startTime = System.nanoTime();
+            if (wikiBaseUrl != null) {
+                retrieveAndStoreWikipageXmlSource(wikiBaseUrl, wikiBaseUrl, wikiPage, includeBacklinks);
+            } else {
+                retrieveAndStoreWikipageXmlSource(wikiPage, includeBacklinks);
+            }
+            runExtractionFramework();
+            decompressExtractedData();
+            modelParser.readRDF(resultFiles);
+
+            long elapsedTime = System.nanoTime() - startTime;
+            double extractionDuration = (double) elapsedTime / 1_000_000_000;
+
+            return modelCache.storeModelInCache(wikiPage, modelParser.getModel(), extractionDuration);
         }
-        runExtractionFramework();
-        decompressExtractedData();
-        modelParser.readRDF(resultFiles);
-        return modelParser.getModel();
     }
 
     /**

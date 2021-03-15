@@ -47,7 +47,15 @@ public class KnowledgeGraphConfiguration {
     public static int getBacklinksCount() {
         try {
             return Integer.parseInt(properties.getProperty("backlinksCount"));
-        } catch(Exception ex) {
+        } catch(Exception e) {
+            return 10;
+        }
+    }
+
+    public static int getCacheSize() {
+        try {
+            return Integer.parseInt(properties.getProperty("cacheSize"));
+        } catch (Exception e) {
             return 10;
         }
     }
@@ -74,6 +82,11 @@ public class KnowledgeGraphConfiguration {
 
     public static void setBacklinksCount(int backlinksCount) {
         properties.setProperty("backlinksCount", Integer.toString(backlinksCount));
+        storeProperties();
+    }
+
+    public static void setCacheSize(int cacheSize) {
+        properties.setProperty("cacheSize", Integer.toString(cacheSize));
         storeProperties();
     }
 

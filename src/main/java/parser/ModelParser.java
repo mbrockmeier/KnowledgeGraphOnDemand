@@ -35,6 +35,7 @@ public class ModelParser {
      */
 
     public Model readRDF(String[] files) {
+        model = ModelFactory.createDefaultModel();
         String baseDir = KnowledgeGraphConfiguration.getExtractionFrameworkBaseDir();
         String language = KnowledgeGraphConfiguration.getLanguage();
         String currentDate = new SimpleDateFormat("yyyyMMdd").format(new Date());

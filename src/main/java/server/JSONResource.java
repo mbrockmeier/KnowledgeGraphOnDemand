@@ -5,6 +5,7 @@ import org.apache.jena.rdf.model.RDFNode;
 import org.apache.jena.rdf.model.Resource;
 import org.json.JSONArray;
 import org.json.JSONObject;
+import parser.ModelCacheEntry;
 
 import java.util.List;
 import java.util.Map;
@@ -17,8 +18,8 @@ public class JSONResource {
         this.jsonRepresentation = new JSONObject();
     }
 
-    public void createFromModel(Model model, String resource) {
-        this.model = model;
+    public void createFromModel(ModelCacheEntry modelCacheEntry, String resource) {
+        this.model = modelCacheEntry.getModel();
         Resource resourceToRender = model.getResource(resource);
         GroupedResource groupedResource = GroupedResource.create(resourceToRender, model);
 
@@ -99,6 +100,8 @@ public class JSONResource {
         jsonRepresentation.put("subject", groupedResource.getSubject());
         jsonRepresentation.put("groupedProperties", groupedProperties);
         jsonRepresentation.put("incomingArcs", incomingArcs);
+        jsonRepresentation.put("extractionTime", modelCacheEntry.getExtractionDuration());
+        jsonRepresentation.put("cachedAt", modelCacheEntry.getDate());
     }
 
     public String getJSON() {
