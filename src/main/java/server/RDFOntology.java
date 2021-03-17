@@ -1,12 +1,11 @@
 package server;
 
+import extraction.KnowledgeGraphBuilder;
 import org.apache.jena.ontology.OntModel;
 import parser.DBpediaOntology;
+import parser.ModelCacheEntry;
 
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.PathParam;
-import javax.ws.rs.Produces;
+import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import java.io.StringWriter;
 
@@ -29,5 +28,14 @@ public class RDFOntology {
         OntModel model = DBpediaOntology.getInstance().getOntology();
         model.write(outputWriter);
         return outputWriter.toString();
+    }
+
+    @GET
+    @Produces({MediaType.APPLICATION_JSON})
+    public String getOntologyJSON(@PathParam("ontology") String ontology) {
+        OntModel model = DBpediaOntology.getInstance().getOntology();
+        JSONResource jsonResource = new JSONResource();
+        jsonResource.createFromModel(model, "http://dbpedia.org/ontology/" + ontology);
+        return jsonResource.getJSON();
     }
 }

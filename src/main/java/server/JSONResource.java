@@ -7,19 +7,28 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 import parser.ModelCacheEntry;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
 public class JSONResource {
     private JSONObject jsonRepresentation;
     private Model model;
+    private double extractionTime = 0;
+    private Date cachedAt = null;
 
     public JSONResource() {
         this.jsonRepresentation = new JSONObject();
     }
 
     public void createFromModel(ModelCacheEntry modelCacheEntry, String resource) {
-        this.model = modelCacheEntry.getModel();
+        this.extractionTime = modelCacheEntry.getExtractionDuration();
+        this.cachedAt = modelCacheEntry.getDate();
+        createFromModel(modelCacheEntry.getModel(), resource);
+    }
+
+    public void createFromModel(Model model, String resource) {
+        this.model = model;
         Resource resourceToRender = model.getResource(resource);
         GroupedResource groupedResource = GroupedResource.create(resourceToRender, model);
 
@@ -100,8 +109,13 @@ public class JSONResource {
         jsonRepresentation.put("subject", groupedResource.getSubject());
         jsonRepresentation.put("groupedProperties", groupedProperties);
         jsonRepresentation.put("incomingArcs", incomingArcs);
-        jsonRepresentation.put("extractionTime", modelCacheEntry.getExtractionDuration());
-        jsonRepresentation.put("cachedAt", modelCacheEntry.getDate());
+
+        if (this.extractionTime != 0) {
+            jsonRepresentation.put("extractionTime", this.extractionTime);
+        }
+        if (this.cachedAt != null) {
+            jsonRepresentation.put("cachedAt", this.cachedAt);
+        }
     }
 
     public String getJSON() {

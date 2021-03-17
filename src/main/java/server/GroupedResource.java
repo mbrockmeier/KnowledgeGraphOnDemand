@@ -1,5 +1,6 @@
 package server;
 
+import extraction.KnowledgeGraphConfiguration;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.RDFNode;
 import org.apache.jena.rdf.model.Resource;
@@ -73,6 +74,13 @@ public class GroupedResource {
      * @return the subject of the resource
      */
     public String getSubject(){
-        return this.resource.getProperty(RDFS.label).getObject().asLiteral().getString();
+        String language = KnowledgeGraphConfiguration.getLanguage();
+        Statement labelStatement = this.resource.listProperties(RDFS.label).toList()
+                .stream()
+                .filter(statement -> statement.getObject().asLiteral().getLanguage().equals(language))
+                .findFirst()
+                .get();
+
+        return labelStatement.getObject().asLiteral().getString();
     }
 }
