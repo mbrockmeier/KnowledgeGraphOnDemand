@@ -41,6 +41,14 @@ public class KnowledgeGraphBuilder {
         modelCache = new ModelCache();
     }
 
+    /**
+     * @author Malte Brockmeier
+     * @param wikiBaseUrl the url of the wikiPage, is not specified wikipedia will be used as a fallback
+     * @param wikiPage the wikiPage to extract
+     * @param includeBacklinks whether to include backlinks in the extraction process
+     * @param refreshModel whether the model should be retrieved from the cache if in the cache or rebuilt using the latest available wikipage
+     * @return
+     */
     public ModelCacheEntry createKnowledgeGraphForWikiPage(String wikiBaseUrl, String wikiPage, boolean includeBacklinks, boolean refreshModel) {
         if (modelCache.containsModel(wikiPage) && !refreshModel) {
             return modelCache.retrieveModelFromCache(wikiPage);

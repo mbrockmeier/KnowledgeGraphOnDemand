@@ -4,6 +4,7 @@ import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.RDFNode;
 import org.apache.jena.rdf.model.Resource;
 import org.apache.jena.rdf.model.Statement;
+import org.apache.jena.vocabulary.RDFS;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -69,9 +70,9 @@ public class GroupedResource {
 
     /**
      * @Author: Yawen Liu
-     * @return
+     * @return the subject of the resource
      */
     public String getSubject(){
-        return this.resource.getLocalName();
+        return this.resource.getProperty(RDFS.label).getObject().asLiteral().getString();
     }
 }
