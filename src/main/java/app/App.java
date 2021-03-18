@@ -8,6 +8,7 @@ import parser.DBpediaOntology;
 import server.RDFOntology;
 import server.RDFResource;
 import server.SettingResource;
+import server.SparqlPage;
 
 import javax.ws.rs.core.Application;
 import java.util.HashSet;
@@ -44,6 +45,7 @@ public class App {
             classes.add(RDFResource.class);
             classes.add(RDFOntology.class);
             classes.add(SettingResource.class);
+            classes.add(SparqlPage.class);
         }
 
         public Set<Class<?>> getClasses() {
