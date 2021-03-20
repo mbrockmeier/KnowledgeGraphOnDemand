@@ -12,6 +12,7 @@ import java.io.IOException;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Iterator;
 
 /**
  * @author Malte Brockmeier
@@ -71,6 +72,31 @@ public class WikipediaExtractor {
         }
 
         return backlinkTitles;
+    }
+
+    /**
+     * @author Sunita Pateer
+     * @param title the title of the wikipedia for which the extract should be retrieved
+     * @return the extract for the specified wikipedia page
+     */
+    public String getExtract(String title) {
+        String abstractString = "";
+
+        try {
+            Response<String> response = backlinksService.getExtract(title).execute();
+            String responseString = response.body();
+            JSONObject obj = new JSONObject(responseString);
+            JSONObject pages = obj.getJSONObject("query").getJSONObject("pages");
+            Iterator<String> keys = pages.keys();
+            if( keys.hasNext() ){
+                String pageid = (String) keys.next(); // First key in json object
+                abstractString = pages.getJSONObject(pageid).getString("extract");
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return abstractString;
     }
 
     /**

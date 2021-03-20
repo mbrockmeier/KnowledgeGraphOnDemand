@@ -115,4 +115,8 @@ public class JSONResource {
             return "else";
         }
     }
+
+    public void setExtract(String extract) {
+        jsonRepresentation.put("extract", extract);
+    }
 }

@@ -16,4 +16,11 @@ public interface BacklinksService {
     })
     @GET("api.php?action=query&format=json&list=backlinks&blnamespace=0")
     Call<String> getBackLinks(@Query("bltitle") String bltitle, @Query("bllimit") int limit);
+
+    @Headers({
+            "Accept: application/json",
+            "Content-Type: application/json"
+    })
+    @GET("api.php?format=json&action=query&prop=extracts&exintro&explaintext&redirects=1")
+    Call<String> getExtract(@Query("titles") String titles);
 }

@@ -35,6 +35,8 @@ public class RDFResource {
         Model model = KnowledgeGraphBuilder.getInstance().createKnowledgeGraphForWikiPage(wikiBaseUrl, resource, true);
         JSONResource jsonResource = new JSONResource();
         jsonResource.createFromModel(model, "http://dbpedia.org/resource/" + resource);
+        String extract = KnowledgeGraphBuilder.getInstance().wikipageExtract;
+        jsonResource.setExtract(extract);
         return jsonResource.getJSON();
     }
 }
