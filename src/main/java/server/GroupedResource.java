@@ -83,4 +83,15 @@ public class GroupedResource {
 
         return labelStatement.getObject().asLiteral().getString();
     }
+
+    public String getAbstract() {
+        String language = KnowledgeGraphConfiguration.getLanguage();
+        Statement labelStatement = this.resource.listProperties(RDFS.comment).toList()
+                .stream()
+                .filter(statement -> statement.getObject().asLiteral().getLanguage().equals(language))
+                .findFirst()
+                .get();
+
+        return labelStatement.getObject().asLiteral().getString();
+    }
 }

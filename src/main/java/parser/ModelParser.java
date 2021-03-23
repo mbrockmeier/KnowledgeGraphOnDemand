@@ -2,6 +2,7 @@ package parser;
 
 import extraction.KnowledgeGraphConfiguration;
 import org.apache.jena.rdf.model.*;
+import org.apache.jena.vocabulary.RDFS;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -54,5 +55,18 @@ public class ModelParser {
 
         //model = renameRDF();
         return model;
+    }
+
+    /**
+     * @author Sunita Pateer
+     * @param wikiPage
+     * @param extractedAbstract
+     */
+    public void addAbstract(String wikiPage, String extractedAbstract) {
+        String resourceName = model.expandPrefix("dbr:" + wikiPage);
+        Property abstractProperty = model.createProperty(model.expandPrefix("dbo:abstract"));
+
+        model.addLiteral(model.getResource(resourceName), RDFS.comment, model.createLiteral((extractedAbstract), KnowledgeGraphConfiguration.getLanguage()));
+        model.addLiteral(model.getResource(resourceName), abstractProperty, model.createLiteral((extractedAbstract), KnowledgeGraphConfiguration.getLanguage()));
     }
 }

@@ -1,5 +1,6 @@
 package server;
 
+import extraction.KnowledgeGraphConfiguration;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.RDFNode;
 import org.apache.jena.rdf.model.Resource;
@@ -116,6 +117,12 @@ public class JSONResource {
         if (this.cachedAt != null) {
             jsonRepresentation.put("cachedAt", this.cachedAt);
         }
+        if (KnowledgeGraphConfiguration.getRetrieveExtract()) {
+            String extractedAbstract = groupedResource.getAbstract();
+            if (!extractedAbstract.equals("")) {
+                jsonRepresentation.put("abstract", extractedAbstract);
+            }
+        }
     }
 
     public String getJSON() {
@@ -131,10 +138,6 @@ public class JSONResource {
         } else {
             return "else";
         }
-    }
-
-    public void setExtract(String extract) {
-        jsonRepresentation.put("extract", extract);
     }
 
     public void setRDFXML(String rdf_xml_content) {

@@ -2,6 +2,8 @@ package extraction;
 
 import org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream;
 import org.apache.jena.rdf.model.Model;
+import org.apache.jena.rdf.model.Property;
+import org.apache.jena.vocabulary.RDFS;
 import org.tinylog.Logger;
 import org.w3c.dom.Document;
 import parser.ModelCache;
@@ -63,6 +65,10 @@ public class KnowledgeGraphBuilder {
             runExtractionFramework();
             decompressExtractedData();
             modelParser.readRDF(resultFiles);
+            modelParser.addAbstract(wikiPage, wikipageExtract);
+
+            //add abstract to model
+
 
             long elapsedTime = System.nanoTime() - startTime;
             double extractionDuration = (double) elapsedTime / 1_000_000_000;
