@@ -7,10 +7,7 @@ import org.apache.jena.rdf.model.Resource;
 import org.apache.jena.rdf.model.Statement;
 import org.apache.jena.vocabulary.RDFS;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.TreeMap;
+import java.util.*;
 
 public class GroupedResource {
     private Model model;
@@ -86,12 +83,16 @@ public class GroupedResource {
 
     public String getAbstract() {
         String language = KnowledgeGraphConfiguration.getLanguage();
-        Statement labelStatement = this.resource.listProperties(RDFS.comment).toList()
-                .stream()
-                .filter(statement -> statement.getObject().asLiteral().getLanguage().equals(language))
-                .findFirst()
-                .get();
+        try {
+            Statement labelStatement = this.resource.listProperties(RDFS.comment).toList()
+                    .stream()
+                    .filter(statement -> statement.getObject().asLiteral().getLanguage().equals(language))
+                    .findFirst()
+                    .get();
 
-        return labelStatement.getObject().asLiteral().getString();
+            return labelStatement.getObject().asLiteral().getString();
+        } catch(NoSuchElementException noSuchElementException) {
+            return null;
+        }
     }
 }

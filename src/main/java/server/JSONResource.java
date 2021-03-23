@@ -119,7 +119,7 @@ public class JSONResource {
         }
         if (KnowledgeGraphConfiguration.getRetrieveExtract()) {
             String extractedAbstract = groupedResource.getAbstract();
-            if (!extractedAbstract.equals("")) {
+            if (extractedAbstract != null && !extractedAbstract.equals("")) {
                 jsonRepresentation.put("abstract", extractedAbstract);
             }
         }
@@ -138,9 +138,5 @@ public class JSONResource {
         } else {
             return "else";
         }
-    }
-
-    public void setRDFXML(String rdf_xml_content) {
-        jsonRepresentation.put("rdf+xml", rdf_xml_content);
     }
 }
