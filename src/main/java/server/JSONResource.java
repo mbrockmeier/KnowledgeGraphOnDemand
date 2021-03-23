@@ -132,4 +132,12 @@ public class JSONResource {
             return "else";
         }
     }
+
+    public void setExtract(String extract) {
+        jsonRepresentation.put("extract", extract);
+    }
+
+    public void setRDFXML(String rdf_xml_content) {
+        jsonRepresentation.put("rdf+xml", rdf_xml_content);
+    }
 }

@@ -121,4 +121,16 @@ public class KnowledgeGraphConfiguration {
             ioException.printStackTrace();
         }
     }
+
+    /**
+     * @author Sunita Pateer
+     */
+    public static boolean getRetrieveExtract() {
+        return Boolean.valueOf(properties.getProperty("retrieveExtract"));
+    }
+
+    public static void setRetrieveExtract(boolean retrieveExtract) {
+        properties.setProperty("retrieveExtract", String.valueOf(retrieveExtract));
+        storeProperties();
+    }
 }

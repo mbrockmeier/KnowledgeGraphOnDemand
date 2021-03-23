@@ -25,6 +25,7 @@ public class KnowledgeGraphBuilder {
     private String[] resultFiles = {"-infobox-properties.ttl", "-page-ids.ttl", "-labels.ttl", "-mappingbased-objects-uncleaned.ttl", "-page-links.ttl"};
     private ModelParser modelParser;
     private ModelCache modelCache;
+    public String wikipageExtract;
 
     private static KnowledgeGraphBuilder instance = null;
 
@@ -118,6 +119,10 @@ public class KnowledgeGraphBuilder {
 
         pagesToRetrieve.add(wikiPage);
 
+        if (KnowledgeGraphConfiguration.getRetrieveExtract()) {
+            retrieveWikipageExtract(wikipediaExtractor, wikiPage);
+        }
+
         String source = wikipediaExtractor.retrieveWikiPagesByTitle(pagesToRetrieve);
         Document document = StringToXml.toXmlDocument(source);
 
@@ -173,5 +178,16 @@ public class KnowledgeGraphBuilder {
                 ioException.printStackTrace();
             }
         }
+    }
+
+    /**
+     * @author Sunita Pateer
+     * @param wikiPage the title of the wikipedia for which the extract should be retrieved
+     */
+    private void retrieveWikipageExtract(WikipediaExtractor wikipediaExtractor, String wikiPage) {
+        // retrieve extract from wikipedia API endpoint
+        System.out.println("[" + wikiPage + "] | BEFORE : " + this.wikipageExtract);
+        this.wikipageExtract = wikipediaExtractor.getExtract(wikiPage);
+        System.out.println("[" + wikiPage + "] | AFTER : " + this.wikipageExtract);
     }
 }
