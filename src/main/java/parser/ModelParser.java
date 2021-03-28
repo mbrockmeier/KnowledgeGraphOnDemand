@@ -4,6 +4,7 @@ import extraction.KnowledgeGraphConfiguration;
 import org.apache.jena.rdf.model.*;
 import org.apache.jena.vocabulary.RDFS;
 
+import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
@@ -47,7 +48,10 @@ public class ModelParser {
             String fileName = language + "wiki-" + currentDate + file;
             String filePath = baseDir + folderPath + fileName;
 
-            model.read(filePath, "N-TRIPLES");
+            File sourceFile = new File(filePath);
+            if (sourceFile.exists() && !sourceFile.isDirectory()) {
+                model.read(filePath, "N-TRIPLES");
+            }
         }
 
         model.clearNsPrefixMap();

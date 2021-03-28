@@ -65,9 +65,11 @@ public class KnowledgeGraphBuilder {
             runExtractionFramework();
             decompressExtractedData();
             modelParser.readRDF(resultFiles);
-            modelParser.addAbstract(wikiPage, wikipageExtract);
 
             //add abstract to model
+            if (this.wikipageExtract != null) {
+                modelParser.addAbstract(wikiPage, wikipageExtract);
+            }
 
 
             long elapsedTime = System.nanoTime() - startTime;
@@ -113,6 +115,7 @@ public class KnowledgeGraphBuilder {
      * @param includeBacklinks whether backlinks to the specified wikipedia page should also be retrieved
      */
     private void retrieveAndStoreWikipageXmlSource(String wikiBaseUrl, String wikiApiBaseUrl, String wikiPage, boolean includeBacklinks) {
+        this.wikipageExtract = null;
         WikipediaExtractor wikipediaExtractor = new WikipediaExtractor(wikiBaseUrl, wikiApiBaseUrl);
 
         List<String> pagesToRetrieve;
@@ -125,7 +128,7 @@ public class KnowledgeGraphBuilder {
 
         pagesToRetrieve.add(wikiPage);
 
-        if (KnowledgeGraphConfiguration.getRetrieveExtract()) {
+        if (KnowledgeGraphConfiguration.getRetrieveExtract() && wikiBaseUrl.contains("https://en.wikipedia.org/")) {
             retrieveWikipageExtract(wikipediaExtractor, wikiPage);
         }
 

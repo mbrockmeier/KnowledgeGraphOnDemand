@@ -1,26 +1,39 @@
 package extraction;
 
 import org.json.JSONObject;
+import org.tinylog.Logger;
 
 import java.io.*;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Properties;
-import java.util.Set;
 
 /**
  * @author Malte Brockmeier
  */
 public class KnowledgeGraphConfiguration {
     private static Properties properties;
+    private static Properties frameworkProperties;
     private static BufferedInputStream bufferedInputStream;
 
     static {
         try {
             properties = new Properties();
+            frameworkProperties = new Properties();
             bufferedInputStream = new BufferedInputStream(new FileInputStream("kgod.properties"));
             properties.load(bufferedInputStream);
             bufferedInputStream.close();
+            Logger.info("Loaded KGoD properties.");
+        } catch (IOException ioException) {
+            ioException.printStackTrace();
+        }
+
+        try {
+            frameworkProperties = new Properties();
+            bufferedInputStream = new BufferedInputStream(new FileInputStream(getExtractionFrameworkDir() + "/extraction.kgod.properties"));
+            frameworkProperties.load(bufferedInputStream);
+            bufferedInputStream.close();
+            Logger.info("Loaded extraction-framework properties.");
         } catch (IOException ioException) {
             ioException.printStackTrace();
         }
@@ -100,7 +113,13 @@ public class KnowledgeGraphConfiguration {
 
         while(keys.hasNext()) {
             String key = keys.next();
-            properties.setProperty(key, String.valueOf(jsonObject.get(key)));
+            if (properties.containsKey(key)) {
+                properties.setProperty(key, String.valueOf(jsonObject.get(key)));
+            } else {
+                if (key.equals("extractors")) {
+                    setEnabledExtractors(String.valueOf(jsonObject.get(key)));
+                }
+            }
         }
 
         storeProperties();
@@ -111,12 +130,24 @@ public class KnowledgeGraphConfiguration {
         for (Map.Entry<Object, Object> property : properties.entrySet()) {
             jsonProperties.put(property.getKey().toString(), property.getValue().toString());
         }
+        jsonProperties.put("extractors", getEnabledExtractors());
         return jsonProperties;
+    }
+
+    private static String getEnabledExtractors() {
+        String extractorsKey = "extractors." + getLanguage();
+        return frameworkProperties.getProperty(extractorsKey);
+    }
+
+    private static void setEnabledExtractors(String enabledExtractors) {
+        String extractorsKey = "extractors." + getLanguage();
+        frameworkProperties.setProperty(extractorsKey, enabledExtractors);
     }
 
     private static void storeProperties() {
         try {
             properties.store(new FileOutputStream("kgod.properties"), null);
+            frameworkProperties.store(new FileOutputStream(getExtractionFrameworkDir() + "/extraction.kgod.properties"), null);
         } catch(IOException ioException) {
             ioException.printStackTrace();
         }
@@ -126,7 +157,7 @@ public class KnowledgeGraphConfiguration {
      * @author Sunita Pateer
      */
     public static boolean getRetrieveExtract() {
-        return Boolean.valueOf(properties.getProperty("retrieveExtract"));
+        return Boolean.parseBoolean(properties.getProperty("retrieveExtract"));
     }
 
     public static void setRetrieveExtract(boolean retrieveExtract) {
