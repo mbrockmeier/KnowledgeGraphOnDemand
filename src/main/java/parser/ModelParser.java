@@ -2,10 +2,13 @@ package parser;
 
 import extraction.KnowledgeGraphConfiguration;
 import org.apache.jena.rdf.model.*;
+import org.apache.jena.vocabulary.RDFS;
 
+import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
+
 
 /**
  * @author Yawen Liu
@@ -13,14 +16,9 @@ import java.util.HashMap;
 public class ModelParser {
 
     private Model model;
-    private HashMap<String, String> namespaces;
 
     public ModelParser(){
         model = ModelFactory.createDefaultModel();
-        this.namespaces = new HashMap<String, String>() {{
-            put("dbp", "http://dbpedia.org/property/");
-            put("dbo", "http://dbpedia.org/ontology/");
-        }};
     }
 
     public ModelParser(Model model) {
@@ -38,7 +36,8 @@ public class ModelParser {
      * @return the RDF model
      */
 
-    public Model readRDF(String[] files){
+    public Model readRDF(String[] files) {
+        model = ModelFactory.createDefaultModel();
         String baseDir = KnowledgeGraphConfiguration.getExtractionFrameworkBaseDir();
         String language = KnowledgeGraphConfiguration.getLanguage();
         String currentDate = new SimpleDateFormat("yyyyMMdd").format(new Date());
@@ -49,37 +48,29 @@ public class ModelParser {
             String fileName = language + "wiki-" + currentDate + file;
             String filePath = baseDir + folderPath + fileName;
 
-            model.read(filePath, "N-TRIPLES");
+            File sourceFile = new File(filePath);
+            if (sourceFile.exists() && !sourceFile.isDirectory()) {
+                model.read(filePath, "N-TRIPLES");
+            }
         }
 
-        model.setNsPrefixes(namespaces);
+        model.clearNsPrefixMap();
+        model.setNsPrefixes(NamespacePrefixLoader.getNsPrefixes());
 
+        //model = renameRDF();
         return model;
     }
 
     /**
-     * @author Yawen Liu
-     * print the model
+     * @author Sunita Pateer
+     * @param wikiPage
+     * @param extractedAbstract
      */
-    public void printRDF() {
-        StmtIterator iter = model.listStatements();
-        while (iter.hasNext())
-        {
-            Statement stmt = iter.nextStatement();
-            String subject = stmt.getSubject().toString();
-            String predicate = stmt.getPredicate().toString();
-            RDFNode object = stmt.getObject();
+    public void addAbstract(String wikiPage, String extractedAbstract) {
+        String resourceName = model.expandPrefix("dbr:" + wikiPage);
+        Property abstractProperty = model.createProperty(model.expandPrefix("dbo:abstract"));
 
-            System.out.print("subject " + subject+"\t");
-            System.out.print(" predicate " + predicate+"\t");
-            if (object instanceof Resource)
-            {
-                System.out.print(" object " + object);
-            }
-            else {
-                System.out.print("object \"" + object.toString() + "\"");
-            }
-            System.out.println(" .");
-        }
+        model.addLiteral(model.getResource(resourceName), RDFS.comment, model.createLiteral((extractedAbstract), KnowledgeGraphConfiguration.getLanguage()));
+        model.addLiteral(model.getResource(resourceName), abstractProperty, model.createLiteral((extractedAbstract), KnowledgeGraphConfiguration.getLanguage()));
     }
 }

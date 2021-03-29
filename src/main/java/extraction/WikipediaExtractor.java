@@ -12,6 +12,7 @@ import java.io.IOException;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Iterator;
 
 /**
  * @author Malte Brockmeier
@@ -22,13 +23,14 @@ import java.util.List;
  * Class providing methods for XML source extraction from Wikipedia
  */
 public class WikipediaExtractor {
-    private WikipediaService wikipediaService;
+    private WikipageService wikipageService;
+    private BacklinksService backlinksService;
 
-    public WikipediaExtractor() {
-        initializeService();
+    public WikipediaExtractor(String wikiBaseUrl, String apiBaseUrl) {
+        initializeService(wikiBaseUrl, apiBaseUrl);
     }
 
-    private void initializeService() {
+    private void initializeService(String baseUrl, String apiBaseUrl) {
         OkHttpClient okHttpClient = new OkHttpClient.Builder()
                 .connectTimeout(Duration.ofSeconds(30))
                 .callTimeout(Duration.ofSeconds(30))
@@ -36,11 +38,18 @@ public class WikipediaExtractor {
 
         Retrofit retrofit = new Retrofit.Builder()
                 .addConverterFactory(ScalarsConverterFactory.create())
-                .baseUrl("https://en.wikipedia.org")
+                .baseUrl(baseUrl)
                 .client(okHttpClient)
                 .build();
 
-        wikipediaService = retrofit.create(WikipediaService.class);
+        Retrofit apiRetrofit = new Retrofit.Builder()
+                .addConverterFactory(ScalarsConverterFactory.create())
+                .baseUrl(apiBaseUrl)
+                .client(okHttpClient)
+                .build();
+
+        wikipageService = retrofit.create(WikipageService.class);
+        backlinksService = apiRetrofit.create(BacklinksService.class);
     }
 
     /**
@@ -51,9 +60,10 @@ public class WikipediaExtractor {
     public List<String> getBackLinks(String title) {
         String responseString;
         List<String> backlinkTitles = new ArrayList<>();
+        int backlinksCount = KnowledgeGraphConfiguration.getBacklinksCount();
 
         try {
-            Response<String> response = wikipediaService.getBackLinks(title).execute();
+            Response<String> response = backlinksService.getBackLinks(title, backlinksCount).execute();
 
             responseString = response.body();
             backlinkTitles = parseJSONBacklinksResponse(responseString);
@@ -62,6 +72,31 @@ public class WikipediaExtractor {
         }
 
         return backlinkTitles;
+    }
+
+    /**
+     * @author Sunita Pateer
+     * @param title the title of the wikipedia for which the extract should be retrieved
+     * @return the extract for the specified wikipedia page
+     */
+    public String getExtract(String title) {
+        String abstractString = "";
+
+        try {
+            Response<String> response = backlinksService.getExtract(title).execute();
+            String responseString = response.body();
+            JSONObject obj = new JSONObject(responseString);
+            JSONObject pages = obj.getJSONObject("query").getJSONObject("pages");
+            Iterator<String> keys = pages.keys();
+            if( keys.hasNext() ){
+                String pageid = (String) keys.next(); // First key in json object
+                abstractString = pages.getJSONObject(pageid).getString("extract");
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return abstractString;
     }
 
     /**
@@ -80,7 +115,7 @@ public class WikipediaExtractor {
         }
 
         try {
-            Call<String> call = wikipediaService.getWikiPageByTitle("submit", formattedTitles, "true");
+            Call<String> call = wikipageService.getWikiPageByTitle("submit", formattedTitles, "true");
             Response<String> response = call.execute();
             pageSource = response.body();
         } catch (IOException e) {
