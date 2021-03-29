@@ -15,7 +15,7 @@ public class SettingResource {
     @Produces(MediaType.APPLICATION_JSON)
     public Response updateSetting(String json) {
         JSONObject jsonObject = new JSONObject(json);
-        KnowledgeGraphConfiguration.updateProperties(jsonObject);
+        KnowledgeGraphConfiguration.upteProperties(jsonObject);
 
         return Response.ok().build();
     }
