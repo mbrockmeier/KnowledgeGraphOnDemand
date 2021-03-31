@@ -23,7 +23,7 @@ public class SparqlPage {
 
     @POST
     @Produces({MediaType.TEXT_HTML})
-    public String getSparql(@PathParam("resource") String resource,@QueryParam("wikiBaseUrl") String wikiBaseUrl,@FormParam("textarea") String sparql, @QueryParam("refreshModel") boolean refreshModel) {
+    public String getSparql(@PathParam("resource") String resource,@QueryParam("wikiBaseUrl") String wikiBaseUrl, @FormParam("textarea") String sparql, @QueryParam("refreshModel") boolean refreshModel) {
         Model model = KnowledgeGraphBuilder.getInstance().createKnowledgeGraphForWikiPage(wikiBaseUrl,resource, true, refreshModel).getModel();
         String query = sparql;
         RDFConnection_sparql rdfConnection_spaqrql = new RDFConnection_sparql(query,model);
@@ -34,11 +34,12 @@ public class SparqlPage {
 
     @POST
     @Produces({MediaType.APPLICATION_JSON})
-    public String getSparqlJSON(@PathParam("resource") String resource, @QueryParam("wikiBaseUrl") String wikiBaseUrl,@FormParam("textarea") String sparql, @QueryParam("refreshModel") boolean refreshModel) {
+    @Consumes({MediaType.APPLICATION_FORM_URLENCODED})
+    public String getSparqlJSON(@PathParam("resource") String resource, @QueryParam("wikiBaseUrl") String wikiBaseUrl, @FormParam("textarea") String sparql, @QueryParam("refreshModel") boolean refreshModel) {
         System.out.println("call the sparql..........");
         //ModelCacheEntry modelCacheEntry = KnowledgeGraphBuilder.getInstance().createKnowledgeGraphForWikiPage(wikiBaseUrl, resource, false, false);
         JSONSparql jsonSparql = new JSONSparql();
-        System.out.println("sparql input: "+sparql);
+        System.out.println("sparql input: "+ sparql);
         //jsonSparql.init(modelCacheEntry,sparql);
         //return jsonSparql.getJSON();
         return "";
