@@ -37,11 +37,10 @@ public class SparqlPage {
     @Consumes({MediaType.APPLICATION_FORM_URLENCODED})
     public String getSparqlJSON(@PathParam("resource") String resource, @QueryParam("wikiBaseUrl") String wikiBaseUrl, @FormParam("textarea") String sparql, @QueryParam("refreshModel") boolean refreshModel) {
         System.out.println("call the sparql..........");
-        //ModelCacheEntry modelCacheEntry = KnowledgeGraphBuilder.getInstance().createKnowledgeGraphForWikiPage(wikiBaseUrl, resource, false, false);
+        ModelCacheEntry modelCacheEntry = KnowledgeGraphBuilder.getInstance().createKnowledgeGraphForWikiPage(wikiBaseUrl, resource, false, false);
         JSONSparql jsonSparql = new JSONSparql();
         System.out.println("sparql input: "+ sparql);
-        //jsonSparql.init(modelCacheEntry,sparql);
-        //return jsonSparql.getJSON();
-        return "";
+        jsonSparql.init(modelCacheEntry,sparql);
+        return jsonSparql.getJSON();
     }
 }
