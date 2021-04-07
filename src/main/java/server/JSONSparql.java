@@ -18,15 +18,24 @@ public class JSONSparql {
         this.jsonObject = new JSONObject();
     }
 
-    public void init(ModelCacheEntry modelCacheEntry, String sparql){
+    public void init(Model model, String sparql) {
+        this.sparql = sparql;
+        this.model = model;
+        RDFConnection_sparql rdfConnection_spaqrql = new RDFConnection_sparql(sparql, model);
+        String erg = rdfConnection_spaqrql.connect();
+        this.jsonObject.put("result", erg);
+    }
+
+    public void init(ModelCacheEntry modelCacheEntry, String sparql) {
         this.sparql = sparql;
         this.model = modelCacheEntry.getModel();
         RDFConnection_sparql rdfConnection_spaqrql = new RDFConnection_sparql(sparql, model);
         String erg = rdfConnection_spaqrql.connect();
         this.jsonObject.put("result", erg);
     }
-    public String getJSON(){
-        return jsonObject.toString();
+
+    public JSONObject getJSON() {
+        return jsonObject;
     }
 
 }
