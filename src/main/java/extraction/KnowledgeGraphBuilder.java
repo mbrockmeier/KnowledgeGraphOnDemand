@@ -17,6 +17,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 
@@ -24,7 +25,7 @@ import java.util.concurrent.TimeUnit;
  * @author Malte Brockmeier
  */
 public class KnowledgeGraphBuilder {
-    private String[] resultFiles = {"-infobox-properties.ttl", "-page-ids.ttl", "-labels.ttl", "-mappingbased-objects-uncleaned.ttl", "-page-links.ttl"};
+    private String[] resultFiles = {"-infobox-properties.ttl", "-page-ids.ttl", "-labels.ttl", "-mappingbased-objects-uncleaned.ttl", "-instance-types.ttl", "-page-links.ttl"};
     private ModelParser modelParser;
     private ModelCache modelCache;
     public String wikipageExtract;
@@ -42,6 +43,21 @@ public class KnowledgeGraphBuilder {
     private KnowledgeGraphBuilder() {
         modelParser = new ModelParser();
         modelCache = new ModelCache();
+    }
+
+    /**
+     * @author Malte Brockmeier
+     * @param wikiPages the wikiPages to extract
+     * @param includeBacklinks whether to include backlinks in the extraction process
+     * @return
+     */
+    public Model createKnowledgeGraphForWikiPages(Set<String> wikiPages, boolean includeBacklinks) {
+        retrieveAndStoreWikipageXmlSource(wikiPages, includeBacklinks);
+        runExtractionFramework();
+        decompressExtractedData();
+        modelParser.readRDF(resultFiles);
+
+        return modelParser.getModel();
     }
 
     /**
@@ -91,12 +107,61 @@ public class KnowledgeGraphBuilder {
             processBuilder.inheritIO();
             Process extractionProcess = processBuilder.start();
 
-            extractionProcess.waitFor(25, TimeUnit.SECONDS);
+            extractionProcess.waitFor(180, TimeUnit.SECONDS);
 
             Logger.info("extraction-framework run sucessfully.");
         } catch (IOException | InterruptedException e) {
             e.printStackTrace();
         }
+    }
+
+    /**
+     * @author Malte Brockmeier
+     * @param wikiPages the wikipedia pages to retrieve
+     * @param includeBacklinks whether backlinks to the specified wikipedia page should also be retrieved
+     */
+    private void retrieveAndStoreWikipageXmlSource(Set<String> wikiPages, boolean includeBacklinks) {
+        retrieveAndStoreWikipageXmlSource("https://en.wikipedia.org/", "https://en.wikipedia.org/w/", wikiPages, includeBacklinks);
+    }
+
+    /**
+     * @author Malte Brockmeier
+     * @param wikiBaseUrl the base url of the queried wiki
+     * @param wikiApiBaseUrl the api url of the queried wiki
+     * @param wikiPages the wiki pages to retrieve
+     * @param includeBacklinks whether backlinks to the specified wikipedia page should also be retrieved
+     */
+    private void retrieveAndStoreWikipageXmlSource(String wikiBaseUrl, String wikiApiBaseUrl, Set<String> wikiPages, boolean includeBacklinks) {
+        this.wikipageExtract = null;
+        WikipediaExtractor wikipediaExtractor = new WikipediaExtractor(wikiBaseUrl, wikiApiBaseUrl);
+
+        List<String> pagesToRetrieve = new ArrayList<>();
+
+        if (includeBacklinks) {
+            for (String wikiPage : wikiPages) {
+                pagesToRetrieve.addAll(wikipediaExtractor.getBackLinks(wikiPage));
+            }
+        }
+
+        pagesToRetrieve.addAll(wikiPages);
+
+        String source = wikipediaExtractor.retrieveWikiPagesByTitle(pagesToRetrieve);
+        Document document = StringToXml.toXmlDocument(source);
+
+        String baseDir = KnowledgeGraphConfiguration.getExtractionFrameworkBaseDir();
+        String language = KnowledgeGraphConfiguration.getLanguage();
+        String currentDate = new SimpleDateFormat("yyyyMMdd").format(new Date());
+
+        String folderPath = "/" + language + "wiki/" + currentDate + "/";
+        String fileName = language + "wiki-" + currentDate + "-dump.xml";
+
+        String filePath = baseDir + folderPath + fileName;
+
+        File file = new File(filePath);
+
+        file.getParentFile().mkdirs();
+
+        StringToXml.saveXML(document, file);
     }
 
     /**
@@ -110,8 +175,9 @@ public class KnowledgeGraphBuilder {
 
     /**
      * @author Malte Brockmeier
-     * @param
-     * @param wikiPage the wikipedia page to retrieve
+     * @param wikiBaseUrl the base url of the queried wiki
+     * @param wikiApiBaseUrl the api url of the queried wiki
+     * @param wikiPage the wiki page to retrieve
      * @param includeBacklinks whether backlinks to the specified wikipedia page should also be retrieved
      */
     private void retrieveAndStoreWikipageXmlSource(String wikiBaseUrl, String wikiApiBaseUrl, String wikiPage, boolean includeBacklinks) {

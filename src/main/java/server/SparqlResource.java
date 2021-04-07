@@ -14,7 +14,7 @@ import javax.ws.rs.core.MediaType;
  */
 
 @Path("/sparql/{resource}")
-public class SparqlPage {
+public class SparqlResource {
     @GET
     @Produces({MediaType.TEXT_HTML})
     public String getSparql(@PathParam("resource") String resource) {
@@ -41,6 +41,6 @@ public class SparqlPage {
         JSONSparql jsonSparql = new JSONSparql();
         System.out.println("sparql input: "+ sparql);
         jsonSparql.init(modelCacheEntry, sparql);
-        return jsonSparql.getJSON();
+        return jsonSparql.getJSON().toString();
     }
 }

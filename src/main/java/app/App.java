@@ -5,10 +5,7 @@ import io.undertow.servlet.api.DeploymentInfo;
 import org.jboss.resteasy.plugins.server.undertow.UndertowJaxrsServer;
 import org.tinylog.Logger;
 import parser.DBpediaOntology;
-import server.RDFOntology;
-import server.RDFResource;
-import server.SettingResource;
-import server.SparqlPage;
+import server.*;
 
 import javax.ws.rs.core.Application;
 import java.util.HashSet;
@@ -45,7 +42,8 @@ public class App {
             classes.add(RDFResource.class);
             classes.add(RDFOntology.class);
             classes.add(SettingResource.class);
-            classes.add(SparqlPage.class);
+            classes.add(SparqlResource.class);
+            classes.add(ExtendedSparqlResource.class);
         }
 
         public Set<Class<?>> getClasses() {
