@@ -40,7 +40,7 @@ public class SparqlPage {
         ModelCacheEntry modelCacheEntry = KnowledgeGraphBuilder.getInstance().createKnowledgeGraphForWikiPage(wikiBaseUrl, resource, false, false);
         JSONSparql jsonSparql = new JSONSparql();
         System.out.println("sparql input: "+ sparql);
-        jsonSparql.init(modelCacheEntry,sparql);
+        jsonSparql.init(modelCacheEntry, sparql);
         return jsonSparql.getJSON();
     }
 }

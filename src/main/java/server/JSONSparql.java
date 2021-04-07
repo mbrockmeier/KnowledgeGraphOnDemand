@@ -19,14 +19,14 @@ public class JSONSparql {
     }
 
     public void init(ModelCacheEntry modelCacheEntry, String sparql){
-        this.sparql =sparql;
+        this.sparql = sparql;
         this.model = modelCacheEntry.getModel();
-        RDFConnection_sparql rdfConnection_spaqrql = new RDFConnection_sparql(sparql,model);
+        RDFConnection_sparql rdfConnection_spaqrql = new RDFConnection_sparql(sparql, model);
         String erg = rdfConnection_spaqrql.connect();
-        this.jsonObject.put("result",erg);
+        this.jsonObject.put("result", erg);
     }
     public String getJSON(){
-        return  jsonObject.toString();
+        return jsonObject.toString();
     }
 
 }
