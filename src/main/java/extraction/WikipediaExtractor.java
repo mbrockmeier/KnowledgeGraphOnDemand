@@ -2,7 +2,9 @@ package extraction;
 
 import okhttp3.OkHttpClient;
 import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
+import org.tinylog.Logger;
 import retrofit2.Call;
 import retrofit2.Response;
 import retrofit2.Retrofit;
@@ -90,7 +92,11 @@ public class WikipediaExtractor {
             Iterator<String> keys = pages.keys();
             if( keys.hasNext() ){
                 String pageid = (String) keys.next(); // First key in json object
-                abstractString = pages.getJSONObject(pageid).getString("extract");
+                try {
+                    abstractString = pages.getJSONObject(pageid).getString("extract");
+                } catch (JSONException jsonException) {
+                    Logger.info("No abstract found for '" + title + "'");
+                }
             }
         } catch (IOException e) {
             e.printStackTrace();

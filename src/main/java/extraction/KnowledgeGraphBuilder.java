@@ -19,13 +19,15 @@ import java.util.Date;
 import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 
 /**
  * @author Malte Brockmeier
  */
 public class KnowledgeGraphBuilder {
-    private String[] resultFiles = {"-infobox-properties.ttl", "-page-ids.ttl", "-labels.ttl", "-mappingbased-objects-uncleaned.ttl", "-instance-types.ttl", "-page-links.ttl"};
+    private String[] resultFiles = {"-infobox-properties.ttl", "-page-ids.ttl", "-labels.ttl", "-mappingbased-objects-uncleaned.ttl", "-mappingbased-literals.ttl", "-instance-types.ttl", "-page-links.ttl"};
     private ModelParser modelParser;
     private ModelCache modelCache;
     public String wikipageExtract;
@@ -69,8 +71,19 @@ public class KnowledgeGraphBuilder {
      * @return
      */
     public ModelCacheEntry createKnowledgeGraphForWikiPage(String wikiBaseUrl, String wikiPage, boolean includeBacklinks, boolean refreshModel) {
+        String rootModel = null;
+        boolean useRootModel = false;
+        Pattern pattern = Pattern.compile("(.*)__.*__.*");
+        Matcher matcher = pattern.matcher(wikiPage);
+        if (matcher.matches()) {
+            rootModel = matcher.group(1);
+            useRootModel = true;
+        }
+
         if (modelCache.containsModel(wikiPage) && !refreshModel) {
             return modelCache.retrieveModelFromCache(wikiPage);
+        } else if (useRootModel && rootModel != null && modelCache.containsModel(rootModel)) {
+            return modelCache.retrieveModelFromCache(rootModel);
         } else {
             long startTime = System.nanoTime();
             if (wikiBaseUrl != null) {

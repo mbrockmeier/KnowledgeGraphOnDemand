@@ -67,20 +67,28 @@ public class GroupedResource {
     }
 
     /**
-     * @Author: Yawen Liu
+     * @author Yawen Liu
      * @return the subject of the resource
      */
-    public String getSubject(){
+    public String getSubject() {
         String language = KnowledgeGraphConfiguration.getLanguage();
-        Statement labelStatement = this.resource.listProperties(RDFS.label).toList()
-                .stream()
-                .filter(statement -> statement.getObject().asLiteral().getLanguage().equals(language))
-                .findFirst()
-                .get();
+        try {
+            Statement labelStatement = this.resource.listProperties(RDFS.label).toList()
+                    .stream()
+                    .filter(statement -> statement.getObject().asLiteral().getLanguage().equals(language))
+                    .findFirst()
+                    .get();
 
-        return labelStatement.getObject().asLiteral().getString();
+            return labelStatement.getObject().asLiteral().getString();
+        } catch (NoSuchElementException noSuchElementException) {
+            return this.resource.getURI();
+        }
     }
 
+    /**
+     * @author Sunita Pateer
+     * @return the abstract of the resource
+     */
     public String getAbstract() {
         String language = KnowledgeGraphConfiguration.getLanguage();
         try {
