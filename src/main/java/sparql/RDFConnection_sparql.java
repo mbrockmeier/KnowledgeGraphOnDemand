@@ -1,10 +1,7 @@
 package sparql;
 
 import org.apache.jena.query.*;
-import org.apache.jena.rdf.model.Literal;
-import org.apache.jena.rdf.model.Model;
-import org.apache.jena.rdf.model.RDFNode;
-import org.apache.jena.rdf.model.Resource;
+import org.apache.jena.rdf.model.*;
 import org.apache.jena.rdfconnection.RDFConnection;
 import org.apache.jena.rdfconnection.RDFConnectionFactory;
 import org.apache.jena.system.Txn;
@@ -51,7 +48,22 @@ public class RDFConnection_sparql {
                 break;
             case DESCRIBE:
                 Model rs_describe = this.getDescribeResult(conn,query);
-                System.out.println(rs_describe);
+                StmtIterator stmtIterator = rs_describe.listStatements();
+                StringBuffer sb = new StringBuffer();
+                while (stmtIterator.hasNext()){
+                    Statement stmt = stmtIterator.nextStatement();
+                    String subject = stmt.getSubject().toString();
+                    String predicate = stmt.getPredicate().toString();
+                    RDFNode object = stmt.getObject();
+                    String object_final = "";
+                    if (object instanceof Resource) {
+                        object_final = object+"";
+                    } else {
+                        object_final = object.toString();
+                    }
+                    sb.append(subject+" "+predicate+" "+object_final+"\n");
+                }
+                erg = sb.toString();
                 break;
             case CONSTRUCT:
                 Model rs_construct = this.getConstructResult(conn,query);
