@@ -3,8 +3,11 @@ package parser;
 import extraction.KnowledgeGraphConfiguration;
 import org.apache.jena.rdf.model.*;
 import org.apache.jena.vocabulary.RDFS;
+import org.tinylog.Logger;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.InputStream;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
@@ -50,7 +53,15 @@ public class ModelParser {
 
             File sourceFile = new File(filePath);
             if (sourceFile.exists() && !sourceFile.isDirectory()) {
-                model.read(filePath, "N-TRIPLES");
+                try {
+                    InputStream inputStream = new FileInputStream(sourceFile);
+
+                    model.read(inputStream, null, "N-TRIPLES");
+
+                    inputStream.close();
+                } catch (Exception exception) {
+                    Logger.info(exception);
+                }
             }
         }
 
