@@ -8,6 +8,8 @@ import sparql.RDFConnection_sparql;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
+import java.util.ArrayList;
+import java.util.HashMap;
 
 /**
  * @author Yawen Liu
@@ -27,8 +29,9 @@ public class SparqlResource {
         Model model = KnowledgeGraphBuilder.getInstance().createKnowledgeGraphForWikiPage(wikiBaseUrl,resource, true, refreshModel).getModel();
         String query = sparql;
         RDFConnection_sparql rdfConnection_spaqrql = new RDFConnection_sparql(query,model);
-        String erg = rdfConnection_spaqrql.connect();
-        return SparqlHTML.sparqlRender(erg);
+        //HashMap<String, ArrayList<String>> erg = rdfConnection_spaqrql.connect();
+        //return SparqlHTML.sparqlRender(erg);
+        return "";
     }
 
 
@@ -39,7 +42,7 @@ public class SparqlResource {
         System.out.println("call the sparql..........");
         ModelCacheEntry modelCacheEntry = KnowledgeGraphBuilder.getInstance().createKnowledgeGraphForWikiPage(wikiBaseUrl, resource, false, false);
         JSONSparql jsonSparql = new JSONSparql();
-        System.out.println("sparql input: "+ sparql);
+        //System.out.println("sparql input: "+ sparql);
         jsonSparql.init(modelCacheEntry, sparql);
         return jsonSparql.getJSON().toString();
     }

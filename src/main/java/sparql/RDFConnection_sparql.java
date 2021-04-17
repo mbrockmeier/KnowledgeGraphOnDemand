@@ -5,8 +5,12 @@ import org.apache.jena.rdf.model.*;
 import org.apache.jena.rdfconnection.RDFConnection;
 import org.apache.jena.rdfconnection.RDFConnectionFactory;
 import org.apache.jena.system.Txn;
+import server.SparqlResource;
 
 import java.io.ByteArrayOutputStream;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
 import java.util.Iterator;
 
 
@@ -21,7 +25,7 @@ public class RDFConnection_sparql {
         this.model = model;
     }
 
-    public String connect(){
+    public ArrayList<ArrayList<String>> connect(){
         Query query = QueryFactory.create(this.sparql);
         Dataset dataset = DatasetFactory.createTxnMem();
         RDFConnection conn = RDFConnectionFactory.connect(dataset);
@@ -35,7 +39,7 @@ public class RDFConnection_sparql {
 
         QueryType type = query.queryType();
         String erg = "";
-
+        ArrayList<ArrayList<String>> results = new ArrayList<>();
         switch (type){
             case ASK:
                 Boolean rs_ask = this.getAskResult(conn,query);
@@ -44,7 +48,9 @@ public class RDFConnection_sparql {
                 break;
             case SELECT:
                 ResultSet rs_select = this.getSelectResult(conn,query);
-                erg = this.formatResult(rs_select);
+                results = this.formatR(rs_select);
+                //results = this.formatErg(rs_select);
+                //erg = this.formatResult(rs_select);
                 break;
             case DESCRIBE:
                 Model rs_describe = this.getDescribeResult(conn,query);
@@ -81,33 +87,102 @@ public class RDFConnection_sparql {
          ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
          ResultSetFormatter.outputAsJSON(outputStream, rs);
          String json = new String(outputStream.toByteArray());**/
-        return erg;
+        return results;
     }
-
-    private String formatResult(ResultSet rs){
-        StringBuffer sb = new StringBuffer();
+    private ArrayList<ArrayList<String>> formatR(ResultSet rs){
+        ArrayList<ArrayList<String>> results = new ArrayList<>();
+        //int count = 0;
+        /**QuerySolution querySolution_line1 = rs.nextSolution();
+        Iterator<String> iter_line1 = querySolution_line1.varNames();
+        ArrayList<String> eachLine_line1 = new ArrayList<>();
+        //count++;
+        while (iter_line1.hasNext()) {
+            String name = iter_line1.next();
+            eachLine_line1.add(name);
+        }
+        results.add(eachLine_line1);**/
         while (rs.hasNext()){
             QuerySolution querySolution = rs.nextSolution();
             Iterator<String> iter = querySolution.varNames();
-            while (iter.hasNext()){
+            ArrayList<String> eachLine = new ArrayList<>();
+            //count++;
+            while (iter.hasNext()) {
                 String name = iter.next();
                 RDFNode rdfNode = querySolution.get(name);
+                //System.out.println("name: "+ name);
                 String line = "";
-                if (rdfNode.isLiteral()){
-                    Literal literal = (Literal)rdfNode;
-                    line = literal+"";
-                }else if (rdfNode.isURIResource()){
+                if (rdfNode.isLiteral()) {
+                    Literal literal = (Literal) rdfNode;
+                    line = literal + "";
+                } else if (rdfNode.isURIResource()) {
                     Resource res = (Resource) rdfNode;
                     line = res.getURI();
-                }else {
+                } else {
                     line = rdfNode.toString();
                 }
-                sb.append(line+" ");
+                eachLine.add(line);
             }
-            sb.append("\n");
+            results.add(eachLine);
         }
-        return sb.toString();
+
+        return results;
     }
+
+ /**   private HashMap<String, ArrayList<String>> formatErg(ResultSet rs){
+        //System.out.println("in the formatErg method");
+        HashMap<String,ArrayList<String>> erg = new HashMap<>();
+        Collection<String> keys = erg.keySet();
+        while (rs.hasNext()){
+
+          //check every line of the results
+          QuerySolution querySolution = rs.nextSolution();
+          Iterator<String> iter = querySolution.varNames();
+
+          //If there is no key in the HashMap, that means the first line
+         if (keys.isEmpty()){
+              System.out.println("Now the key set of the hashMap is empty!!!!!!!!!!");
+              while (iter.hasNext()){
+                  String name = iter.next();
+                  RDFNode rdfNode = querySolution.get(name);
+                  //System.out.println("name: "+ name);
+                  String line = "";
+                  if (rdfNode.isLiteral()){
+                      Literal literal = (Literal)rdfNode;
+                      line = literal+"";
+                  }else if (rdfNode.isURIResource()){
+                      Resource res = (Resource) rdfNode;
+                      line = res.getURI();
+                  }else {
+                      line = rdfNode.toString();
+                  }
+                  ArrayList<String> arr = new ArrayList<>();
+                  arr.add(line);
+                  erg.put(name,arr);
+              }
+          }else{
+              while (iter.hasNext()){
+                  String name = iter.next();
+                  RDFNode rdfNode = querySolution.get(name);
+                  String line = "";
+                  if (rdfNode.isLiteral()){
+                      Literal literal = (Literal)rdfNode;
+                      line = literal+"";
+                  }else if (rdfNode.isURIResource()){
+                      Resource res = (Resource) rdfNode;
+                      line = res.getURI();
+                  }else {
+                      line = rdfNode.toString();
+                  }
+                  ArrayList<String> arr = erg.get(name);
+                  arr.add(line);
+                  erg.put(name,arr);
+              }
+          }
+
+        }
+        return erg;
+    }
+    **/
 
     private Boolean getAskResult(RDFConnection conn, Query query){
         Boolean rs = conn.query(query).execAsk();

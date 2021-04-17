@@ -1,9 +1,15 @@
 package server;
 
+import org.json.JSONArray;
 import org.json.JSONObject;
 import org.apache.jena.rdf.model.Model;
 import parser.ModelCacheEntry;
 import sparql.RDFConnection_sparql;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @author: Yawen Liu
@@ -22,16 +28,21 @@ public class JSONSparql {
         this.sparql = sparql;
         this.model = model;
         RDFConnection_sparql rdfConnection_spaqrql = new RDFConnection_sparql(sparql, model);
-        String erg = rdfConnection_spaqrql.connect();
-        this.jsonObject.put("result", erg);
+        ArrayList<ArrayList<String>> erg = rdfConnection_spaqrql.connect();
+        //this.jsonObject.put("result", erg);
     }
 
     public void init(ModelCacheEntry modelCacheEntry, String sparql) {
         this.sparql = sparql;
         this.model = modelCacheEntry.getModel();
         RDFConnection_sparql rdfConnection_spaqrql = new RDFConnection_sparql(sparql, model);
-        String erg = rdfConnection_spaqrql.connect();
-        this.jsonObject.put("result", erg);
+        ArrayList<ArrayList<String>> erg = rdfConnection_spaqrql.connect();
+        JSONArray columns = new JSONArray();
+
+        for(ArrayList<String> eachLine:erg){
+            columns.put(eachLine);
+        }
+        this.jsonObject.put("columns",columns);
     }
 
     public JSONObject getJSON() {
