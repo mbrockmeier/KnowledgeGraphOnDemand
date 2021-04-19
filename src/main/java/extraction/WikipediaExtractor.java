@@ -121,8 +121,10 @@ public class WikipediaExtractor {
         }
 
         try {
+            Logger.info("Start downloading wikipages...");
             Call<String> call = wikipageService.getWikiPageByTitle("submit", formattedTitles, "true");
             Response<String> response = call.execute();
+            Logger.info("Finished downloading wikipages.");
             pageSource = response.body();
         } catch (IOException e) {
             e.printStackTrace();
