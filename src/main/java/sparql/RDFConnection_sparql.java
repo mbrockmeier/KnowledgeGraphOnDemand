@@ -1,5 +1,6 @@
 package sparql;
 
+import org.apache.jena.base.Sys;
 import org.apache.jena.query.*;
 import org.apache.jena.rdf.model.*;
 import org.apache.jena.rdfconnection.RDFConnection;
@@ -92,22 +93,18 @@ public class RDFConnection_sparql {
     private ArrayList<ArrayList<String>> formatR(ResultSet rs){
         ArrayList<ArrayList<String>> results = new ArrayList<>();
         //int count = 0;
-        /**QuerySolution querySolution_line1 = rs.nextSolution();
-        Iterator<String> iter_line1 = querySolution_line1.varNames();
-        ArrayList<String> eachLine_line1 = new ArrayList<>();
-        //count++;
-        while (iter_line1.hasNext()) {
-            String name = iter_line1.next();
-            eachLine_line1.add(name);
-        }
-        results.add(eachLine_line1);**/
+        ArrayList<String> first_row = new ArrayList<>();
+        int count = 0;
         while (rs.hasNext()){
             QuerySolution querySolution = rs.nextSolution();
             Iterator<String> iter = querySolution.varNames();
             ArrayList<String> eachLine = new ArrayList<>();
-            //count++;
             while (iter.hasNext()) {
                 String name = iter.next();
+                if (count == 0) {
+                    first_row.add(name);
+                }
+                //System.out.println("other name: "+name);
                 RDFNode rdfNode = querySolution.get(name);
                 //System.out.println("name: "+ name);
                 String line = "";
@@ -122,9 +119,10 @@ public class RDFConnection_sparql {
                 }
                 eachLine.add(line);
             }
+            count++;
             results.add(eachLine);
         }
-
+        results.add(0,first_row);
         return results;
     }
 
