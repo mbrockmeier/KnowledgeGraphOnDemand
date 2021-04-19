@@ -30,6 +30,12 @@ public class JSONSparql {
         RDFConnection_sparql rdfConnection_spaqrql = new RDFConnection_sparql(sparql, model);
         ArrayList<ArrayList<String>> erg = rdfConnection_spaqrql.connect();
         //this.jsonObject.put("result", erg);
+        JSONArray columns = new JSONArray();
+
+        for(ArrayList<String> eachLine:erg){
+            columns.put(eachLine);
+        }
+        this.jsonObject.put("columns",columns);
     }
 
     public void init(ModelCacheEntry modelCacheEntry, String sparql) {

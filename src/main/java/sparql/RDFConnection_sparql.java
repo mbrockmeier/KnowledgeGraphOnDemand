@@ -44,8 +44,6 @@ public class RDFConnection_sparql {
         switch (type){
             case ASK:
                 Boolean rs_ask = this.getAskResult(conn,query);
-                //System.out.println(rs_ask);
-                //erg = String.valueOf(rs_ask);
                 ArrayList<String> answer = new ArrayList<>();
                 answer.add(String.valueOf(rs_ask));
                 results.add(answer);
