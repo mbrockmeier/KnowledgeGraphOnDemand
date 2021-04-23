@@ -30,7 +30,7 @@ public class JSONResource {
 
     public void createFromModel(Model model, String resource) {
         this.model = model;
-        Resource resourceToRender = model.getResource(resource);
+        Resource resourceToRender = model.getResource(model.expandPrefix(resource));
         GroupedResource groupedResource = GroupedResource.create(resourceToRender, model);
 
         // Package properties
