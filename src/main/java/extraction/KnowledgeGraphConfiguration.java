@@ -65,6 +65,14 @@ public class KnowledgeGraphConfiguration {
         }
     }
 
+    public static boolean getIncludeBacklinks() {
+        try {
+            return Boolean.parseBoolean(properties.getProperty("includeBacklinks"));
+        } catch(Exception e) {
+            return true;
+        }
+    }
+
     public static int getCacheSize() {
         try {
             return Integer.parseInt(properties.getProperty("cacheSize"));
@@ -95,6 +103,11 @@ public class KnowledgeGraphConfiguration {
 
     public static void setBacklinksCount(int backlinksCount) {
         properties.setProperty("backlinksCount", Integer.toString(backlinksCount));
+        storeProperties();
+    }
+
+    public static void setIncludeBacklinks(boolean includeBacklinks) {
+        properties.setProperty("includeBacklinks", Boolean.toString(includeBacklinks));
         storeProperties();
     }
 
