@@ -15,7 +15,7 @@ public interface BacklinksService {
             "Content-Type: application/json"
     })
     @GET("api.php?action=query&format=json&list=backlinks&blnamespace=0")
-    Call<String> getBackLinks(@Query("bltitle") String bltitle, @Query("bllimit") int limit);
+    Call<String> getBackLinks(@Query("bltitle") String bltitle, @Query("bllimit") int limit, @Query("blcontinue") String blcontinue);
 
     @Headers({
             "Accept: application/json",

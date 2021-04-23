@@ -62,15 +62,29 @@ public class WikipediaExtractor {
     public List<String> getBackLinks(String title) {
         String responseString;
         List<String> backlinkTitles = new ArrayList<>();
-        int backlinksCount = KnowledgeGraphConfiguration.getBacklinksCount();
 
-        try {
-            Response<String> response = backlinksService.getBackLinks(title, backlinksCount).execute();
+        //check whether to include backlinks
+        if (KnowledgeGraphConfiguration.getIncludeBacklinks()) {
+            int backlinksCount = KnowledgeGraphConfiguration.getBacklinksCount();
+            int backlinksRetrieved = 0;
+            int backlinksToRetrieve = (backlinksCount > 500 || backlinksCount == 0) ? 500 : backlinksCount;
 
-            responseString = response.body();
-            backlinkTitles = parseJSONBacklinksResponse(responseString);
-        } catch (IOException e) {
-            e.printStackTrace();
+            try {
+                String continueString = null;
+                do {
+                    Response<String> response = backlinksService.getBackLinks(title, backlinksToRetrieve, continueString).execute();
+
+                    responseString = response.body();
+                    backlinkTitles.addAll(parseJSONBacklinksResponse(responseString));
+                    continueString = getContinueString(responseString);
+                    backlinksRetrieved = backlinkTitles.size();
+                    backlinksToRetrieve = ((backlinksCount - backlinksRetrieved) > 500 || backlinksCount == 0) ? 500 : (backlinksCount - backlinksRetrieved);
+                    Logger.info("Retrieved " + backlinksRetrieved + " backlinks of limit " + backlinksCount);
+                } while (((backlinksRetrieved < backlinksCount) || backlinksCount == 0) && continueString != null);
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
 
         return backlinkTitles;
@@ -149,8 +163,27 @@ public class WikipediaExtractor {
                 backlinkTitles.add(title);
             }
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            Logger.warn(e);
         }
         return backlinkTitles;
+    }
+
+    /**
+     * @author Sunita Pateer
+     * @param response the backlinks response
+     * @return the continue string
+     */
+    private String getContinueString(String response) {
+        String continueString = null;
+        try {
+            JSONObject obj = new JSONObject(response);
+            if (obj.has("continue")) {
+                continueString = obj.getJSONObject("continue").getString("blcontinue");
+                Logger.info("Use continue string " + continueString + " to complete backlinks query");
+            }
+        } catch (Exception e) {
+            Logger.warn(e);
+        }
+        return continueString;
     }
 }

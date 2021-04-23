@@ -123,7 +123,10 @@ public class KnowledgeGraphBuilder {
             ProcessBuilder processBuilder = new ProcessBuilder("cmd.exe", "/C", "java -jar extraction.jar extraction.kgod.properties");
             processBuilder.directory(new File(KnowledgeGraphConfiguration.getExtractionFrameworkDir()));
 
-            processBuilder.inheritIO();
+            //processBuilder.inheritIO();
+            processBuilder.redirectError(new File("extraction_framework_error.txt"))
+                    .redirectOutput(new File("extraction_framework_output.txt"));
+
             Process extractionProcess = processBuilder.start();
 
             extractionProcess.waitFor(180, TimeUnit.SECONDS);
