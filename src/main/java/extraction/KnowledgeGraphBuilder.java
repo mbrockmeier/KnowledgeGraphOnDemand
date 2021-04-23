@@ -143,7 +143,8 @@ public class KnowledgeGraphBuilder {
      * @param includeBacklinks whether backlinks to the specified wikipedia page should also be retrieved
      */
     private void retrieveAndStoreWikipageXmlSource(Set<String> wikiPages, boolean includeBacklinks) {
-        retrieveAndStoreWikipageXmlSource("https://en.wikipedia.org/", "https://en.wikipedia.org/w/", wikiPages, includeBacklinks);
+        String lang = KnowledgeGraphConfiguration.getLanguage();
+        retrieveAndStoreWikipageXmlSource("https:// " + lang + ".wikipedia.org/", "https://" + lang + ".wikipedia.org/w/", wikiPages, includeBacklinks);
     }
 
     /**
@@ -192,7 +193,8 @@ public class KnowledgeGraphBuilder {
      * @param includeBacklinks whether backlinks to the specified wikipedia page should also be retrieved
      */
     private void retrieveAndStoreWikipageXmlSource(String wikiPage, boolean includeBacklinks) {
-        retrieveAndStoreWikipageXmlSource("https://en.wikipedia.org/", "https://en.wikipedia.org/w/", wikiPage, includeBacklinks);
+        String lang = KnowledgeGraphConfiguration.getLanguage();
+        retrieveAndStoreWikipageXmlSource("https://" + lang + ".wikipedia.org/", "https://" + lang + ".wikipedia.org/w/", wikiPage, includeBacklinks);
     }
 
     /**
