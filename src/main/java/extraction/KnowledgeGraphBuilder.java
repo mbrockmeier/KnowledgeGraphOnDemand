@@ -32,6 +32,8 @@ public class KnowledgeGraphBuilder {
     private ModelCache modelCache;
     public String wikipageExtract;
 
+    private static final Object LOCK = new Object();
+
     private static KnowledgeGraphBuilder instance = null;
 
     public static KnowledgeGraphBuilder getInstance() {
@@ -54,12 +56,14 @@ public class KnowledgeGraphBuilder {
      * @return
      */
     public Model createKnowledgeGraphForWikiPages(Set<String> wikiPages, boolean includeBacklinks) {
-        retrieveAndStoreWikipageXmlSource(wikiPages, includeBacklinks);
-        runExtractionFramework();
-        decompressExtractedData();
-        modelParser.readRDF(resultFiles);
+        synchronized (LOCK) {
+            retrieveAndStoreWikipageXmlSource(wikiPages, includeBacklinks);
+            runExtractionFramework();
+            decompressExtractedData();
+            modelParser.readRDF(resultFiles);
 
-        return modelParser.getModel();
+            return modelParser.getModel();
+        }
     }
 
     /**
@@ -71,40 +75,42 @@ public class KnowledgeGraphBuilder {
      * @return
      */
     public ModelCacheEntry createKnowledgeGraphForWikiPage(String wikiBaseUrl, String wikiPage, boolean includeBacklinks, boolean refreshModel) {
-        String rootModel = null;
-        boolean useRootModel = false;
-        Pattern pattern = Pattern.compile("(.*)__.*__.*");
-        Matcher matcher = pattern.matcher(wikiPage);
-        if (matcher.matches()) {
-            rootModel = matcher.group(1);
-            useRootModel = true;
-        }
+        synchronized (LOCK) {
+            String rootModel = null;
+            boolean useRootModel = false;
+            Pattern pattern = Pattern.compile("(.*)__.*__.*");
+            Matcher matcher = pattern.matcher(wikiPage);
+            if (matcher.matches()) {
+                rootModel = matcher.group(1);
+                useRootModel = true;
+            }
 
-        if (modelCache.containsModel(wikiPage) && !refreshModel) {
-            return modelCache.retrieveModelFromCache(wikiPage);
-        } else if (useRootModel && rootModel != null && modelCache.containsModel(rootModel)) {
-            return modelCache.retrieveModelFromCache(rootModel);
-        } else {
-            long startTime = System.nanoTime();
-            if (wikiBaseUrl != null) {
-                retrieveAndStoreWikipageXmlSource(wikiBaseUrl, wikiBaseUrl, wikiPage, includeBacklinks);
+            if (modelCache.containsModel(wikiPage) && !refreshModel) {
+                return modelCache.retrieveModelFromCache(wikiPage);
+            } else if (useRootModel && rootModel != null && modelCache.containsModel(rootModel)) {
+                return modelCache.retrieveModelFromCache(rootModel);
             } else {
-                retrieveAndStoreWikipageXmlSource(wikiPage, includeBacklinks);
+                long startTime = System.nanoTime();
+                if (wikiBaseUrl != null) {
+                    retrieveAndStoreWikipageXmlSource(wikiBaseUrl, wikiBaseUrl, wikiPage, includeBacklinks);
+                } else {
+                    retrieveAndStoreWikipageXmlSource(wikiPage, includeBacklinks);
+                }
+                runExtractionFramework();
+                decompressExtractedData();
+                modelParser.readRDF(resultFiles);
+
+                //add abstract to model
+                if (this.wikipageExtract != null) {
+                    modelParser.addAbstract(wikiPage, wikipageExtract);
+                }
+
+
+                long elapsedTime = System.nanoTime() - startTime;
+                double extractionDuration = (double) elapsedTime / 1_000_000_000;
+
+                return modelCache.storeModelInCache(wikiPage, modelParser.getModel(), extractionDuration);
             }
-            runExtractionFramework();
-            decompressExtractedData();
-            modelParser.readRDF(resultFiles);
-
-            //add abstract to model
-            if (this.wikipageExtract != null) {
-                modelParser.addAbstract(wikiPage, wikipageExtract);
-            }
-
-
-            long elapsedTime = System.nanoTime() - startTime;
-            double extractionDuration = (double) elapsedTime / 1_000_000_000;
-
-            return modelCache.storeModelInCache(wikiPage, modelParser.getModel(), extractionDuration);
         }
     }
 
@@ -117,7 +123,10 @@ public class KnowledgeGraphBuilder {
             ProcessBuilder processBuilder = new ProcessBuilder("cmd.exe", "/C", "java -jar extraction.jar extraction.kgod.properties");
             processBuilder.directory(new File(KnowledgeGraphConfiguration.getExtractionFrameworkDir()));
 
-            processBuilder.inheritIO();
+            //processBuilder.inheritIO();
+            processBuilder.redirectError(new File("extraction_framework_error.txt"))
+                    .redirectOutput(new File("extraction_framework_output.txt"));
+
             Process extractionProcess = processBuilder.start();
 
             extractionProcess.waitFor(180, TimeUnit.SECONDS);
@@ -134,7 +143,8 @@ public class KnowledgeGraphBuilder {
      * @param includeBacklinks whether backlinks to the specified wikipedia page should also be retrieved
      */
     private void retrieveAndStoreWikipageXmlSource(Set<String> wikiPages, boolean includeBacklinks) {
-        retrieveAndStoreWikipageXmlSource("https://en.wikipedia.org/", "https://en.wikipedia.org/w/", wikiPages, includeBacklinks);
+        String lang = KnowledgeGraphConfiguration.getLanguage();
+        retrieveAndStoreWikipageXmlSource("https:// " + lang + ".wikipedia.org/", "https://" + lang + ".wikipedia.org/w/", wikiPages, includeBacklinks);
     }
 
     /**
@@ -183,7 +193,8 @@ public class KnowledgeGraphBuilder {
      * @param includeBacklinks whether backlinks to the specified wikipedia page should also be retrieved
      */
     private void retrieveAndStoreWikipageXmlSource(String wikiPage, boolean includeBacklinks) {
-        retrieveAndStoreWikipageXmlSource("https://en.wikipedia.org/", "https://en.wikipedia.org/w/", wikiPage, includeBacklinks);
+        String lang = KnowledgeGraphConfiguration.getLanguage();
+        retrieveAndStoreWikipageXmlSource("https://" + lang + ".wikipedia.org/", "https://" + lang + ".wikipedia.org/w/", wikiPage, includeBacklinks);
     }
 
     /**

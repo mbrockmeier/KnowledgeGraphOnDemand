@@ -2,3 +2,5 @@
 .DS_Store
 target/
 Extraction/
+extraction_framework_error.txt
+extraction_framework_output.txt

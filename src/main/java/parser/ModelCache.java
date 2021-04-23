@@ -1,6 +1,7 @@
 package parser;
 
 import org.apache.jena.rdf.model.Model;
+import org.tinylog.Logger;
 
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -49,11 +50,11 @@ public class ModelCache {
     }
 
     private void logCacheStatus() {
-        System.out.println("Hashmap Size " + modelCache.size());
-        System.out.print("\nKey queue: ");
+        Logger.info("Current cache size " + modelCache.size());
+        StringBuilder keyQueue = new StringBuilder();
         for(String key : modelKeys) {
-            System.out.print(key + ", ");
+            keyQueue.append(key).append(", ");
         }
-        System.out.print("\n");
+        Logger.info("Key queue: " + keyQueue.toString());
     }
 }

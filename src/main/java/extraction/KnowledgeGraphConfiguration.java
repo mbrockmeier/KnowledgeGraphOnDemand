@@ -65,6 +65,14 @@ public class KnowledgeGraphConfiguration {
         }
     }
 
+    public static boolean getIncludeBacklinks() {
+        try {
+            return Boolean.parseBoolean(properties.getProperty("includeBacklinks"));
+        } catch(Exception e) {
+            return true;
+        }
+    }
+
     public static int getCacheSize() {
         try {
             return Integer.parseInt(properties.getProperty("cacheSize"));
@@ -98,6 +106,11 @@ public class KnowledgeGraphConfiguration {
         storeProperties();
     }
 
+    public static void setIncludeBacklinks(boolean includeBacklinks) {
+        properties.setProperty("includeBacklinks", Boolean.toString(includeBacklinks));
+        storeProperties();
+    }
+
     public static void setCacheSize(int cacheSize) {
         properties.setProperty("cacheSize", Integer.toString(cacheSize));
         storeProperties();
@@ -118,6 +131,9 @@ public class KnowledgeGraphConfiguration {
             } else {
                 if (key.equals("extractors")) {
                     setEnabledExtractors(String.valueOf(jsonObject.get(key)));
+                }
+                if (key.equals("lang")) {
+                    frameworkProperties.setProperty("languages", String.valueOf(jsonObject.get(key)));
                 }
             }
         }
