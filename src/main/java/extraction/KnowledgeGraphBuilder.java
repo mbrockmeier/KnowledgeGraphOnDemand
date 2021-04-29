@@ -144,7 +144,7 @@ public class KnowledgeGraphBuilder {
      */
     private void retrieveAndStoreWikipageXmlSource(Set<String> wikiPages, boolean includeBacklinks) {
         String lang = KnowledgeGraphConfiguration.getLanguage();
-        retrieveAndStoreWikipageXmlSource("https:// " + lang + ".wikipedia.org/", "https://" + lang + ".wikipedia.org/w/", wikiPages, includeBacklinks);
+        retrieveAndStoreWikipageXmlSource("https://" + lang + ".wikipedia.org/", "https://" + lang + ".wikipedia.org/w/", wikiPages, includeBacklinks);
     }
 
     /**
