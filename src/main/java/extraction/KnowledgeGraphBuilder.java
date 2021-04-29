@@ -218,7 +218,7 @@ public class KnowledgeGraphBuilder {
 
         pagesToRetrieve.add(wikiPage);
 
-        if (KnowledgeGraphConfiguration.getRetrieveExtract() && wikiBaseUrl.contains("https://en.wikipedia.org/")) {
+        if (KnowledgeGraphConfiguration.getRetrieveExtract() && wikiBaseUrl.matches("https://.*.wikipedia.org/")) {
             retrieveWikipageExtract(wikipediaExtractor, wikiPage);
         }
 

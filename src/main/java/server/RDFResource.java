@@ -20,28 +20,28 @@ public class RDFResource {
     @Produces({MediaType.TEXT_HTML})
     public String getResourceHTML(@PathParam("resource") String resource, @QueryParam("wikiBaseUrl") String wikiBaseUrl, @QueryParam("refreshModel") boolean refreshModel) {
         Model model = KnowledgeGraphBuilder.getInstance().createKnowledgeGraphForWikiPage(wikiBaseUrl, resource, true, refreshModel).getModel();
-        return HTMLRenderer.renderModel(model, "http://dbpedia.org/resource/" + resource);
+        return HTMLRenderer.renderModel(model, ResourceTransformer.getResourceName(resource));
     }
 
     @GET
     @Produces("application/rdf+xml")
     public String getResourceRDFXML(@PathParam("resource") String resource, @QueryParam("wikiBaseUrl") String wikiBaseUrl, @QueryParam("refreshModel") boolean refreshModel) {
         Model model = KnowledgeGraphBuilder.getInstance().createKnowledgeGraphForWikiPage(wikiBaseUrl, resource, true, refreshModel).getModel();
-        return ResourceTransformer.getResourceXML(model, resource);
+        return ResourceTransformer.getResourceXML(model, ResourceTransformer.getResourceName(resource));
     }
 
     @GET
     @Produces("application/n-triples")
     public String getResourceNTriples(@PathParam("resource") String resource, @QueryParam("wikiBaseUrl") String wikiBaseUrl, @QueryParam("refreshModel") boolean refreshModel) {
         Model model = KnowledgeGraphBuilder.getInstance().createKnowledgeGraphForWikiPage(wikiBaseUrl, resource, true, refreshModel).getModel();
-        return ResourceTransformer.getResourceNTriples(model, resource);
+        return ResourceTransformer.getResourceNTriples(model, ResourceTransformer.getResourceName(resource));
     }
 
     @GET
     @Produces("text/turtle")
     public String getResourceTurtle(@PathParam("resource") String resource, @QueryParam("wikiBaseUrl") String wikiBaseUrl, @QueryParam("refreshModel") boolean refreshModel) {
         Model model = KnowledgeGraphBuilder.getInstance().createKnowledgeGraphForWikiPage(wikiBaseUrl, resource, true, refreshModel).getModel();
-        return ResourceTransformer.getResourceTurtle(model, resource);
+        return ResourceTransformer.getResourceTurtle(model, ResourceTransformer.getResourceName(resource));
     }
 
     @GET
@@ -49,7 +49,7 @@ public class RDFResource {
     public String getResourceJSON(@PathParam("resource") String resource, @QueryParam("wikiBaseUrl") String wikiBaseUrl, @QueryParam("refreshModel") boolean refreshModel) {
         ModelCacheEntry modelCacheEntry = KnowledgeGraphBuilder.getInstance().createKnowledgeGraphForWikiPage(wikiBaseUrl, resource, true, refreshModel);
         JSONResource jsonResource = new JSONResource();
-        jsonResource.createFromModel(modelCacheEntry, "http://dbpedia.org/resource/" + resource);
+        jsonResource.createFromModel(modelCacheEntry, ResourceTransformer.getResourceName(resource));
         return jsonResource.getJSON();
     }
 }

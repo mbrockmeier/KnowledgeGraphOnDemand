@@ -128,12 +128,12 @@ public class KnowledgeGraphConfiguration {
             String key = keys.next();
             if (properties.containsKey(key)) {
                 properties.setProperty(key, String.valueOf(jsonObject.get(key)));
+                if (key.equals("lang")) {
+                    frameworkProperties.setProperty("languages", String.valueOf(jsonObject.get(key)));
+                }
             } else {
                 if (key.equals("extractors")) {
                     setEnabledExtractors(String.valueOf(jsonObject.get(key)));
-                }
-                if (key.equals("lang")) {
-                    frameworkProperties.setProperty("languages", String.valueOf(jsonObject.get(key)));
                 }
             }
         }

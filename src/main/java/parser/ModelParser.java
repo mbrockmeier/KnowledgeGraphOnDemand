@@ -4,6 +4,7 @@ import extraction.KnowledgeGraphConfiguration;
 import org.apache.jena.rdf.model.*;
 import org.apache.jena.vocabulary.RDFS;
 import org.tinylog.Logger;
+import server.ResourceTransformer;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -78,7 +79,7 @@ public class ModelParser {
      * @param extractedAbstract
      */
     public void addAbstract(String wikiPage, String extractedAbstract) {
-        String resourceName = model.expandPrefix("dbr:" + wikiPage);
+        String resourceName = model.expandPrefix(ResourceTransformer.getResourceName(wikiPage));
         Property abstractProperty = model.createProperty(model.expandPrefix("dbo:abstract"));
 
         model.addLiteral(model.getResource(resourceName), RDFS.comment, model.createLiteral((extractedAbstract), KnowledgeGraphConfiguration.getLanguage()));
