@@ -1,5 +1,6 @@
 package app;
 
+import extraction.KnowledgeGraphConfiguration;
 import io.undertow.Undertow;
 import io.undertow.servlet.api.DeploymentInfo;
 import org.jboss.resteasy.plugins.server.undertow.UndertowJaxrsServer;
@@ -16,7 +17,8 @@ import java.util.Set;
  */
 public class App {
     public static void main(String[] args) throws Exception {
-        Undertow.Builder undertowBuilder = Undertow.builder().addHttpListener(8080, "0.0.0.0");
+        int port = KnowledgeGraphConfiguration.getServerPort();
+        Undertow.Builder undertowBuilder = Undertow.builder().addHttpListener(port, "0.0.0.0");
         UndertowJaxrsServer server = new UndertowJaxrsServer().start(undertowBuilder);
 
         DeploymentInfo deploymentInfo = server.undertowDeployment(AppResourceConfig.class)
@@ -26,7 +28,7 @@ public class App {
 
         server.deploy(deploymentInfo);
 
-        Logger.info("Server listening on 0.0.0.0:8080. Press ENTER to quit...");
+        Logger.info("Server listening on 0.0.0.0:" + port + ". Press ENTER to quit...");
 
         DBpediaOntology.getInstance().printOntology();
 

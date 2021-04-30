@@ -81,6 +81,14 @@ public class KnowledgeGraphConfiguration {
         }
     }
 
+    public static int getServerPort() {
+        try {
+            return Integer.parseInt(properties.getProperty("serverPort"));
+        } catch (Exception e) {
+            return 8080;
+        }
+    }
+
     public static void setExtractionFrameworkDir(String extractionFrameworkDir) {
         properties.setProperty("extractionFrameworkDir", extractionFrameworkDir);
         storeProperties();

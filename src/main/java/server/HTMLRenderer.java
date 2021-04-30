@@ -5,7 +5,7 @@ import static j2html.TagCreator.*;
 
 public class HTMLRenderer {
     public static String renderModel(Model model, String resource) {
-        Resource resourceToRender = model.getResource(resource);
+        Resource resourceToRender = model.getResource(model.expandPrefix(resource));
         GroupedResource groupedResource = GroupedResource.create(resourceToRender, model);
         System.out.println("the link is: "+ resourceToRender.getURI());
         return document(html(
