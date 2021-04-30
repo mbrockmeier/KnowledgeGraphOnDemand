@@ -72,6 +72,7 @@ extractors=
 Finally, the ontology and mappings need to be downloaded. This can be achieved by running the following two commands while in the `core` directory.
 
 `mvn scala:run "-Dlauncher=download-ontology"`
+
 `mvn scala:run "-Dlauncher=download-mappings"`
 
 ## Knowledge Graph On Demand Setup
