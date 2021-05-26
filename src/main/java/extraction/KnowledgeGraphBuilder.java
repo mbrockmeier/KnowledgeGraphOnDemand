@@ -120,7 +120,13 @@ public class KnowledgeGraphBuilder {
     private void runExtractionFramework() {
         Logger.info("Running extraction-framework on XML source dumps...");
         try {
-            ProcessBuilder processBuilder = new ProcessBuilder("cmd.exe", "/C", "java -jar extraction.jar extraction.kgod.properties");
+            ProcessBuilder processBuilder;
+            //handling for Windows and other OS
+            if (System.getProperty("os.name").toLowerCase().contains("win")) {
+                processBuilder = new ProcessBuilder("cmd.exe", "/C", "java -jar extraction.jar extraction.kgod.properties");
+            } else {
+                processBuilder = new ProcessBuilder("java -jar extraction.jar extraction.kgod.properties");
+            }
             processBuilder.directory(new File(KnowledgeGraphConfiguration.getExtractionFrameworkDir()));
 
             //processBuilder.inheritIO();
