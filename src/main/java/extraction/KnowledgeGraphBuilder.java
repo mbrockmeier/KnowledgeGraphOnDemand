@@ -125,7 +125,7 @@ public class KnowledgeGraphBuilder {
             if (System.getProperty("os.name").toLowerCase().contains("win")) {
                 processBuilder = new ProcessBuilder("cmd.exe", "/C", "java -jar extraction.jar extraction.kgod.properties");
             } else {
-                processBuilder = new ProcessBuilder("java -jar extraction.jar extraction.kgod.properties");
+                processBuilder = new ProcessBuilder("java", "-jar", "extraction.jar extraction.kgod.properties");
             }
             processBuilder.directory(new File(KnowledgeGraphConfiguration.getExtractionFrameworkDir()));
 
